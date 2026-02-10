@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography Demonstration - Tufte-Style Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#archive">Archive</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="article-header">
+      <h1 class="article-title">Typography Demonstration</h1>
+      <div class="article-meta">A showcase of all typographic elements</div>
+    </header>
+
+    <section class="content">
+      <h2>Paragraph Indentation Rules</h2>
+
+      <p>
+        This is the first paragraph after a heading. According to our CSS rules, it has NO indent (text-indent: 0). This creates a clear visual break between sections and helps establish hierarchy.
+      </p>
+
+      <p>
+        This is the second paragraph. Notice how it IS indented by 1.5em. All subsequent paragraphs follow this pattern, creating the classic book-style typography that Tufte's work exemplifies. The indent signals a new paragraph without requiring extra vertical space.
+      </p>
+
+      <p>
+        Third paragraph, also indented. The consistent indentation creates a rhythm that guides the eye down the page. Combined with justified text and careful line-height, this produces an even "color" across the page—a key goal in classical typography.
+      </p>
+
+      <h3>After a Level 3 Heading</h3>
+
+      <p>
+        Again, no indent for the first paragraph. This rule applies to all heading levels (h1 through h6), ensuring consistency throughout the document.
+      </p>
+
+      <p>
+        And back to normal indentation for subsequent paragraphs.
+      </p>
+
+      <h2>The Blockquote Exception</h2>
+
+      <p>
+        Here's a paragraph before a blockquote, with standard indentation.
+      </p>
+
+      <blockquote>
+        <p>
+          This is a blockquote. It's styled in italics with a left border. Blockquotes can contain multiple paragraphs.
+        </p>
+        <p>
+          Notice that paragraphs within blockquotes have no indent, maintaining clarity within the quoted material.
+        </p>
+      </blockquote>
+
+      <h2>Abstract Box</h2>
+
+      <p>
+        The abstract box provides a special container for abstract sections, with a light gray border and subtle background.
+      </p>
+
+      <div class="abstract-box">
+        This abstract box automatically adds "Abstract" in bold small-caps before the content. It uses a slightly smaller font size (0.95rem) and has a subtle off-white background with a light gray border, making it distinct from regular blockquotes while maintaining the overall design aesthetic.
+      </div>
+
+      <h2>Editorial Box</h2>
+
+      <p>
+        The editorial box provides a container for commentary, notes, or editorial content, with a subtle gray background and automatic "Commentary" label.
+      </p>
+
+      <div class="editorial">
+        This is an editorial box for commentary or notes. It automatically adds a "Commentary" label at the top and uses a subtle gray background to distinguish it from the main content while maintaining readability.
+      </div>
+
+      <p>
+        This paragraph immediately follows the blockquote, so according to our CSS rules, it has NO indent. This prevents the visual awkwardness of an indent right after the blockquote's left border.
+      </p>
+
+      <p>
+        Now we're back to normal indented paragraphs. The rule is simple: first paragraph after a heading or blockquote gets no indent; everything else does.
+      </p>
+
+      <h2>Emphasis Styles</h2>
+
+      <p>
+        Traditional typography offers several methods of emphasis, each with its own character and purpose. We avoid bold text because it creates dark spots on the page, disrupting the even typographic color.
+      </p>
+
+      <p>
+        Instead, we use <em>italic text for gentle emphasis</em>. Italics suggest a shift in tone or stress without visual violence. They're perfect for foreign words, titles of works, or subtle emphasis within a sentence.
+      </p>
+
+      <p>
+        For stronger emphasis, we use <strong>small capitals</strong>. Notice how "small capitals" in the previous sentence provides emphasis without the heavy weight of bold. <strong>Small caps maintain the line's color</strong> while still drawing attention. They're traditionally used for acronyms, names, and important terms.
+      </p>
+
+      <p>
+        Compare: <strong>This is small caps emphasis</strong> versus bold text (which we've disabled). The small caps version integrates smoothly into the paragraph's texture, while bold would create a dark patch.
+      </p>
+
+      <h2>Working with Lists</h2>
+
+      <p>
+        Lists provide structure for enumerated or bulleted information. They break the flow of prose paragraphs intentionally:
+      </p>
+
+      <ul>
+        <li>Unordered lists use simple bullets</li>
+        <li>Each item has proper spacing</li>
+        <li>They integrate well with the overall design</li>
+        <li>You can emphasize within list items using <em>italics</em> or <strong>small caps</strong></li>
+      </ul>
+
+      <p>
+        Ordered lists work similarly:
+      </p>
+
+      <ol>
+        <li>First item in the sequence</li>
+        <li>Second item, properly numbered</li>
+        <li>Third item demonstrating consistent spacing</li>
+        <li>Fourth item with a longer text to show how line wrapping works within list items and maintains proper alignment</li>
+      </ol>
+
+      <p>
+        After the list, paragraphs resume their normal indented flow.
+      </p>
+
+      <h2>Code and Technical Content</h2>
+
+      <p>
+        For technical writing, we need to handle code gracefully. Inline code like <code>const example = true;</code> is set in a monospace font with subtle background highlighting.
+      </p>
+
+      <p>
+        Larger code blocks get their own space:
+      </p>
+
+      <pre><code>function demonstrateCode() {
+  const value = "properly formatted";
+  return {
+    font: "monospace",
+    background: "subtle gray",
+    readable: true
+  };
+}</code></pre>
+
+      <p>
+        The code blocks maintain readability while clearly distinguishing code from prose. They use a darker background consistent with our grayscale palette.
+      </p>
+
+      <h2>Links and References</h2>
+
+      <p>
+        Links are styled subtly with an underline that appears as a border-bottom. This is more controllable than text-decoration and creates a cleaner appearance. For example, <a href="#">this is a link</a> that demonstrates the styling. On hover, the underline intensifies slightly.
+      </p>
+
+      <p>
+        Multiple links like <a href="#">this one</a> and <a href="#">that one</a> integrate naturally into the text without overwhelming the reader with color or excessive decoration.
+      </p>
+
+      <h2>Tables</h2>
+
+      <p>
+        When data requires tabular presentation, our styling maintains the grayscale aesthetic:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Treatment</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paragraphs</td>
+            <td>1.5em indent</td>
+            <td>Classical book style</td>
+          </tr>
+          <tr>
+            <td>Emphasis</td>
+            <td>Italics & small caps</td>
+            <td>Even typographic color</td>
+          </tr>
+          <tr>
+            <td>Headings</td>
+            <td>No following indent</td>
+            <td>Clear hierarchy</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Table headers use small caps for a refined appearance, and borders are subtle gray lines that don't compete with the content.
+      </p>
+
+      <hr>
+
+      <h2>Conclusion</h2>
+
+      <p>
+        This demonstration shows all the major typographic elements working together. The system is internally consistent, creating a reading experience that focuses attention on the content rather than the design.
+      </p>
+
+      <p>
+        The grayscale palette eliminates color distractions. The Georgia font provides excellent readability. The indentation rules create rhythm and hierarchy. The emphasis styles maintain even typographic color. Together, these elements produce a page that respects both the writer's craft and the reader's intelligence.
+      </p>
+
+      <p>
+        Such attention to detail may seem excessive in an age of quick consumption, but for long-form writing, it makes the difference between a document that invites sustained reading and one that encourages skimming or abandonment.
+      </p>
+    </section>
+  </article>
+
+  <footer>
+    <p>© 2026 Tufte-Style Blog. Set in Georgia.</p>
+  </footer>
+</body>
+</html>

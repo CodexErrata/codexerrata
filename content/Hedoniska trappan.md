@@ -1,0 +1,84 @@
+<!-- title: Hedoniska löpbandet -->
+<!-- date: 3/2-2026 -->
+
+<div class="container">Jag vill varna om att det här inte är rolig läsning. Hedoniska löpbandet är det mest deprimerande konceptet jag stött på. Jag vill också etablera på förhand att det inte handlar om hedonism, i bemärkelsen materiella nöjen, som mat, sex, och konsumerism, utan all form av lycka. </div>
+
+Om du frågade en romersk slav hur han trodde himlen var skulle han kanske säga att det är en plats där du alltid har tillgång till bröd när du är hungrig, bröd du inte ens behöver baka själv. Det är en plats där du själv kan välja hur starkt solen skiner, så du slipper svettas om somrarna och frysa om vintrarna, och där du kan få solens ljus utan solens värme eller solens värme utan solens ljus. Det är en plats där vem som helst, inte bara samhällets översta skikt, har tillgång till vacker musik och underhållning så fort man ber om det. En plats där du kan resa från en stad till en annan, inte bara utan att gå, utan många gånger snabbare än på häst. En plats där barn, gamla, och sjuka slipper arbeta. En plats utan Babeltornets bestraffning, där du kan prata med vem som helst oavsett deras språk. Kanske kan du t o m prata med vänner och familj, utan att ni är på samma plats. 
+
+På denna plats lever den genomsnittliga svensken i idag, med många andra lyx en romersk slav inte ens kunde föreställa sig. Ändå är vi inte mycket lyckligare än vad slaven var. Vi lever i himmelriket på jorden, och varje dag tar himmelrikets medborgare livet av sig. 
+
+Albert Camus skrev att det finns bara en allvarlig filosofisk fråga, och det är självmordet. Jag vill påstå att det bara finns en allvarlig teknologisk fråga, och det är det hedoniska löpbandet. De är också relaterade -- kan du inte få din hedoniska utgångspunkt ovanför nollpunkten finns det ett uppenbart svar på Camus fråga. 
+
+Det hedoniska löpbandet, eller hedonisk anpassning som psykologerna kallar det, är hjärnans tendens att återgå till en lyckomässig trivselvikt. Vi mår bättre en kortare stund efter en löneförhöjning, en ny bil, ny flickvän eller efter att ha hittat ett nytt bra indie rock-album, men så småningom återgår vi till ungefär samma nivå vi låg på tidigare. Det omvända gäller också; du mår dåligt en stund efter att jobbet sparkar dig, tjejen lämnar dig, eller du förlorat ett ben, men efter ett år kommer du troligtvis vara ungefär lika lycklig som enbent, arbetslös singelman. Detta må vara skönt att höra om din tjej just lämnade dig, eller om du nyligen förlorade ett ben, men för den som spenderat mycket tid olycklig är detta horribla nyheter, och även för den som generellt sätt mår bra är det i a f högst demotiverande; varför spendera energi på att förbättra sitt liv om man ändå kommer återgå till samma grundtillstånd? 
+
+Man kan fråga sig varför, i ett himmelrike där folk kastar sig framför tåg, lägger vi så mycket energi på att förbättra tågen? Alla teknologiska framsteg är obetydelsefulla i jämförelse med det hedoniska problemet, och dem är obetydelsefulla just på grund av det hedoniska problemet. Teknologiskt finns det två teoretiska sätt att lösa problemet: farmakologiskt och genetiskt. Farmakologiskt är idéerna att antingen hitta ett sätt att stänga av hjärnans homeostatiska (balanserande -- självreglerande) process, eller skapa agonist- (imiterande) preparat, som fyller samma funktioner som lyckohormonerna utan att faktiskt vara de hormonerna. Detta har vi inte haft någon framgång med. Jag hade velat se en tusenfaldig (höftskott) ökning av resurserna vi lägger på detta, men eftersom normala, naturliga processer inte ses som problem tvivlar jag på att det kommer ske. 
+
+Genetiskt finns det faktiskt något vi redan kan göra. Eugenik fungerar, väldigt väl faktiskt. Däremot är så grov fascism inte särskilt populärt någonstans, och de få diktaturer som kanske skulle kunna engagera sig i det verkar vara mer fokusera på att avla fram intelligens och disciplin än lycka (även om båda disciplin och intelligens har en måttlig korrelation med lycka). 
+
+Som tur är sker detta i någon grad naturligt. Neuroticism och extraversion (vilket i sig korrelerar med gott mående) korrelerar med barnafödande. Deprimerade får färre barn, helt enkelt. 
+
+Mer effektivt än eugenik kommer genmanipulation vara. CRISPR-9-forskning får stora mängder resurser. Målet med forskningen är naturligtvis inte att göra folk lyckligare, utan målet är explicit att förebygga genetiska sjukdomar som sickelcellanemi och Downs syndrom, implicit att skapa [[supermänniskor|som att kineserna inte var smarta nog...]], men gensaxen är ett brett verktyg; kan du genmanipulera längd kan du rimligtvis använda samma verktyg för att manipulera lycka. 
+
+<div class="container">Innan jag djupdyker i frågan vill jag få det sagt att hedoniska trappan troligtvis inte nödvändigtvis är absolut. Den dominerande uppfattningen är, så vitt jag förstår, att du inte med säkerhet vänjer dig till 100% med livsförbättringar, men att du *för det mesta* gör det. Det verkar också som att lyckotaket är svårare att rubba på än golvet, och att de flesta kan falla längre än de kan klättra. 
+
+
+En *Lesswrong* användare formulerade problematiken inte som ett jämviktsproblem, utan ett marginalnyttoproblem. Han menar att god hälsa, meningsfulla aktiviteter och bra relationer *höjer* ditt utgångsläge, men att marginalnyttan minskar snabbt, och att de flesta redan är nära toppen.
+<blockquote class="quote-small">
+  <p>Cherish the plateu. For now, it is our summit</p>
+</blockquote>
+</div>
+
+
+Vad kan man då göra, om man inte är global despot och kontrollerar forskningsanlag? Först, måste vi etablera vad lycka (och olycka) är. Med risk för att låta överdrivet fysikalistisk går det att reducera till dopamin (belöningssignalsubstansen), serotonin (belåtenhetssubstansen), oxytocin (kärlekssubstansen), endorfiner (smärtstillande), och kortisol (stresshormonen). Detta är grovt förenklat -- alla som tagit MDMA med någon de tycker om är nog förvånade att det inte är serotonin som kallas kärleks hormonen. Alla dessa hormoner har många fler funktioner, inklusive funktioner utanför hjärnan, och överlappar med varandra i hög grad, men denna förenkling får duga för våra syften. Att vi upptäckt lyckohormonerna skulle vara en fantastisk upptäckt, om inte hjärnan var så skicklig på att nedreglera och avtrubba sig själv när du får "för mycket" av dem. Det är därför du inte kan spendera resten av ditt liv njutandes av amfeminets dopamin, ecstacys serotonin, morfinets endorfiner, och valiumets lugn. Oxytocin har ingen vanlig korresponderande drog eftersom molekylen är för stor för att ta sig genom blod-hjärnbarriären, så denna får du bara genom äkta kärlek -- en något romantisk slump från universums håll (sanning med modifikation, men men). 
+
+Eftersom dina känslor kan reduceras till ett fåtal biokemiska processer är det passande att vi börjar med att diskutera vad som kan göras farmakologiskt. 
+
+
+##Dopamin
+Nästan alla droger är dopaminerga i någon grad. De kan delas upp i två grupper beroende på deras farmakodynamik: *dopamine releasing agents* (DAT) och *dopamine reuptake inhibitors* (DRI). I den första gruppen hittar vi amfetamin: amfetaminet får nervcellen att släppa mer av dopaminet den håller. Krashen efteråt kommer eftersom du har tömt dina celler på dopamin. 
+
+DRI-preparat är substanser som metylfenidat (Ritalin, Concerta) och kokain. Dessa blockerar återabsorbtion av dopamin, så att dopamin är aktivt längre. Dessa är generellt sätt bättre än DAT preparat på så sätt att de inte tömmer dopamindepåer, men avtrubbning av dopaminreceptorerna sker fortfarande. 
+
+Avtrubbning sker baserat på två faktorer: basnivåer och toppnivåer. Dopamin har i hjärnan en ortoligt kort halveringstid, ungefär 200 millisekunder. Därför kan dopaminnivåerna vara väldigt volatila, t o m från sekund till sekund. Dopaminerga droger gör att bottennivån är förhöjd, vilket hjärnan märker och nedreglerar för dopamin. Detta sker mer desto längre nivåerna är förhöjda -- m a o riskerar du sådan nedreglering av kronisk användning av ADHD medicin. 
+
+Den andra faktor, toppnivåerna, innebär att dopaminnivåerna blir så höga att hjärnan får panik. Den märker att nivåerna är så höga att allvarig oxidativ stress kan ske ("rost" som orsakar celldöd), och slutar utsöndra dopamin. Detta orsakas mer av kokain än långsammare substanser som lisdexamfetamin. 
+
+Så, vi har etablerat att vi inte kan öka utsöndringen av dopamin, eftersom vi får slut på våra dopamindepåer, och vi kan inte motverka återabsorbtion av dopamin, eftersom det får nervceller att minska sin naturliga utsöndring av dopamin. Vad finns då kvar? Jo, detta löste kommunisterna på 80-talet: sovjeterna uppfann bromantan. Bromantan går direkt till källan; det går direkt på genommekanismer. Bromantan ökar själva produktionen av dopamin. Eftersom utsöndringen inte tvingas, utan sker naturligt (d v s volatilt) är inte basnivåerna konstant förhöjda, och hjärnan nedreglerar inte. 
+
+<div class="container">Jag vill påpeka att det är möjligt att ditt hormonella normalläge är lägre än din genetik kodar för. Höga doser av oxiderande droger leder till celldöd. Vissa former av processad mat, systemiska sjukdomar och kronisk stress leder till inflammatoriska ämnen i hjärnan, varpå hjärnan använder tyrosynet för att producera immunmodulerande hormoner istället för dopamin. Brister av hormonernas byggstenar innebär att du är begränsad i hur mycket av dem du kan producera. Dessa specialfall kommer jag inte diskutera idag, men lider du av systemisk sjukdom eller Tyrosyn/D-vitamin-brist är det naturligtvis prio ett att lösa. </div> 
+
+##Serotonin
+Tyvärr finns ingen Bromantanekvivalent för serotonin. Hjärnan är mycket känsligare för förhöjda serotoninnivåer än för dopamin; får du för mycket dopamin spenderar du en timma på att demontera soffan eller frenetisk redigera wikipediasidor, i värsta fall kan du bli manisk eller utsätta hjärnan för oxidativ stress. Får du för mycket serotonin dör du (serotoninsyndrom). 
+
+Du kanske redan fått idén om SSRI-preparat (selective serotonin reuptake inhibitors, antidepressiva). Vid första anblick låter det rimligt. Deprimerade använder det och många av dem tar sig med hjälp av SSRI ut ur depressionen. 
+
+Tanken med SSRI var naturligtvis att ge deprimerade mer serotonin. Däremot förvirrade det längre forskare varför SSRI inte verkade fungera direkt -- ta en ecstacypiller och du mår toppen på inom en halvtimma, men antidepp, som skulle fungera via samma mekanism, verkade ta en månad eller längre innan det gjorde något. 
+
+Det var först på 2000-talet vi förstod varför. Det är inte serotoninet som hjälper; precis som för dopamin avtrubbas hjärnan snabbt mot högre serotoninnivåer. Istället hjälper SSRI-preparat genom att öka neuroplasticitet. 
+
+Föreställ dig att du har din egna skidbacke. På morgonen (när du föds) har du en vacker backe med pudersnö. Du tar på dig dina skidor och åker ned. När du åker ned för backen pressas snön ned, och nästa gång du tar samma väg går det lite snabbare och enklare att ta sig ned. Så småningom, när du åkt samma väg tillräckligt många gånger, är pudersnön på vardera sida så mycket högre att du inte längre kan ta dig upp ur banan -- du är fast. Detta fenomen är inte dåligt i sig; till skillnad från en treåring behöver du inte ödsla särskilt mycket mental energi på att borsta tänderna för hjärnan har redan banat ut den processen väldigt väl. För många deprimerade, däremot, är de fast på dåliga banor. Preparat som ökar neuroplasticitet (som SSRI, långsamt, eller psykadelika, mycket mer exlposivt) fungerar som en snöstorm. Plötsligt är backen täckt av pudersnö igen, och du kan forma nya vägar ned. 
+
+Detta finner jag högst intressant, men hjälper oss inte särskilt mycket hormonellt. Vad har vi då för alternativ? 
+
+Som tidigare etablerat finns ingen fungerande bromantanekvivalent för serotonin, men serotoninet har något som dopaminet inte har: fungerande agonister. Medan MDMA får nervcellerna att släppa sitt serotonin, och SSRI hämmar återupptag, fungerar LSD och psilocybin så att de *imiterar* serotonin. De båda molekylerna har "ankare" som ser ut som serotoninets ankare, och kan därför binda till vissa serotoninreceptorer. Varför nedregleras då inte serotoninreceptorerna? Det korta svaret är att *det gör dem*, men det är inget problem. Vi har femton olika serotoninreceptorer, men LSD och psilocybin påverkar främst 5-HT2A, vilken utöver de hallucinogena egenskaperna styr över ångest och depressiva tendenser. När 5-HT2A nedregleras mår du inte dåligt, eftersom du har kvar ditt vanliga serotonin och 14 andra receptorer som serotoninet kan omdirigeras mot. Vilken av dessa du föredrar är högst individuellt, men det är värt att ta i åtanke att psilocybin är mer selektiv (ännu mer viktad mot just 5-HT2A än LSD, även om båda främst påverkar den receptor, och påverkar inte dopamin eller noradrenalin vilket LSD gör). 
+
+De tråkiga nyheterna är att 5-HT2A är mer av en humörsstabiliserare än en "lyckoreceptor", så du kan lättare motverka ångest och depression än framkalla ren lycka, men det är fortfarande väldigt värdefullt. För många kan också den ökade neuroplasticiteten hjälpa, framförallt dem som redan mår dåligt. En annan nackdel är att serotoninreceptorer nedregleras väldigt snabbt och kraftigt, så du kan inte trippa mer än en gång i veckan, eller mikrodosera mer än ungefär var tredje dag. 
+
+<div class="container">Jag bör flika in att det fortfarande inte råder konsensus, så vitt jag förstår, om hur serotonin faktiskt påverkar humör. Serotonin refereras till som en "glad" substans, en "humörsstabiliserande" substans, och en "humörsamplifierande" substans, och det verkar som att ingen av de termerna nödvändigtvis är fel. Serotonin fungerar olika beroende på situation, vilka andra ämnen det interagerar med, vilka receptorer det träffar och vilken mängd vi pratar om. Därför bör allt som skrivits ta med en stor nypa salt. </div>
+
+##Oxytocin och endorfiner
+
+Här verkar det inte finnas mycket att göra. Du kan temporärt öka dessa hormoner, t ex genom löpning (*runner's high* är endorfiner), men hjärnan nedreglerar så småningom. 
+
+##Kortisol
+Stresshormonen är visserligen inte lika viktig för välmående; du mår inte automatiskt bra av låga nivåer, men höga nivåer kan få dig att må dåligt. Det ska däremot sägas att kortisol inte är dåligt i sig: det sköter en mängd livsviktiga funktioner, minskar inflammation (som i sig kan motverka produktion av dopamin och serotonin), och gör dig pigg och alert. Med det sagt finns det faktiskt ganska mycket du kan göra på farmakologisk väg för att minska kortisol, vilket säkrar kortisolets plats i denna text. #TBC
+
+##Selegiline
+##Naltrexone
+##Buprenorphine
+##Moclobemide
+
+
+
+
+
