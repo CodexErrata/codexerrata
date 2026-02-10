@@ -418,6 +418,18 @@ nav a {
   border: none;
 }
 
+nav a.nav-site-title {
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, Consolas, monospace;
+  font-variant: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+nav a.nav-site-title .errata {
+  color: #c44;
+}
+
 nav a:hover {
   color: var(--text-primary);
 }
