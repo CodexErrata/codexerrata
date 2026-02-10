@@ -46,6 +46,17 @@ h1 {
   margin-top: 0;
 }
 
+.site-title {
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, Consolas, monospace;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.site-title .errata {
+  color: #c44;
+}
+
 h2 {
   font-size: 1.8rem;
 }
@@ -442,6 +453,8 @@ footer {
   border: none;
   color: var(--text-primary);
   text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
   transition: color 0.2s ease;
 }
 

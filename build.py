@@ -439,7 +439,7 @@ class BlogBuilder:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
+  <title>codexerrata</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
@@ -448,9 +448,10 @@ class BlogBuilder:
 <body>
   <article>
     <section class="content">
-      <p>Det här är min blogg. Det smärtar mig att behöva använda den termen, så nära associerat med Blondinbella, Jockiboi, och resten av bloggvärldens literära genier, men att kalla det en samlingsplats för mina essäer eller något annat pretentiöst vore oärligt; dessa texter är inte polerade och välbetänkta. Snarare än att jag skriver ut redan prövade och granskade idéer är själva skrivandet prövningen och granskningsprocessen. </p>
+      <h1 class="site-title">Codex <span class="errata">Errata</span></h1>
+      <p>Det här är min blogg. Det smärtar mig att behöva använda den termen, så nära associerat med Blondinbella, Jockiboi, och resten av bloggvärldens literära genier, men att kalla det något mer pretentiöst vore oärligt; dessa texter är inte polerade och välbetänkta. Snarare än att jag skriver ut redan prövade och granskade idéer är själva skrivandet prövningen och granskningsprocessen. </p>
 
-      <p>Inte heller vill jag att texterna ska ses som nödvändigt representativa för mina åsikter om en viss fråga. Något skrivs för att det är intressant, inte för att det är sant. </p>
+      <p>Inte heller vill jag att texterna ska ses som nödvändigt representativa för mina åsikter. Något skrivs för att det är intressant, inte för att det är sant. </p>
 
       <hr>
 
