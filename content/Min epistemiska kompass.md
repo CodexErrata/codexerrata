@@ -13,4 +13,11 @@ En strategi man bör använda sig av kan vi kalla "inverterad magkänsla". Är e
 
 Ta som exempel medicin. Har du två substanser, en naturlig och en syntetisk, är man generellt sätt intuitivt bekvämare med den naturliga. Om stödet är lika för de två substanserna är det en indikator för att det finns information om den syntetiska som pekar mot att den är effektivare, annars hade de flesta chansat på det naturliga alternativet. 
 
-Ett mer konkret exempel är nikotin. Nikotin är en polariserande substans. P g a dess association med rökning (utan tvekan ohälsosamt) finns det en stor grupp människor som är emot all form av nikotin, men det finns också en stor grupp som är för substansen; troligtvis finns det alltså kunskap den gruppen tagit del av som går emot intuitionen vad det gäller nikotin. Det visar sig att nikotin i sig är nervskyddande; nikotin är antiinflammatorisk (kronisk hjärninflammation osakar Alzeimer's, demens, Parkinson's och stroke), motverkar oxidativ stress (vilket orsakar celldöd -- varför metamfetaminbrukare "friterar" sina hjärnor) och ökar neurotropiska faktorer (hjälper med neuroplasticitet, hjärnans förmåga att bygga nya nervkopplingar). 
+Ett mer konkret exempel är nikotin. Nikotin är en polariserande substans. P g a dess association med rökning (utan tvekan ohälsosamt) finns det en stor grupp människor som är emot all form av nikotin, men det finns också en stor grupp som är för substansen; troligtvis finns det alltså kunskap den gruppen tagit del av som går emot intuitionen vad det gäller nikotin. Det visar sig att nikotin i sig är nervskyddande; nikotin är antiinflammatorisk (kronisk hjärninflammation osakar Alzeimer's, demens, Parkinson's och stroke), motverkar oxidativ stress (vilket orsakar celldöd -- varför metamfetaminbrukare "friterar" sina hjärnor) och ökar neurotropiska faktorer (hjälper med neuroplasticitet, hjärnans förmåga att bygga nya nervkopplingar).
+
+Bla bla bla clever ending bla bla bla
+
+
+
+
+1/2-2026, Kuala Lumpur

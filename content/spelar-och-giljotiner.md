@@ -13,17 +13,17 @@ René Girard var professor i filosofisk antropologi på skolan, och höll en lit
 
 Mimetisk teori är i grunden väldigt simpel: begär är mimetiskt, d v s vi vill ha vad vi ser andra vilja ha. Girard förklarar det som att subjektet (den som begär något) och objektet (det som begärs) inte räcker -- en tredje part krävs: modellen, en annan person vars begär vi kan imitera. 
 
-Det tydligaste exemplet på detta jag kan komma på hittar du hos kvinnlig attraktion. Aldrig får du så mycket uppmärksamhet från andra kvinnor som när du är upptagen, det är just därför singelmän som går ut med vigselring på fingret är ett etablerat fenomen. 
+En känd (eller ökänd) taktik singelmän använder sig av när de ska ragga är att bära vigselring. Detta låter vid första anblick som en kontraproduktiv taktik, men är desto mer förståelig när man läst Girard. 
 
-Det förklarar också materialism: önskan att ha en sportbil går ofta före begär som faktiskt gör dig mer lycklig, eftersom en sportbil är ett tydligare och mer lättapplicerat objekt än abstrakta koncept som mening. 
+Det förklarar också materialism: önskan att ha t ex en sportbil går ofta före begär som faktiskt gör dig mer lycklig, eftersom en sportbil är ett tydligare och mer lättapplicerat objekt än abstrakta koncept som mening. 
 
 Det är också rimligt från ett biologiskt perspektiv: från de stora talens lag följer att någonting är troligare att vara värt att spendera sin tid på att få tag på desto fler som begär den saken. 
 
-En naturlig konsekvens av denna imitation är tävling. När flera män åtrår samma kvinna, samma fruktträd, eller samma plats i gruppens hierarki, då ökar rivalitet och aggression. För att undvika att samhället utbryter i våldsam anarki väljer gruppen, enligt Girard, kollektivt och arbiträrt en syndabock på vilken gruppen projicerar sin aggression. Denna person dödas och skuldbeläggs för den sociala krisen -- social ordning är plötsligt återfunnen.
+En naturlig konsekvens av denna imitation är rivalitet. När flera män vill ha samma kvinna, samma fruktträd, eller samma plats i gruppens hierarki, då ökar rivalitet och aggression. För att undvika att samhället utbryter i våldsam anarki väljer gruppen, enligt Girard, kollektivt och arbiträrt, en syndabock på vilken gruppen projicerar sin aggression. Denna person dödas och skuldbeläggs för den sociala krisen -- social ordning är plötsligt återfunnen.
 
-Detta, tror Girard, är hur alla samhällen brukade hantera mimetiska begärens problematik. T ex är det välkänt att man i Aten under kristider valde ut en slav, kriminell, eller ful (ja, ful) person som avrättades eller misshandlades, varpå man ansåg staden renad. 
+Detta, tror Girard, är hur alla samhällen brukade hantera mimetiska begärens problematik. Det välkänt att de i Aten under kristider valde ut en slav, kriminell, eller ful (ja, ful) person som avrättades eller misshandlades, varpå man ansåg staden renad. 
 
-Så småningom kom the greatest American that ever lived, Jesus. Han dödades, enligt den kristna tron, som oskyldig och genomgod, av kollektivt hysteri. Berättelsen om Jesus blottade att syndabocken var just en syndabock, och en syndabock fungerar bara tills man förstår att det är vad det är. Europa blev kristet, och plötsligt var det svårt att arbiträrt välja någon att beskylla för den sociala oron. Aten slutade med Pharmakos, Kolosseum blev blott en turistattraktion. 
+Så småningom kom the greatest American that ever lived, Jesus. Han dödades, enligt den kristna tron, som oskyldig och genomgod, av kollektiv hysterisk aggression. Berättelsen om Jesus blottade att syndabocken var just en syndabock, och en syndabock fungerar bara tills man förstår att det är vad det är. Europa blev kristet, och plötsligt var det svårt att arbiträrt välja någon att beskylla för den sociala oron. Aten slutade med Pharmakos, Kolosseum blev blott en turistattraktion. 
 
 Den muslimska mellanöstern, även om Islam är en abrahamitisk religion, lägger inte samma fokus på de profeter som agerar offer, och har därför inte samma aversion mot att utnyttja en syndabock för att lösa sociala kriser. I de fundamentalistiska islamiska samhällena finner vi den tydligaste kvarlevande syndabocksmekanismen. Hela samhället samlas och tillsammans stenar en person, och den rivalitet som tidigare fanns personer emellan byts ut mot bandet av att tillsammans dödat en person. 
 
@@ -33,7 +33,7 @@ Jag tror demokrati fungerar som en civiliserad form av syndabocksmekanism. Vi f�
 
 En annan form är sport, där du alldeles arbiträrt i grupp får hata antingen motståndaren till ditt lag, eller valfri syndabock inom laget. 
 
-Däremot finns problem med dessa substitut. Sporthuliganism har, med risk för att låta elitistisk, ett tydligt intellektuellt tak för engagemang. Politik är väldigt effektivt när folket är enat: råder det konsensus om att presidenten ska kastas från ett tak kan det ensamma offret agera utlopp för en gränslös mängd människor, men i stabila demokratier är landet sällan enat, så ett val som för ena halvan ger utlopp för behovet av en syndabock kommer för den andra halvan endast polarisera. 
+Däremot finns problem med dessa substitut. Sporthuliganism har, med risk för att låta elitistisk, ett intellektuellt tak för engagemang. Politik är väldigt effektivt när folket är enat: råder det konsensus om att presidenten ska kastas från ett tak kan det ensamma offret agera utlopp för en gränslös mängd människor, men i stabila demokratier är landet sällan enat, så ett val som för ena halvan ger utlopp för behovet av en syndabock kommer för den andra halvan endast polarisera. 
 
 1939 var sista gången ett huvud fick rulla inför publik i Frankrike. Publiken hade betett sig "hysteriskt" -- flera hade plockat med sig souvenirer som trasor dränkta i blod från den nu mördade mördaren. Dåvarande president Lebrun var förfärad över publikens uppförande, och förbjöd offentliga avrättningar för att undvika "moraliskt förfall och barbari". 
 
@@ -42,6 +42,8 @@ Det som borde intresserat Lebrun är inte deras beteende under avrättningen, ut
 Jag tror det senare. 
 
 Let 'em roll, baby, let 'em roll
+
+
 
 
 11/12-25, Koh Phangan
