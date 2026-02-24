@@ -77,9 +77,30 @@ Här verkar det inte finnas mycket att göra. Du kan temporärt öka dessa hormo
 ##Kortisol
 Stresshormonen är visserligen inte lika viktig för välmående; du mår inte automatiskt bra av låga nivåer, men höga nivåer kan få dig att må dåligt. Det ska däremot sägas att kortisol inte är dåligt i sig: det sköter en mängd livsviktiga funktioner, minskar inflammation (som i sig kan motverka produktion av dopamin och serotonin), och gör dig pigg och alert. Med det sagt finns det faktiskt ganska mycket du kan göra på farmakologisk väg för att minska kortisol, vilket säkrar kortisolets plats i denna text. 
 
+##MAO-Inhibitors
+Vi har redan pratat om *releasing agents*, *reuptake inhibitors*, agonister, och genuttrycksreglering. Det finns en sista mekanism värd att titta på. 
+
+På femtiotalet behandlades vissa tuberkulospatienter behandlades med Iproniazid. Patienter botades från tuberkolosen, och visserligen är det skäl till bra humör, men satan var glada de var. 
+
+Det visade sig att förutom att behandla tuberkulos blockerade drogen också monoaminoxidas, enzymer som bryter bryter ned neurotransmittorer. 
+
+MAO delas upp i MAO-A och MAO-B, Där A (främst) bryter ned serotonin och norepinephrine, och B bryter ned dopamin. 
+
+Tidiga MAO-hämmare verkade på både A och B, och MAO-A bryter också ned tyramin, vilket hittas i lagrade ostar och vin. Detta visste man inte på femtiotalet, och tyraminöverdoser tag ett flertal liv, vilket gav MAO-hämmarna ett oförtjänt dåligt rykte. Detta problem har den enkla lösningen att undvika mat med tyramin, men något omständigt är det. 
+
+Selektiva MAO-A-hämmare finns, men är inte så intressanta. Icke selektiva MAO-hämmare är inte lika subtila som de selektiva MAO-B-hämmarna, och är effektivare för att behandla depression (kanske p g a dess interaktioner med serotonin) -- är du deprimerad kan det vara värt att kola på dessa istället för SSRI, då de *ökar* libido och energi till skillnad mot SSRI som tenderar att göra motsatsen. Däremot kommer de icke selektiva preparaten med en lång lista bieffekter. Som nämnt kan viss mat döda dig. Vanliga fysiska problem är yrsel, viktuppgång, och insomni. Ännu värre, för vissa av oss, är att droger är *off limits*; stimulanter, psykadelika, t o m vissa mjuka preparat som vissa hostmediciner eller modafinil, kan orsaka serotoninsyndrom. Detta är en röd linje för mig, så vi går vidare. 
+
+Selektiva MAOBI är som nämnt subtilare, men verkar främst på dopamin, vid måttliga doser. Tyraminproblemet försvinner, och även om det fortfarande är kontraindikerat med de flesta droger verkar serotoninsyndromsrisken vara liten. Detta är, tillsammans med Bromantan, det mest intressanta jag hittat. 
+
+Deprenyl, sålt som Selegiline, är en selektiv MAOBI som David Pearce, mannen bakom *The Hedonic Imperative*, rekommenderar. Det ökar driv, libido, förbättrar både subjektiv och objektiv kognitiv förmåga, och ökar t o m möss livslängd med 20%. 
+
+
+
+
+
 To be continued
 
-##Selegiline
+
 ##Naltrexone
 ##Buprenorphine
 ##Moclobemide

@@ -1,4 +1,4 @@
-<!-- title: Praktisk lösning av moralens ontologiska problem, och varför normativ etik är slöseri med tid -->
+<!-- title: Pascals vad som lösning av moralens ontologiska problem, och varför normativ etik är slöseri med tid -->
 <!-- date: 30/01-2026 -->
 <div class="container">Moralens ontologiska problem är frågan om objektiv moral finns. Normativ etik är den gren av moralfilosofi som studerar principer för rätt (gott) handlande.
 </div>
