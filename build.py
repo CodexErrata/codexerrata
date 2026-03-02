@@ -449,11 +449,6 @@ class BlogBuilder:
   <article>
     <section class="content">
       <h1 class="site-title">Codex <span class="errata">Errata</span></h1>
-      <p>Det här är min blogg. Det smärtar mig att behöva använda den termen, så nära associerat med Blondinbella, Jockiboi, och resten av bloggvärldens literära genier, men att kalla det något mer pretentiöst vore oärligt; dessa texter är inte polerade och välbetänkta. Snarare än att jag skriver ut redan prövade och granskade idéer är själva skrivandet prövningen och granskningsprocessen. </p>
-
-      <p>Inte heller vill jag att texterna ska ses som nödvändigt representativa för mina åsikter. Något skrivs för att det är intressant, inte för att det är sant. </p>
-
-      <hr>
 
 {post_list_html}    </section>
   </article>
