@@ -319,7 +319,8 @@ class BlogBuilder:
                 return False
 
             # Build final HTML
-            blog_post = template.replace("Post Title - Tufte-Style Blog", f"{metadata['title']} - Tufte-Style Blog")
+            blog_post = template.replace("{{TITLE}}", metadata['title'])
+            blog_post = blog_post.replace("Post Title - Tufte-Style Blog", f"{metadata['title']} - Tufte-Style Blog")
             blog_post = blog_post.replace("Your Post Title Here", metadata['title'])
             blog_post = blog_post.replace("{{ARTICLE_DATE}}", metadata['date'] + f" · {metadata['reading_time']} min read")
 
@@ -435,14 +436,15 @@ class BlogBuilder:
         
         # Create index HTML
         index_html = f'''<!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>codexerrata</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap"></noscript>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
