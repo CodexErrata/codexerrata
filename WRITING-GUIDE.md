@@ -1,13 +1,13 @@
-# Writing Guide — How to Do Everything
+# Writing Guide — Codex Errata
 
-A short reference for writing and publishing posts on this blog.
+A short reference for writing and publishing posts on Codex Errata.
 
 ---
 
 ## 1. Creating a New Blog Post
 
 1. **Create a new file** in the `content/` folder.
-2. **Name it** something like `my-post-name.md` (use lowercase, hyphens, no spaces). The filename is used for the URL (e.g. `my-post-name` → `posts/my-post-name.html`).
+2. **Name it** something like `my-post-name.md` (use lowercase, hyphens, no spaces).
 3. **At the very top**, add the title and optional date:
 
 ```markdown
@@ -17,16 +17,14 @@ A short reference for writing and publishing posts on this blog.
 
 4. **Write your content** below (plain text, markdown, and HTML as needed).
 5. **Save the file** (⌘ + S).
-6. **Build the site:** in Terminal, run:
+6. **Build the site:** in Terminal, run (from the project folder):
 
 ```bash
-cd /Users/Thompson/tufte-blog
+cd /Users/Thompson/Documents/GitHub/codexerrata
 python3 build.py
 ```
 
-
-
-- **Title:** Required. Use exactly one `<!-- title: Your Title -->` line at the top.
+- **Title:** Required. Use exactly one `<!-- title: Your Title -->` line at the top. The **post URL** is derived from this title (e.g. "My Post Title" → `posts/my-post-title.html`), not from the filename.
 - **Date:** Optional. Use `<!-- date: DD/MM-YYYY -->` (e.g. `26/01-2026`). If you omit it, the build uses today’s date in the same format.
 
 
@@ -212,8 +210,32 @@ A line with only three hyphens becomes a horizontal line:
 1. **Title** at top: `<!-- title: Your Post Title -->`
 2. **Date** (optional): `<!-- date: DD/MM-YYYY -->`
 3. **Save** the `.md` file (⌘ + S)
-4. **Run** `python3 build.py` in the project folder
+4. **Run** `python3 build.py` in the project folder (see command in section 1)
 5. **Refresh** the blog in your browser
+
+---
+
+## 14. Run Site Locally & Push to GitHub
+
+**Run the site locally** (from the project folder):
+
+```bash
+cd /Users/Thompson/Documents/GitHub/codexerrata
+python3 -m http.server 8000
+```
+
+Then open **http://localhost:8000** in your browser. Press Ctrl+C to stop the server.
+
+**Push changes so the live site updates:**
+
+```bash
+cd /Users/Thompson/Documents/GitHub/codexerrata
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+Replace `"Your commit message"` with a short description of your changes. Run `python3 build.py` before committing if you edited any markdown in `content/`.
 
 ---
 
