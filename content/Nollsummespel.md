@@ -1,4 +1,4 @@
-<!-- Title: Ekonomiska nollsummespel -->
+<!-- Title: Nollsummespel -->
 <!-- Date: 2/2-2026 -->
 Sedan Adam Smith och merkantilismens slut ser folk, med undantag för ekonomiskt populistiska bottenskrap som Trump och VPK, inte längre på ekonomi som ett nollsummespel. Det idéskiftet har tjänat oss väl -- världen är bra mycket rikare än den varit utan samarbete och tillväxtpolitik. Med det sagt finns det ett fåtal branscher som faktiskt är nollsummesspel. 
 
