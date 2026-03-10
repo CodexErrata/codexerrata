@@ -23,7 +23,7 @@ Som tur är sker detta i någon grad naturligt. Låg neuroticism och hög extrav
 Mer effektivt än eugenik kommer genmanipulation vara. CRISPR-9-forskning får stora mängder resurser. Målet med forskningen är naturligtvis inte att göra folk lyckligare, utan målet är explicit att förebygga genetiska sjukdomar som sickelcellanemi och Downs syndrom, implicit att skapa [[supermänniskor|som att kineserna inte var smarta nog...]], men gensaxen är ett brett verktyg; kan du genmanipulera längd kan du rimligtvis använda samma verktyg för att manipulera lycka. 
 
 
-<div class="container">Innan jag djupdyker i frågan vill jag få det sagt att hedoniska trappan troligtvis inte nödvändigtvis är absolut. Den dominerande uppfattningen är, så vitt jag förstår, att du inte med säkerhet vänjer dig till 100% med livsförbättringar, men att du *för det mesta* gör det. Det verkar också som att lyckotaket är svårare att rubba på än golvet, och att de flesta kan falla längre än de kan klättra. 
+<div class="container">Innan jag djupdyker i frågan vill jag få det sagt att hedoniska trappan inte nödvändigtvis är absolut. Den dominerande uppfattningen är, så vitt jag förstår, att du inte med säkerhet vänjer dig till 100% med livsförbättringar, men att du *för det mesta* gör det. Det verkar också som att lyckotaket är svårare att rubba på än golvet, och att de flesta kan falla längre än de kan klättra. 
 
 
 En *Lesswrong* användare formulerade problematiken inte som ett jämviktsproblem, utan ett marginalnyttoproblem. Han menar att god hälsa, meningsfulla aktiviteter och bra relationer *höjer* ditt utgångsläge, men att marginalnyttan minskar snabbt, och att de flesta redan är nära toppen.
