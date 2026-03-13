@@ -476,7 +476,7 @@ class BlogBuilder:
       <h1 class="site-title">Codex <span class="errata">Errata</span></h1>
       <blockquote style="font-size: 1.4rem;"><p>I can tolerate anything except the outgroup</p><footer>— Scott Alexander</footer></blockquote>
 
-      <hr>
+      <hr style="width: 100%">
 
 {post_list_html}    </section>
   </article>
