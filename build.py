@@ -474,7 +474,7 @@ class BlogBuilder:
   <article>
     <section class="content">
       <h1 class="site-title">Codex <span class="errata">Errata</span></h1>
-      <blockquote style="font-size: 1.4rem;"><p>I wake up in the morning and piss excellence</p></blockquote>
+      <blockquote style="font-size: 1.4rem;"><p>I can tolerate anything except the outgroup</p><footer>— Scott Alexander</footer></blockquote>
 
       <hr>
 
