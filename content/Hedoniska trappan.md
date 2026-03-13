@@ -1,4 +1,4 @@
-<!-- title: Hedoniska löpbandet -->
+<!-- title: Hedoniska löpbandet (work in progress) -->
 <!-- date: 3/2-2026 -->
 
 <div class="container">Jag vill varna om att det här inte är rolig läsning. Hedoniska löpbandet är det mest deprimerande konceptet jag stött på. Jag vill också etablera på förhand att det inte handlar om hedonism som det används i vardagligt tal, i bemärkelsen materiella nöjen, som mat, sex, och konsumerism, utan all form av lycka. </div>

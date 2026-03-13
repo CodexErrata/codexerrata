@@ -1,5 +1,5 @@
 <!-- title: Om normativ etik -->
-<!-- date: 30/01-2026 -->
+<!-- date: 29/01-2026 -->
 <div class="container">Moralens ontologiska problem är frågan om objektiv moral finns. Normativ etik är den gren av moralfilosofi som studerar principer för rätt (gott) handlande.
 </div>
 
