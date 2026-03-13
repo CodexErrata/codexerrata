@@ -1,15 +1,15 @@
 <!-- title: En epistemisk kompasspekare -->
 <!-- date: 1/2-2026 -->
 
-<div class="container">Epistemologiska riktlinhjer finns det många av. De flesta av dem, t ex att auktoriteter på ett ämne oftare har rätt än lekmän, har du hört explicit, eller förstår intuitivt. Att skriva om dem är slöseri med tid. Denna har jag däremot inte hört folk prata om (vilket inte betyder att jag tror jag är först med idén; jag är nog en av miljoner som kommit till samma slutsats), vilket jag tycker är synd. Den är på många sätt motsatt den kända *Ockhams rakblad,* men bör snarare ses som ett komplement än substitut. </div>
+<div class="container">Epistemologiska riktlinhjer finns det många av. De flesta av dem, t ex att auktoriteter på ett ämne oftare har rätt än lekmän, har du hört explicit, eller förstår intuitivt. Att skriva om dem är slöseri med tid. Denna har jag däremot inte hört folk prata om (vilket inte betyder att jag tror jag är först med idén). </div>
 
 Hur vet du vad du ska tro när du saknar kunskap? 
 
 Detta är inte så populärt hos självutnämnda "fria sanningssökare" (reflexivt konträra foliehattar), men det fungerar väldigt bra att delegera till massorna. Tror de flesta något är det vanligtvis sant -- de stora talens lag är ändå en lag. Råder det närmast konsensus om att vi landade på månen är det ett tecken att vi faktiskt landade på månen. 
 
-Intressantare är hur man ska hantera frågor med jämnare fördelning av åsikter. Politiska frågor är sådana frågor i sin natur; om perspektiv A och B inte har stöd av liknande storlek kommer det populärare alternativet antas av båda sidor. I dessa fall kan man naturligtvis ta reda på svaret själv, men volymen av dessa frågor är alldeles för stor. Du har begränsat med tid, och vill du ha rätt oftare än en singelslant behöver du en fungerande epistemisk kompass. 
+Intressantare är hur man ska hantera frågor med jämnare fördelning av åsikter. I demokratier är politiska frågor sådana i sin natur; om perspektiv A och B inte har stöd av liknande storlek kommer det populärare alternativet antas av båda sidor. Demokratier är alltså självreglerande på så sätt att tvistepunkterna kommer splittra befolkningen jämnt, antingen i absoluta siffror eller intensitetsviktat. I dessa fall kan man naturligtvis ta reda på svaret själv, men volymen av dessa frågor är alldeles för stor. Du har begränsat med tid, och vill du ha rätt oftare än en singelslant behöver du en fungerande epistemisk kompass. 
 
-En strategi man bör använda sig av kan vi kalla "inverterad magkänsla". Är idé A vid första anblick mer tilltalande än idé B, och de båda har jämlikt stöd, är B vanligtvis den bättre idén, eftersom en mindre tilltalande idé kräver starkare bevis för att få folk att ställa sig bakom den. 
+En strategi man bör använda sig av kan vi kalla "inverterat Ockhams rakblad". Är idé A vid första anblick mer tilltalande än idé B, och de båda har jämlikt stöd, så är B vanligtvis den bättre idén, eftersom en mindre tilltalande idé kräver starkare bevis för att få folk att ställa sig bakom den. 
 
 Ta som exempel medicin. Har du två substanser, en naturlig och en syntetisk, är man generellt sett intuitivt bekvämare med den naturliga. Om stödet är lika för de två substanserna är det en indikator för att det finns information om den syntetiska som pekar mot att den är effektivare, annars hade de flesta chansat på det naturliga alternativet. 
 

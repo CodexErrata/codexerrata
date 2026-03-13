@@ -4,7 +4,7 @@
 
 ##Stat eller kyrka, rationalitet eller religion, Sokrates eller Jesus. 
 
-Denna dikotomi exemplifierade den tyskjudiska filosofen Leo Strauss med Aten och Jerusalem, födelseplatserna för västerländsk filosofi respektive den judeokristna traditionen. Till en början var dessa två världssyner separerade av Medelhavet, men på 300-talet konverterade romerska kejsaren Konstantin och integrerade dem under samma imperium. De efterföljande 1300 åren löd en strid mellan dessa två sätt att se världen. Ingen kom att vinna, istället nöttes de båda ned, och så småningom kom upplysningstänkarna och hittade en temporär lösning: sopa de stora problemen under mattan. Frågor om religion, människans natur, och objektiv moral -- dessa kommer vi aldrig enas om. Låt oss ignorera dem; gör religion till något privat, och ersätt idén om universella lagar med relativism. 
+Denna dikotomi exemplifierade den tyskjudiska filosofen Leo Strauss med Aten och Jerusalem, födelseplatserna för västerländsk filosofi respektive den judeokristna traditionen. Till en början var dessa två världssyner separerade av Medelhavet, men på 300-talet konverterade romerska kejsaren Konstantin och integrerade dem under samma imperium. De efterföljande 1300 åren löd en strid mellan dessa två sätt att se världen. Ingen sida vann, istället nöttes de båda ned, och så småningom kom upplysningstänkarna och hittade en temporär lösning: sopa de stora problemen under mattan. Frågor om religion, människans natur, och objektiv moral, kommer vi aldrig enas om. Låt oss ignorera dem; gör religion till något privat, och ersätt idén om universella lagar med relativism. 
 
 Upplysningsexperimentet har varit extremt framgångsrikt. De som för över tre sekel sedan hade dött för kungahus, nation eller religion i trettioårskriget kan nu lägga sin energi på att bedriva handel via EU, med de som tidigare hade varit dess fiende. USA, första världens ekonomiska, politiska, kulturella och militära hegemon sedan andra världskriget, och världens enda hegemon sedan Sovjets fall, har sina rötter djupare i upplysningen och liberalismens födelse än något annat land.
 
@@ -36,7 +36,7 @@ Vill man att politiska extremister ska få makt måste man utforma ett system d�
 
 Den enligt mig bästa lösningen, som löper direkt konträrt med modern mainstream diskurs, är ökad segregation. Överlåt mer makt till region och kommun, och designera olika kommuner/regioner till olika ideologier. I Sveriges fall: låt Malmö bli ett kalifat, ge Sveg till kommunisterna, ge Sölvesborg till white trash-nazisterna. För att motverka återflytt när deras ekonomier oundvikligen fallerar upprättas flyttskatt, och de liberala ekonomniska centrumen får ta notan för subventioner (vilket redan är hur det fungerar idag, bara i lägre grad). På så sätt får vi ett flertal närliggande exempel på hur de olika ideologierna verkar när de får absolut makt, och vi löper ingen risk att långsiktiga projekt stoppas av vitt skilda meningsmotståndare. 
 
-Det är dags att sluta stirra in i avgrunden och istället låta de som önskar den faktiskt få bosätta sig där. 
+Sluta stirra in i avgrunden och låt istället de som önskar den faktiskt få bosätta sig där. 
 
 
 

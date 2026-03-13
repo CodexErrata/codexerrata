@@ -11,12 +11,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <script>
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('theme-toggle').textContent = 'dark';
+        });
+      }
+    })();
+    function toggleTheme() {
+      var btn = document.getElementById('theme-toggle');
+      if (document.documentElement.getAttribute('data-theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    }
+  </script>
   <article>
     <section class="content">
       <h1 class="site-title">Codex <span class="errata">Errata</span></h1>
-      <p>Det här är min blogg. Det smärtar mig att behöva använda den termen, så nära associerat med Blondinbella, Jockiboi, och resten av bloggvärldens literära genier, men att kalla det något mer pretentiöst vore oärligt; dessa texter är inte polerade och välbetänkta. Snarare än att jag skriver ut redan prövade och granskade idéer är själva skrivandet prövningen och granskningsprocessen. </p>
-
-      <p>Inte heller vill jag att texterna ska ses som nödvändigt representativa för mina åsikter. Något skrivs för att det är intressant, inte för att det är sant. </p>
+      <blockquote style="font-size: 1.4rem;"><p>I wake up in the morning and piss excellence</p></blockquote>
 
       <hr>
 

@@ -3,7 +3,7 @@
 <div class="container">Moralens ontologiska problem är frågan om objektiv moral finns. Normativ etik är den gren av moralfilosofi som studerar principer för rätt (gott) handlande.
 </div>
 
-Varför studeras normativ etik? Jo, för att hjälpa oss handla rätt. För att normativ etik ska fylla en funktion ska man rationellt bygga ett etisk ramverk, och därefter anpassa sitt handlande efter dess principer. Det är inte så det fungerar. Istället byggs ramverken retrospektivt; man agerar efter vad som känns intuitivt rätt, och sedan skapar man ett etiskt system i vilket det agerandet klassas som rätt (eller väljer man att följa ett existerande system i vilket ens handlande passar). 
+Varför studeras normativ etik? Jo, för att hjälpa oss handla rätt. För att normativ etik ska fylla en funktion ska man rationellt bygga ett etisk ramverk, och därefter anpassa sitt handlande efter dess principer. Det är inte så det fungerar. Istället byggs ramverken retrospektivt; man agerar efter vad som känns intuitivt rätt, och sedan skapar man ett etiskt system i vilket det agerandet klassas som rätt (eller så väljer man att följa ett existerande system i vilket ens handlande passar). 
 
 Inom normativ etik finns två dominerande filosofier: pliktetik (Kants kategoriska imperativ, etc) och konsekvensetik (utilitarism). Vi hittar på en hypotetisk person, vi kan kalla henne Immanuella Krant. Immanuella kallar sig själv för pliktetiker. 
 

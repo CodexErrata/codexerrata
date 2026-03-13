@@ -12,6 +12,29 @@
   
 </head>
 <body>
+  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <script>
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('theme-toggle').textContent = 'dark';
+        });
+      }
+    })();
+    function toggleTheme() {
+      var btn = document.getElementById('theme-toggle');
+      if (document.documentElement.getAttribute('data-theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    }
+  </script>
   <nav>
     <ul>
       <li><a href="../index.html" class="nav-site-title">Codex <span class="errata">Errata</span></a></li>
@@ -34,8 +57,6 @@
 <p>En annan sådan industri är skönhetsindustrin. Vackra människor har fler barn, och som en konsekvens av detta blir människor överlag vackrare för varje generation -- i en realistisk <em>Outlander</em> hade Claire Randall haft ytterst svårt att hitta en 1700-talsriddare som såg ut som Sam Heughan, eller ens lika snygg som den genomsnittlige moderne revisorn. Trots denna trend mot vackrare människor är går vi inte runt med konstant vidöppna ögon, betagna av Julia Roberts och Brad Pitts på varje gathörn. Det är för att skönhet är ett relativt, inte absolut, värde. Lyckas skönhetsindustrin göra en person vackrare, blir resterande åtta miljarder människor marginellt fulare.</p>
 
 <p>Marknadsföring fyller visserligen en kommunikativ funktion: teoretiskt sätt hjälper det konsumenten genom att informera om flera olika alternativ. I praktiken däremot är den mesta marknadsföringen ett nollsummespel: de marknadsför inte för att informera, utan för exponeringseffekten, d v s att du som konsument litar mer på en produkt du sätt många gånger; du vet inte mer om Coca Cola efter den hundrade reklamen, men ändå är det troligare att du köper en Coca Cola om du sett den röda burken hundratals gånger.</p>
-
-<div class="container">Högfrekvenshandel av aktier och derivat är också något som slår mig som ett nollsummespel, då vinsterna kommer uteslutande från vanlig aktiehandel av aktiehandlare med mindre talang. Däremot verkar det finnas starka argument för högfrekvenshandel: ökad marknadslikviditet och mindre köp-säljskillnader. Jag har för svag förståelse för finansmarknader för att ta en hård ställning åt något håll, uppdaterar när jag förstår det bättre.</div>
 
 <p>Vad gör vi då åt dessa nollsummeindustrier? Vi gör vad man alltid gör när man försöker minska aktivitet i en viss sektor: vi beskattar dem. Detta gör ont i mig att säga -- högre beskattning och mer statligt ingripande är två saker jag är väldigt negativt inställd till, men ska jag följa den epistemiska kompassen jag framlade i mitt förra inlägg stärker min negativa utgångspunkt min säkerhet i dessa undantagsfall. Att beskattning hämmar tillväxt och ekonomisk aktivitet är inget problem här -- det är bara bra, då vi frigör arbetskraft och ekonomiska resurser som kan dirigeras åt produktivare aktiviteter.</p>
 

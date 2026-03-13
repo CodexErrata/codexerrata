@@ -12,6 +12,29 @@
   {{MATH_SCRIPTS}}
 </head>
 <body>
+  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <script>
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('theme-toggle').textContent = 'dark';
+        });
+      }
+    })();
+    function toggleTheme() {
+      var btn = document.getElementById('theme-toggle');
+      if (document.documentElement.getAttribute('data-theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    }
+  </script>
   <nav>
     <ul>
       <li><a href="../index.html" class="nav-site-title">Codex <span class="errata">Errata</span></a></li>

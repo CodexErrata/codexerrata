@@ -5,7 +5,7 @@
 <footer>— René Girard</footer>
 </blockquote>
 <div class="container">Detta är den första av två texter inspirerade av Peter Thiels essä [The Straussian Moment](https://gwern.net/doc/politics/2007-thiel.pdf) från 2004, denna med fokus på René Girards mimetiska teori och syndabocksmekanism</div>
-Satt idag och läste om Peter Thiel: grundaren av PayPal och Palantir, första investerare i Facebook, mannen bakom JD Vance, inofficiell ledare av "PayPal-maffian" -- en samling forna PayPal-arbetare, som influerade av Thiels filosofi, ligger bakom hälften av allt som kommit ur Silicon Valley detta århundrade, däribland Elon Musk -- och en hel del annat. Sjukt fascinerande man, vars hjärna fungerar olikt något jag stött på tidigare. Läs hans essä The Straussian Moment så får du se själv, han är briljant. 
+Satt idag och läste om Peter Thiel: grundaren av PayPal och Palantir, första investerare i Facebook, mannen bakom JD Vance, inofficiell ledare av "PayPal-maffian" -- en samling forna PayPal-arbetare, som influerade av Thiels filosofi, ligger bakom hälften av allt som kommit ur Silicon Valley detta århundrade, däribland Elon Musk -- och en hel del annat. Sjukt fascinerande snubbe, vars hjärna fungerar olikt något jag stött på tidigare. Läs hans essä *The Straussian Moment* så får du se själv, han är briljant. 
 
 När en stor man skiljer sig från normen så avsevärt är det intressant att se vem som influerat honom, för varje Alexander behöver en Aristoteles, och Thiel mötte sin på Stanford.
 
@@ -17,13 +17,13 @@ En känd (eller ökänd) taktik singelmän använder sig av när de ska ragga ä
 
 Det förklarar också materialism: önskan att ha t ex en sportbil går ofta före begär som faktiskt gör dig mer lycklig, eftersom en sportbil är ett tydligare och mer lättapplicerat objekt än abstrakta koncept som mening. 
 
-Det är också rimligt från ett biologiskt perspektiv: från de stora talens lag följer att någonting är troligare att vara värt att spendera sin tid på att få tag på desto fler som begär den saken. 
+Det är också rimligt från ett statistiskt perspektiv: från de stora talens lag följer att någonting är troligare att vara värt att spendera sin tid på att få tag på desto fler som begär den saken. 
 
-En naturlig konsekvens av denna imitation är rivalitet. När flera män vill ha samma kvinna, samma fruktträd, eller samma plats i gruppens hierarki, då ökar rivalitet och aggression. För att undvika att samhället utbryter i våldsam anarki väljer gruppen, enligt Girard, kollektivt och arbiträrt, en syndabock på vilken gruppen projicerar sin aggression. Denna person dödas och skuldbeläggs för den sociala krisen -- social ordning är plötsligt återfunnen.
+En naturlig konsekvens av denna imitation är rivalitet. När flera personer vill ha samma partner, samma fruktträd, eller samma plats i gruppens hierarki, då ökar rivalitet och aggression. För att undvika att samhället utbryter i våldsam anarki väljer gruppen, enligt Girard, kollektivt och arbiträrt, en syndabock på vilken gruppen projicerar sin aggression. Denna person dödas och skuldbeläggs för den sociala krisen -- social ordning är plötsligt återfunnen.
 
 Detta, tror Girard, är hur alla samhällen brukade hantera mimetiska begärens problematik. Det är välkänt att de i Aten under kristider valde ut en slav, kriminell, eller ful (ja, ful) person som avrättades eller misshandlades, varpå man ansåg staden renad. 
 
-Så småningom kom the greatest American that ever lived, Jesus. Han dödades, enligt den kristna tron, som oskyldig och genomgod, av kollektiv hysterisk aggression. Berättelsen om Jesus blottade att syndabocken var just en syndabock, och en syndabock fungerar bara tills man förstår att det är vad det är. Europa blev kristet, och plötsligt var det svårt att arbiträrt välja någon att beskylla för den sociala oron. Aten slutade med Pharmakos, Kolosseum blev blott en turistattraktion. 
+Så småningom kom *the greatest American that ever lived*, Jesus. Han dödades, enligt den kristna tron, som oskyldig och genomgod, av kollektiv hysterisk aggression. Berättelsen om Jesus blottade att syndabocken var just en syndabock, och en syndabock fungerar bara tills man förstår att det är vad det är. Europa blev kristet, och plötsligt var det svårt att arbiträrt välja någon att beskylla för den sociala oron. Aten slutade med Pharmakos, Kolosseum blev blott en turistattraktion. 
 
 Den muslimska mellanöstern, även om Islam är en abrahamitisk religion, lägger inte samma fokus på de profeter som agerar offer, och har därför inte samma aversion mot att utnyttja en syndabock för att lösa sociala kriser. I de fundamentalistiska islamiska samhällena finner vi den tydligaste kvarlevande syndabocksmekanismen. Hela samhället samlas och tillsammans stenar en person, och den rivalitet som tidigare fanns personer emellan byts ut mot bandet av att tillsammans dödat en person. 
 

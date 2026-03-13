@@ -15,6 +15,29 @@
     onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
 </head>
 <body>
+  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <script>
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('theme-toggle').textContent = 'dark';
+        });
+      }
+    })();
+    function toggleTheme() {
+      var btn = document.getElementById('theme-toggle');
+      if (document.documentElement.getAttribute('data-theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    }
+  </script>
   <nav>
     <ul>
       <li><a href="../index.html" class="nav-site-title">Codex <span class="errata">Errata</span></a></li>
@@ -38,7 +61,7 @@
 <p>Det kumulativa förväntade moralvärdet kan beräknas på samma sätt som du beräknar väntevärden när du spelar om pengar eller gör riskanalys på aktier; varje utfalls positiva utfall minus dess negativa utfall, multiplicerat med dess sannolikhet. $$E(X) = \sum_{i=1}^{n} x_i P(x_i) = x_1 P(x_1) + \dots + x_n P(x_n)$$</p>
 
 <p class="no-indent">Vår ekvation blir ytterst enkel: finns inga objektiva värden spelar det utfallet ingen roll; nihilismens paradox är sådan att dess betydelse försvinner som den är sann. M a o: det enda utfallet som finns kvar i ekvationen är utfall A, och du har därför en moralisk plikt att leva enligt det antagandet. 
-<div class="container">Det slår dig kanske att detta förutsätter ett värde för A:s sannolikhet, hur än litet det värdet är. Det är korrekt. Har du landat i nihilism har du använt rationellt tänkande för att ta dig dit, och tvivel i dina egna slutsatser är en av grundpelarna i rationalism.</div></p>
+<div class="container">Det slår dig kanske att detta förutsätter ett värde för A:s sannolikhet, hur än litet det värdet är. Det är korrekt. Epistemisk ödmjukhet ska alla utöva. </div></p>
 
 <p>Vi har nu fastslagit att det finns objektiva moraliska principer du är förpliktad att följa, oavsett om de underliggande objektiva värden som underbygger det systemet finns.</p>
 

@@ -12,6 +12,29 @@
   
 </head>
 <body>
+  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <script>
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('theme-toggle').textContent = 'dark';
+        });
+      }
+    })();
+    function toggleTheme() {
+      var btn = document.getElementById('theme-toggle');
+      if (document.documentElement.getAttribute('data-theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    }
+  </script>
   <nav>
     <ul>
       <li><a href="../index.html" class="nav-site-title">Codex <span class="errata">Errata</span></a></li>
@@ -28,7 +51,7 @@
 <div class="container">Moralens ontologiska problem är frågan om objektiv moral finns. Normativ etik är den gren av moralfilosofi som studerar principer för rätt (gott) handlande.
 </div>
 
-<p>Varför studeras normativ etik? Jo, för att hjälpa oss handla rätt. För att normativ etik ska fylla en funktion ska man rationellt bygga ett etisk ramverk, och därefter anpassa sitt handlande efter dess principer. Det är inte så det fungerar. Istället byggs ramverken retrospektivt; man agerar efter vad som känns intuitivt rätt, och sedan skapar man ett etiskt system i vilket det agerandet klassas som rätt (eller väljer man att följa ett existerande system i vilket ens handlande passar).</p>
+<p>Varför studeras normativ etik? Jo, för att hjälpa oss handla rätt. För att normativ etik ska fylla en funktion ska man rationellt bygga ett etisk ramverk, och därefter anpassa sitt handlande efter dess principer. Det är inte så det fungerar. Istället byggs ramverken retrospektivt; man agerar efter vad som känns intuitivt rätt, och sedan skapar man ett etiskt system i vilket det agerandet klassas som rätt (eller så väljer man att följa ett existerande system i vilket ens handlande passar).</p>
 
 <p>Inom normativ etik finns två dominerande filosofier: pliktetik (Kants kategoriska imperativ, etc) och konsekvensetik (utilitarism). Vi hittar på en hypotetisk person, vi kan kalla henne Immanuella Krant. Immanuella kallar sig själv för pliktetiker.</p>
 
