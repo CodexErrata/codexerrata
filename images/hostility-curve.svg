@@ -23,8 +23,8 @@
     stroke="currentColor" stroke-width="0.8"
     marker-end="url(#arr)"/>
 
-  <!-- Curve: peaks near left, descends toward right -->
-  <path d="M 80,308 C 88,32 192,32 238,162 C 300,278 400,324 482,330"
+  <!-- Curve: bell curve, peak in center -->
+  <path d="M 80,334 C 148,334 198,44 281,44 C 364,44 414,334 482,334"
     fill="none" stroke="currentColor" stroke-width="1.2"/>
 
   <!-- Y-axis label -->

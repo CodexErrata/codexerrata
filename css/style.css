@@ -327,6 +327,11 @@ blockquote.dynoquote footer {
   border: 1px solid var(--border-color);
 }
 
+html:not([data-theme="light"]) .invertible {
+  filter: invert(1);
+  border-color: #1a1a1a;
+}
+
 /* Lists */
 ul, ol {
   margin: 1rem 0;

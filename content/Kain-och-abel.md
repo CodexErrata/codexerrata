@@ -70,6 +70,8 @@ Föga förvånande kom vi inte överens om särskilt mycket, men trots det var d
 
 #IV
 
+<img src="images/hostility-curve.svg" class="content-image invertible">  
+ <img src="images/concentric-circles.svg" class="content-image invertible">
 
 #V
 
