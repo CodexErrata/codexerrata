@@ -12,14 +12,16 @@
   
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {
@@ -86,7 +88,7 @@
 
 <p>Sluta stirra in i avgrunden och låt istället de som önskar den faktiskt få bosätta sig där.</p>
 
-<p class="no-indent" style="margin-top: 4.5em">17-12-2025, Koh Phangan</p>
+<p class="no-indent" style="margin-top: 3em">17-12-2025, Koh Phangan</p>
 </section>
   </article>
 

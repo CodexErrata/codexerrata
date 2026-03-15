@@ -20,7 +20,7 @@ A short reference for writing and publishing posts on Codex Errata.
 6. **Build the site:** in Terminal, run (from the project folder):
 
 ```bash
-cd /Users/Thompson/Documents/GitHub/codexerrata
+cd /Users/jackli/Desktop/codexerrata
 python3 build.py
 ```
 
@@ -30,7 +30,22 @@ python3 build.py
 
 ---
 
-## 2. Container (Box Around Text)
+## 2. Sidenote Row (Two-Column Layout)
+
+Use this to place content side by side — a note on the left, anything (text, image, nothing) on the right. Works regardless of surrounding content.
+
+```html
+<div class="sidenote-row">
+  <div>Left column text or note here.</div>
+  <div>Right column — text, image, or leave empty.</div>
+</div>
+```
+
+The left column gets 1/3 of the width, the right gets 2/3.
+
+---
+
+## 2b. Container (Box Around Text)
 
 Use a **container** to put a block of text in a light box with a border.
 
@@ -47,9 +62,13 @@ No label is added — just the box.
 
 ---
 
-## 3. Quotes (Blockquote with Attribution)
+## 3. Quotes
 
-Use this when you want a proper quote with curly quotation marks and an author line.
+There are two quote styles to choose from.
+
+### Standard quote (curly marks)
+
+Use when you want a formal-looking quote with large decorative quotation marks and attribution.
 
 **Syntax:** use HTML only (not the `> ` markdown style):
 
@@ -60,8 +79,35 @@ Use this when you want a proper quote with curly quotation marks and an author l
 </blockquote>
 ```
 
-- The quote appears in typewriter font, 70% width, with large curly quotes.
-- The `<footer>` line is shown in white, right-aligned, as the attribution.
+- Appears in typewriter font, 70% width, with large curly quotes above and below.
+- The `<footer>` line is right-aligned as the attribution.
+
+### Small quote (curly marks, compact)
+
+Same as the standard quote but smaller and tighter — good for short inline citations.
+
+```html
+<blockquote class="quote-small">
+<p>The quoted text goes here.</p>
+<footer>— Author</footer>
+</blockquote>
+```
+
+- Typewriter font, 70% width, smaller curly quotes, tighter line spacing.
+
+### Dynoquote (left border)
+
+A quieter style — no quotation marks, just a vertical line on the left margin. Good for longer excerpts or when you want the quote to blend more naturally with the text.
+
+```html
+<blockquote class="dynoquote">
+<p>The quoted text goes here.</p>
+<footer>— Author</footer>
+</blockquote>
+```
+
+- Full column width, with a left border rule instead of quotation marks.
+- The `<footer>` is optional and appears left-aligned below the quote.
 
 ---
 
@@ -220,7 +266,7 @@ A line with only three hyphens becomes a horizontal line:
 **Run the site locally** (from the project folder):
 
 ```bash
-cd /Users/Thompson/Documents/GitHub/codexerrata
+cd /Users/jackli/Desktop/codexerrata
 python3 -m http.server 8000
 ```
 
@@ -229,7 +275,7 @@ Then open **http://localhost:8000** in your browser. Press Ctrl+C to stop the se
 **Push changes so the live site updates:**
 
 ```bash
-cd /Users/Thompson/Documents/GitHub/codexerrata
+cd /Users/jackli/Desktop/codexerrata
 git add .
 git commit -m "Your commit message"
 git push origin main
@@ -257,7 +303,9 @@ Replace `"Your commit message"` with a short description of your changes. Run `p
 |------------------|--------|
 | New post         | New `.md` in `content/` with `<!-- title: ... -->` at top, then `python3 build.py` |
 | Container        | `<div class="container">...</div>` with blank lines around it |
-| Quote + author   | `<blockquote><p>...</p><footer>— Name</footer></blockquote>` |
+| Quote (curly marks) | `<blockquote><p>...</p><footer>— Name</footer></blockquote>` |
+| Quote (small, curly marks) | `<blockquote class="quote-small"><p>...</p><footer>— Name</footer></blockquote>` |
+| Quote (left border) | `<blockquote class="dynoquote"><p>...</p><footer>— Name</footer></blockquote>` |
 | Italics          | `*text*` or `<em>text</em>` |
 | Small caps       | `**text**` or `<strong>text</strong>` |
 | Hover popup      | `[[visible\|tooltip]]` |

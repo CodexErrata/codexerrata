@@ -12,14 +12,16 @@
   
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {
@@ -74,7 +76,7 @@
 
 <p>Det finns garanterat otaligt många fler industrier där detta problem går att lösa, men min kreativa källa har sinat.</p>
 
-<p class="no-indent" style="margin-top: 4.5em">2/2-2026, Kuala Lumpur</p>
+<p class="no-indent" style="margin-top: 3em">2/2-2026, Kuala Lumpur</p>
 </section>
   </article>
 

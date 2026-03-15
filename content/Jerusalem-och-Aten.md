@@ -40,5 +40,4 @@ Sluta stirra in i avgrunden och låt istället de som önskar den faktiskt få b
 
 
 
-
 17-12-2025, Koh Phangan

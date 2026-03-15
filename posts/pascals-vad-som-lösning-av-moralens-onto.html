@@ -15,14 +15,16 @@
     onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {
@@ -65,7 +67,7 @@
 
 <p>Vi har nu fastslagit att det finns objektiva moraliska principer du är förpliktad att följa, oavsett om de underliggande objektiva värden som underbygger det systemet finns.</p>
 
-<p class="no-indent" style="margin-top: 3.0em">30/1-2026, Kuala Lumpur</p>
+<p class="no-indent" style="margin-top: 3em">30/1-2026, Kuala Lumpur</p>
 </section>
   </article>
 

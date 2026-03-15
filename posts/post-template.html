@@ -12,14 +12,16 @@
   {{MATH_SCRIPTS}}
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {

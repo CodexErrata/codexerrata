@@ -22,16 +22,13 @@ Som tur är sker detta i någon grad naturligt. Låg neuroticism och hög extrav
 
 Mer effektivt än eugenik kommer genmanipulation vara. CRISPR-9-forskning får stora mängder resurser. Målet med forskningen är naturligtvis inte att göra folk lyckligare, utan målet är explicit att förebygga genetiska sjukdomar som sickelcellanemi och Downs syndrom, implicit att skapa [[supermänniskor|som att kineserna inte var smarta nog...]], men gensaxen är ett brett verktyg; kan du genmanipulera längd kan du rimligtvis använda samma verktyg för att manipulera lycka. 
 
-
 <div class="container">Innan jag djupdyker i frågan vill jag få det sagt att hedoniska trappan inte nödvändigtvis är absolut. Den dominerande uppfattningen är, så vitt jag förstår, att du inte med säkerhet vänjer dig till 100% med livsförbättringar, men att du *för det mesta* gör det. Det verkar också som att lyckotaket är svårare att rubba på än golvet, och att de flesta kan falla längre än de kan klättra. 
-
 
 En *Lesswrong* användare formulerade problematiken inte som ett jämviktsproblem, utan ett marginalnyttoproblem. Han menar att god hälsa, meningsfulla aktiviteter och bra relationer *höjer* ditt utgångsläge, men att marginalnyttan minskar snabbt, och att de flesta redan är nära toppen.
 <blockquote class="quote-small">
   <p>Cherish the plateau. For now, it is our summit</p>
 </blockquote>
 </div>
-
 
 Vad kan man då göra, om man inte är global despot och kontrollerar forskningsanlag? Först, måste vi etablera vad lycka (och olycka) är. Med risk för att låta överdrivet fysikalistisk går det att reducera till dopamin (belöningssignalsubstansen), serotonin (belåtenhetssubstansen), oxytocin (kärlekssubstansen), endorfiner (smärtstillande), och kortisol (stresshormonen). Detta är grovt förenklat -- alla som tagit MDMA med någon de tycker om är nog förvånade att det inte är serotonin som kallas kärlekshormonen. Alla dessa hormoner har många fler funktioner, inklusive funktioner utanför hjärnan, och överlappar med varandra i hög grad, men denna förenkling får duga för våra syften. Att vi upptäckt lyckohormonerna skulle vara en fantastisk upptäckt, om inte hjärnan var så skicklig på att nedreglera och avtrubba sig själv när du får "för mycket" av dem. Det är därför du inte kan spendera resten av ditt liv njutandes av amfetaminets dopamin, ecstasys serotonin, morfinets endorfiner, och valiumets lugn. Oxytocin har ingen vanlig korresponderande drog eftersom molekylen är för stor för att ta sig genom blod-hjärnbarriären, så denna får du bara genom äkta kärlek -- en något romantisk slump från universums håll (sanning med modifikation, men men). 
 
@@ -50,6 +47,7 @@ Den andra faktor, toppnivåerna, innebär att dopaminnivåerna blir så höga at
 Så, vi har etablerat att vi inte kan öka utsöndringen av dopamin, eftersom vi får slut på våra dopamindepåer, och vi kan inte motverka återabsorbtion av dopamin, eftersom det får nervceller att minska sin naturliga utsöndring av dopamin. Vad finns då kvar? Jo, detta löste kommunisterna på 80-talet: sovjeterna uppfann bromantan. Bromantan går direkt till källan; det går direkt på genommekanismer. Bromantan ökar själva produktionen av dopamin. Eftersom utsöndringen inte tvingas, utan sker naturligt (d v s volatilt) är inte basnivåerna konstant förhöjda, och hjärnan nedreglerar inte. 
 
 <div class="container">Jag vill påpeka att det är möjligt att ditt hormonella normalläge är lägre än din genetik kodar för. Höga doser av oxiderande droger leder till celldöd. Vissa former av processad mat, systemiska sjukdomar och kronisk stress leder till inflammatoriska ämnen i hjärnan, varpå hjärnan använder tyrosinet för att producera immunmodulerande hormoner istället för dopamin. Brister av hormonernas byggstenar innebär att du är begränsad i hur mycket av dem du kan producera. Dessa specialfall kommer jag inte diskutera idag, men lider du av systemisk sjukdom eller Tyrosyn/D-vitamin-brist är det naturligtvis prio ett att lösa. </div> 
+
 
 ##Serotonin
 Tyvärr finns ingen Bromantanekvivalent för serotonin. Hjärnan är mycket känsligare för förhöjda serotoninnivåer än för dopamin; får du för mycket dopamin spenderar du en timma på att demontera soffan eller frenetisk redigera wikipediasidor, i värsta fall kan du bli manisk eller utsätta hjärnan för oxidativ stress. Får du för mycket serotonin dör du (serotoninsyndrom). 
@@ -70,12 +68,15 @@ De tråkiga nyheterna är att 5-HT2A är mer av en humörsstabiliserare än en "
 
 <div class="container">Jag bör flika in att det fortfarande inte råder konsensus, så vitt jag förstår, om hur serotonin faktiskt påverkar humör. Serotonin refereras till som en "glad" substans, en "humörsstabiliserande" substans, och en "humörsamplifierande" substans, och det verkar som att ingen av de termerna nödvändigtvis är fel. Serotonin fungerar olika beroende på situation, vilka andra ämnen det interagerar med, vilka receptorer det träffar och vilken mängd vi pratar om. Därför bör allt som skrivits ta med en stor nypa salt. </div>
 
+
 ##Oxytocin och endorfiner
 
 Här verkar det inte finnas mycket att göra. Du kan temporärt öka dessa hormoner, t ex genom löpning (*runner's high* är endorfiner), men hjärnan nedreglerar så småningom. 
 
+
 ##Kortisol
-Stresshormonen är visserligen inte lika viktig för välmående; du mår inte automatiskt bra av låga nivåer, men höga nivåer kan få dig att må dåligt. Det ska däremot sägas att kortisol inte är dåligt i sig: det sköter en mängd livsviktiga funktioner, minskar inflammation (som i sig kan motverka produktion av dopamin och serotonin), och gör dig pigg och alert. Med det sagt finns det faktiskt ganska mycket du kan göra på farmakologisk väg för att minska kortisol, vilket säkrar kortisolets plats i denna text. 
+Stresshormonen är visserligen inte lika viktig för välmående; du mår inte automatiskt bra av låga nivåer, men höga nivåer kan få dig att må dåligt. Det ska däremot sägas att kortisol inte är dåligt i sig: det sköter en mängd livsviktiga funktioner, minskar inflammation (som i sig kan motverka produktion av dopamin och serotonin), och gör dig pigg och alert. Med det sagt finns det faktiskt ganska mycket du kan göra på farmakologisk väg för att minska kortisol, vilket säkrar kortisolets plats i denna text. TBC
+
 
 ##MAO-Inhibitors
 Vi har redan pratat om *releasing agents*, *reuptake inhibitors*, agonister, och genuttrycksreglering. Det finns en sista mekanism värd att titta på. 
@@ -93,9 +94,6 @@ Selektiva MAO-A-hämmare finns, men är inte så intressanta. Icke selektiva MAO
 Selektiva MAOBI är som nämnt subtilare, men verkar främst på dopamin, vid måttliga doser. Tyraminproblemet försvinner, och även om det fortfarande är kontraindikerat med de flesta droger verkar serotoninsyndromsrisken vara liten. Detta är, tillsammans med Bromantan, det mest intressanta jag hittat. 
 
 Deprenyl, sålt som Selegiline, är en selektiv MAOBI som David Pearce, mannen bakom *The Hedonic Imperative*, rekommenderar. Det ökar driv, förbättrar både subjektiv och objektiv kognitiv förmåga, och ökar t o m möss livslängd med 20%. 
-
-
-
 
 
 To be continued

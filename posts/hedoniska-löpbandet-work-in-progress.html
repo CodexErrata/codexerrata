@@ -12,14 +12,16 @@
   
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {
@@ -70,7 +72,7 @@
 
 <div class="container">Innan jag djupdyker i frågan vill jag få det sagt att hedoniska trappan inte nödvändigtvis är absolut. Den dominerande uppfattningen är, så vitt jag förstår, att du inte med säkerhet vänjer dig till 100% med livsförbättringar, men att du <em>för det mesta</em> gör det. Det verkar också som att lyckotaket är svårare att rubba på än golvet, och att de flesta kan falla längre än de kan klättra.
 
-<p class="after-break">En <em>Lesswrong</em> användare formulerade problematiken inte som ett jämviktsproblem, utan ett marginalnyttoproblem. Han menar att god hälsa, meningsfulla aktiviteter och bra relationer <em>höjer</em> ditt utgångsläge, men att marginalnyttan minskar snabbt, och att de flesta redan är nära toppen.
+<p>En <em>Lesswrong</em> användare formulerade problematiken inte som ett jämviktsproblem, utan ett marginalnyttoproblem. Han menar att god hälsa, meningsfulla aktiviteter och bra relationer <em>höjer</em> ditt utgångsläge, men att marginalnyttan minskar snabbt, och att de flesta redan är nära toppen.
 <blockquote class="quote-small"></p>
 
 <p>Cherish the plateau. For now, it is our summit</p>
@@ -82,7 +84,7 @@
 
 <p>Eftersom dina känslor kan reduceras till ett fåtal biokemiska processer är det passande att vi börjar med att diskutera vad som kan göras farmakologiskt.</p>
 
-<h2>Dopamin</h2>
+<h2 style="margin-top: 2em">Dopamin</h2>
 
 <p>Nästan alla droger är dopaminerga i någon grad. De kan delas upp i två grupper beroende på deras farmakodynamik: <em>dopamine releasing agents</em> (DAT) och <em>dopamine reuptake inhibitors</em> (DRI). I den första gruppen hittar vi amfetamin: amfetaminet får nervcellen att släppa mer av dopaminet den håller. Krashen efteråt kommer eftersom du har tömt dina celler på dopamin.</p>
 
@@ -120,11 +122,11 @@
 
 <p>Här verkar det inte finnas mycket att göra. Du kan temporärt öka dessa hormoner, t ex genom löpning (<em>runner's high</em> är endorfiner), men hjärnan nedreglerar så småningom.</p>
 
-<h2>Kortisol</h2>
+<h2 style="margin-top: 2em">Kortisol</h2>
 
-<p>Stresshormonen är visserligen inte lika viktig för välmående; du mår inte automatiskt bra av låga nivåer, men höga nivåer kan få dig att må dåligt. Det ska däremot sägas att kortisol inte är dåligt i sig: det sköter en mängd livsviktiga funktioner, minskar inflammation (som i sig kan motverka produktion av dopamin och serotonin), och gör dig pigg och alert. Med det sagt finns det faktiskt ganska mycket du kan göra på farmakologisk väg för att minska kortisol, vilket säkrar kortisolets plats i denna text.</p>
+<p>Stresshormonen är visserligen inte lika viktig för välmående; du mår inte automatiskt bra av låga nivåer, men höga nivåer kan få dig att må dåligt. Det ska däremot sägas att kortisol inte är dåligt i sig: det sköter en mängd livsviktiga funktioner, minskar inflammation (som i sig kan motverka produktion av dopamin och serotonin), och gör dig pigg och alert. Med det sagt finns det faktiskt ganska mycket du kan göra på farmakologisk väg för att minska kortisol, vilket säkrar kortisolets plats i denna text. TBC</p>
 
-<h2>MAO-Inhibitors</h2>
+<h2 style="margin-top: 2em">MAO-Inhibitors</h2>
 
 <p>Vi har redan pratat om <em>releasing agents</em>, <em>reuptake inhibitors</em>, agonister, och genuttrycksreglering. Det finns en sista mekanism värd att titta på.</p>
 
@@ -142,9 +144,9 @@
 
 <p>Deprenyl, sålt som Selegiline, är en selektiv MAOBI som David Pearce, mannen bakom <em>The Hedonic Imperative</em>, rekommenderar. Det ökar driv, förbättrar både subjektiv och objektiv kognitiv förmåga, och ökar t o m möss livslängd med 20%.</p>
 
-<p class="no-indent" style="margin-top: 6.0em">To be continued</p>
+<p class="after-break">To be continued</p>
 
-<h2>Naltrexone</h2>
+<h2 style="margin-top: 2em">Naltrexone</h2>
 
 <h2>Buprenorphine</h2>
 

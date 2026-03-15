@@ -5,6 +5,7 @@
 <footer>— René Girard</footer>
 </blockquote>
 <div class="container">Detta är den första av två texter inspirerade av Peter Thiels essä [The Straussian Moment](https://gwern.net/doc/politics/2007-thiel.pdf) från 2004, denna med fokus på René Girards mimetiska teori och syndabocksmekanism</div>
+
 Satt idag och läste om Peter Thiel: grundaren av PayPal och Palantir, första investerare i Facebook, mannen bakom JD Vance, inofficiell ledare av "PayPal-maffian" -- en samling forna PayPal-arbetare, som influerade av Thiels filosofi, ligger bakom hälften av allt som kommit ur Silicon Valley detta århundrade, däribland Elon Musk -- och en hel del annat. Sjukt fascinerande snubbe, vars hjärna fungerar olikt något jag stött på tidigare. Läs hans essä *The Straussian Moment* så får du se själv, han är briljant. 
 
 När en stor man skiljer sig från normen så avsevärt är det intressant att se vem som influerat honom, för varje Alexander behöver en Aristoteles, och Thiel mötte sin på Stanford.
@@ -42,7 +43,6 @@ Det som borde intresserat Lebrun är inte deras beteende under avrättningen, ut
 Jag tror det senare. 
 
 Let 'em roll, baby, let 'em roll
-
 
 
 

@@ -11,14 +11,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {
@@ -40,6 +42,11 @@
       <blockquote style="font-size: 1.4rem;"><p>I can tolerate anything except the outgroup</p><footer>— Scott Alexander</footer></blockquote>
 
       <hr style="width: 100%">
+
+      <div class="post-entry">
+        <h2><a href="posts/kain-och-abel.html">Kain och Abel</a></h2>
+        <div class="article-meta">14/3-2026 · 6 min read</div>
+      </div>
 
       <div class="post-entry">
         <h2><a href="posts/hedoniska-löpbandet-work-in-progress.html">Hedoniska löpbandet (work in progress)</a></h2>

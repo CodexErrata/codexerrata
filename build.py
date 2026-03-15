@@ -148,7 +148,7 @@ class BlogBuilder:
             base = ' class="no-indent"' if prev_had_math else ''
             if level == 1:
                 return base.replace('class="no-indent"', 'class="after-break' + (' no-indent' if prev_had_math else '') + '"')
-            return base + f' style="margin-top: {1.5 * level}em"'
+            return base + f' style="margin-top: {level + 1}em"'
 
         for i, part in enumerate(parts):
             if re.match(r'^\n\s*\n+$', part):
@@ -162,7 +162,7 @@ class BlogBuilder:
                     if after_break_level == 1:
                         cls = ' class="after-break' + (' no-indent' if prev_had_math else '') + '"'
                     elif after_break_level > 1:
-                        cls = ' class="no-indent" style="margin-top: ' + str(1.5 * after_break_level) + 'em"'
+                        cls = ' class="no-indent" style="margin-top: ' + str(after_break_level + 1) + 'em"'
                     elif prev_had_math:
                         cls = ' class="no-indent"'
                     paragraphs.append(f'<p{cls}>{block}</p>')
@@ -175,12 +175,15 @@ class BlogBuilder:
                         if after_break_level == 1:
                             cls = ' class="no-indent after-break"'
                         elif after_break_level > 1:
-                            cls = ' class="no-indent" style="margin-top: ' + str(1.5 * after_break_level) + 'em"'
+                            cls = ' class="no-indent" style="margin-top: ' + str(after_break_level + 1) + 'em"'
                         elif prev_had_math:
                             cls = ' class="no-indent"'
                         paragraphs.append(f'<p{cls}>{block}</p>')
                         prev_had_math = block_has_math(block)
                     else:
+                        if after_break_level > 0:
+                            margin = after_break_level + 1 if after_break_level > 1 else 2
+                            block = re.sub(r'^(<\w+)', r'\1 style="margin-top: ' + str(margin) + 'em"', block, count=1)
                         paragraphs.append(block)
                         prev_had_math = False
             after_break_level = 0
@@ -448,14 +451,16 @@ class BlogBuilder:
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {{
-      if (localStorage.getItem('theme') === 'light') {{
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {{
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {{
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         }});
+      }} else {{
+        document.documentElement.setAttribute('data-theme', 'light');
       }}
     }})();
     function toggleTheme() {{

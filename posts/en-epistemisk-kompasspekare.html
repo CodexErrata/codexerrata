@@ -12,14 +12,16 @@
   
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {
@@ -64,7 +66,7 @@
 
 <p>Bla bla bla clever ending bla bla bla</p>
 
-<p class="no-indent" style="margin-top: 4.5em">1/2-2026, Kuala Lumpur</p>
+<p class="no-indent" style="margin-top: 4em">1/2-2026, Kuala Lumpur</p>
 </section>
   </article>
 

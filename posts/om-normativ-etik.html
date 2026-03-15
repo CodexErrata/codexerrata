@@ -12,14 +12,16 @@
   
 </head>
 <body>
-  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
   <script>
     (function() {
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
         document.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('theme-toggle').textContent = 'dark';
+          document.getElementById('theme-toggle').textContent = 'light';
         });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
     function toggleTheme() {
@@ -62,7 +64,7 @@
 
 <p>Mamman slipper bli mördad, och blir så småningom gravid. Hon har egentligen inte råd med ännu ett barn, men bestämmer sig för att rådfråga sin dotter som läst så mycket normativ etik, om det är fel med abort. Immanuella, som nu är utilitarist, kommer fram till att lidandet av en graviditet och efterföljande ekonomiska svårigheter är långt mycket mindre än det positiva värdet av barnets långa liv, så abort är fel. Sedan tar hon argumentet ett steg längre: om ett barns liv har mer värde än graviditetens lidande är inte bara abort fel, det är fel att inte skaffa så många barn som möjligt -- hon måste sätta sin och resten av världens mammor i en Matrix-esque inseminationsfabrik tills planetens bärande kapacitet är uppnådd. Detta känns horribelt, så hon undviker detta genom att referera till att hon inte har någon rätt att styra över någon annans kropp. Immanuella är återigen pliktetiker.</p>
 
-<p class="no-indent" style="margin-top: 4.5em">30-1-2026, Kuala Lumpur</p>
+<p class="no-indent" style="margin-top: 3em">30-1-2026, Kuala Lumpur</p>
 </section>
   </article>
 
