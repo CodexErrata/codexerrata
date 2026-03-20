@@ -5,6 +5,8 @@
 
 #I
 
+
+
 Jag brukade arbeta som personlig assistent hos en väldigt politiskt engagerad familj. De lever alla med skyddad identitet, så jag håller mig vag. Jobbintervjun höll brukarens mamma. Jobbintervjun gick kanon. Vi satt och pratade i några timmar, och förvånandsvärt lite av konversationen kretsade kring jobbet i sig. Det var snarare en längre *vibe check*; *kommer han gå oss på nerverna eller kommer det vara kul att ha honom arbetandes i mitt hem?*
 
 Efter någon timma av tjötande om ditten och datten slängde mamman ur sig någonting i stil med: "det pratas ganska mycket politik i vår familj", med den implicita frågan *är du på vår sida, eller kommer du förstöra husfriden när vi köper dasspapper bärandes Kristerssons ansikte?* Jag, som gärna ville konvertera min första jobbintervju till ett jobberbjudande, kläckte ur mig att "det är inga problem, *jag är med i SSU*, och där cementerades det både att jag skulle få jobbet, och att jag skulle tvingas spela vänster, i a f på arbetstid. 
@@ -39,7 +41,7 @@ Svaret är under 1% budgetstorlek, under 3% för den aggregerade skillnaden mell
 
 
 #II
-<div class="container">Xenophobia (from Ancient Greek ξένος (xénos) 'strange, foreign, or alien' and φόβος (phóbos) 'fear') is the fear or dislike of people who are perceived as being foreign or strange. 
+<div class="container">Xenophobia (from Ancient Greek ξένος (xénos) 'strange, foreign, or alien' and φόβος (phóbos) 'fear') is the fear or dislike of people who are perceived as being foreign or strange. It is an expression that is based on the perception that a conflict exists between an in-group and an out-group (...)
 </div>
 Så definierar Wikipedia xenofobi. Läser man vidare i artikeln dyker nazisterna och dess behandling av judar upp som exempel på xenofobi. 
 <blockquote class="dynoquote">
@@ -53,14 +55,16 @@ Så definierar Wikipedia xenofobi. Läser man vidare i artikeln dyker nazisterna
 <footer>-Marianne Schweitzer, förintelseöverlevare</footer>
 </blockquote>
 
-Det är svårt att argumentera att tyskar såg judar som konstigare och mer främmande än japaner. Många tyska judar fick lärdom om sin judiska identitet först när nazisterna analyserade deras familjeträd. I dessa fall var inte deras judiska gener närmare kopplat till någon identitet än vilken haplogrupp jag bär på är relaterad till min. 
+Många tyska judar fick lärdom om sin judiska identitet först när nazisterna analyserade deras familjeträd. I dessa fall var inte deras judiska gener närmare kopplat till någon identitet än vilken haplogrupp jag bär på är relaterad till min. 
 
 Japanerna å andra sidan såg inte ut som tyskar. De talade inte samma språk som tyskar. De åt inte samma mat som tyskar. De läste inte samma litteratur som tyskar. Bortsett från en delad entusiasm för systematiskt våld är det svårt att hitta likheter mellan de två folken. 
+
+Aversion mot konstiga främlingar och dess olikhet verkar inte vara en tillräcklig förklaringsmodell för nazitysklands "xenofobi". 
 
 
 
 #III
-Sjunde oktober 2024 var jag och en vän på Norrmalmstorg för minnesmanifestation för de som dödats och kidnappats på Novafestivalen. Det var kul att spana efter <span class="marginnote">Samma vän har senaste året politiskt migrerat, och ockuperar nu den ungefärliga positionen "förintelsen är ett judiskt påhitt, men om det skedde var det bra". Så snabbt det kan gå. </span>krypskyttar och SÄPO-agenter, men inom en halvtimma hade jag tröttnat och begav mig hemåt. 
+Sjunde oktober 2024 var jag och en vän på Norrmalmstorg för minnesmanifestation för de som dödats och kidnappats på Novafestivalen. Det var kul att spana efter <span class="marginnote">Samma vän har senaste året politiskt migrerat, och ockuperar nu den ungefärliga positionen "förintelsen är ett judiskt påhitt, men om det skedde var det bra." Vad snabbt det kan gå. </span>krypskyttar och SÄPO-agenter, men inom en halvtimma hade jag tröttnat och begav mig hemåt. 
 
 Jag gick mot T-centralen, och såg att det på Plattan stod en grupp ungdomar, tillhörandes ett kommunistiskt parti, som delade ut anti-israeliska flygblad. Rörd av manifestationens gulliga judiska (och förvånandsvärt många persiska) gubbar och tanter kunde jag inte hålla mig från att gå fram. Jag sa precis vad jag tänkte: *på ett intellektuellt plan har jag redan sedan innan problem med er position, men på ett känslomässigt plan finner jag det äckligt att ni valt denna dag och denna plats att sprida er galla.*
 
@@ -68,11 +72,38 @@ Sedan stod vi där i Oktoberkylan och diskuterade i många timmar, jag i mössa 
 
 Föga förvånande kom vi inte överens om särskilt mycket, men trots det var diskussionen väldigt bra; genuina försök från båda håll att förstå varandra, ingen ilska, inga höjda röster, med ett undantag. Jag, utmattad efter många timmars diskussion, bytte spår och frågade en av dem om de och Revolutionära Kommunistiska Partiet var samma organisation. *Där bar det av*. Man hade kunnat tro att RKP avrättat hela hans familj. RKP var trotskister, och hans organisation var [stalinister/leninister/whatever]. Att många timmar respektfullt diskutera med mig, rasistisk folkmordapologet, var inga problem -- vi kunde ändå lära oss av varandra -- men han drog en fet röd linje vid fel bolsjevistisk gren, det var oförlåtligt. 
 
-#IV
 
-<img src="images/hostility-curve.svg" class="content-image invertible">  
- <img src="images/concentric-circles.svg" class="content-image invertible">
+
+#IV
+Vi och dem-dikotomin har kilat fast sig i modernt metapolitiskt tänkande. Detta är ett problem eftersom den, om den tas till sin logiska slutpunkt, visar en relation som inte finns. Ingruppen och utgruppen måste komplementeras med en tredje klass, en grupp för långt borta för att identifieras som antagonistisk -- en spökgrupp. 
+
+<img src="images/concentric-circles.svg" class="content-image invertible"> 
+
+Vi och dem dikotomin, tagen till sin naturliga gräns, insinuerar att antagonismen ökar i takt med att skillnaderna ökar. I realitet kan antagonismen plottas som en parabel, där antagonismen är som störst när vi:et skiljer sig tydligt från dem:et, men likheterna fortfarande är stora nog att att ingruppen kan identifiera sig med utgruppen. 
+
+<div class="sidenote-row">
+    <div style="margin-top: 120px;">Kurvans höjd och förskjutning kommer skilja mellan olika individer och grupper, t ex kommer plattan-leninisternas kurva vara ovanligt brant, tidigt. 
+</div>
+    <div>
+
+ <img src="images/hostility-curve.svg" class="content-image invertible"> 
+ 
+
 
 #V
+<blockquote class="dynoquote">
+<p>In Russia, before the Revolution, the doomed classes romanticized the Russian peasant as good, brave, and Christian muzhik. A relativistic bourgeoisie in a confused Europe searched all sorts of exotic cultures for the purpose of making them an object of its aesthetic consumption. The aristocratic society in France before the Revolution of 1789 sentimentalized “man who is by nature good” and the virtue of the masses. (...) nobody scented the revolution; it is incredible to see the security and unsuspiciousness with which these privileged spoke of the goodness, mildness, and innocence of the people when 1793 was already upon them. 
+</p>
+<footer>Carl Schmitt, The Concept of the Political</footer>
+</blockquote>
+
+Min pappa har ofta pratat om *den goda fienden*. Risken finns att jag har feltolkat honom, men jag att han med termen menar att "den goda fienden" är en illusion, påhittad eller överdriven, för att rättfärdiga något som annars aldrig skulle accepteras -- en bekvämlig fiende. 
+
+*Den goda fienden* behöver inte nödvändigtvis användas cyniskt. Den behöver inte vara bara bekvämlig för en viss grupp, utan en fiende kan vara i sig bra för samhället i stort.
+
+Det omvända, vad vi kan kalla *den besvärliga fienden*, är då en riktig fiende, vars kännedom om är kontraproduktiv. Denna figur tillhör utgruppen, men är inte olik nog att tillhöra den svårförstådda spökgruppen. 
+
+Den besvärliga fienden är besvärlig just för att den grumlar vän-fiende-distinktionen. 
 
 #VI
+
