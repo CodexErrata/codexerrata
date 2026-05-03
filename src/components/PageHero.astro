@@ -2,7 +2,7 @@
 type Props = {
   eyebrow?: string;
   title: string;
-  intro: string;
+  intro?: string;
   meta?: string;
 };
 
@@ -16,7 +16,7 @@ const { eyebrow, title, intro, meta } = Astro.props;
       <h1 class:list={["max-w-4xl font-serif text-[clamp(2.65rem,11vw,4.5rem)] leading-[0.98] md:text-7xl", eyebrow ? "mt-5" : ""]}>{title}</h1>
     </div>
     <div class="self-end">
-      <p class="measure text-xl leading-8 text-ink">{intro}</p>
+      {intro && <p class="measure text-xl leading-8 text-ink">{intro}</p>}
       {meta && <p class="mt-8 border-t border-line pt-5 text-sm font-semibold uppercase tracking-[0.08em] text-ink">{meta}</p>}
     </div>
   </div>

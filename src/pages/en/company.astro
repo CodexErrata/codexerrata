@@ -1,6 +1,7 @@
 ---
 import PageHero from "@/components/PageHero.astro";
 import SiteLayout from "@/layouts/SiteLayout.astro";
+import StatsAwardsPage from "@/components/StatsAwardsPage.astro";
 import TeamGrid from "@/components/TeamGrid.astro";
 ---
 
@@ -25,5 +26,9 @@ import TeamGrid from "@/components/TeamGrid.astro";
       </div>
     </div>
     <TeamGrid locale="en" />
+  </section>
+
+  <section id="stats-awards" class="scroll-mt-28">
+    <StatsAwardsPage locale="en" />
   </section>
 </SiteLayout>

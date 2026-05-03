@@ -12,16 +12,15 @@ import { site } from "@/data/site";
   path="/en/contact"
   alternatePath="/kontakt"
 >
-  <PageHero
-    eyebrow="Contact"
-    title="Speak directly with the right function."
-    intro="Contact should be person-led, not form-led. The roles and addresses below are structured for publication once names are approved."
-  />
+  <PageHero title="Contact us" />
 
   <section class="container py-16">
     <div class="mb-8 border-b border-ink pb-6">
-      <p class="eyebrow">General</p>
+      <p class="eyebrow">Email</p>
       <a class="mt-3 block font-serif text-4xl underline" href={`mailto:${site.email}`}>{site.email}</a>
+      <p class="eyebrow mt-10">Job applications</p>
+      <a class="mt-3 block font-serif text-4xl underline" href={`mailto:${site.jobApplicationsEmail}`}>{site.jobApplicationsEmail}</a>
+      <p class="mt-4 text-ink">Send CVs, portfolios and applications to this address.</p>
       <p class="mt-4 text-ink">{site.address}</p>
     </div>
     <ContactGrid locale="en" />

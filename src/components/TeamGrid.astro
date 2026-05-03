@@ -12,16 +12,20 @@ const { locale = "sv" } = Astro.props;
   {placeholderTeamMembers.map((member) => (
     <article>
       <div class="relative aspect-[5/4] overflow-hidden bg-[#c9c9c4]">
-        <img
-          class="h-full w-full object-cover object-top saturate-[0.92]"
-          src={member.image.src}
-          width={member.image.width}
-          height={member.image.height}
-          alt={member.image.alt[locale]}
-          loading="lazy"
-          decoding="async"
-        />
-        <span class="absolute right-4 top-4 text-4xl font-light leading-none text-white/90" aria-hidden="true">+</span>
+        {!member.placeholder && (
+          <img
+            class="h-full w-full object-cover object-top saturate-[0.92]"
+            src={member.image.src}
+            width={member.image.width}
+            height={member.image.height}
+            alt={member.image.alt[locale]}
+            loading="lazy"
+            decoding="async"
+          />
+        )}
+        {!member.placeholder && (
+          <span class="absolute right-4 top-4 text-4xl font-light leading-none text-white/90" aria-hidden="true">+</span>
+        )}
       </div>
       <h3 class="mt-5 font-serif text-3xl leading-none md:text-4xl">{member.name}</h3>
       <p class="mt-2 text-sm leading-5 text-stone-500">{member.role[locale]}</p>

@@ -14,7 +14,7 @@ export default {
       },
       fontFamily: {
         serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
-        sans: ["Source Serif 4", "Georgia", "Cambria", "Times New Roman", "serif"]
+        sans: ["Georgia", "Cambria", "Times New Roman", "serif"]
       },
       maxWidth: {
         content: "1180px"

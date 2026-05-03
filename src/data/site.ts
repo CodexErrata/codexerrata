@@ -51,6 +51,7 @@ export type TeamMember = {
     height: number;
     alt: Record<Locale, string>;
   };
+  placeholder?: boolean;
 };
 
 export type ContactRole = {
@@ -67,6 +68,7 @@ export const site = {
   url: "https://www.alaskafilmtv.com",
   address: "Stockholm, Sverige",
   email: "info@alaskafilmtv.com",
+  jobApplicationsEmail: "ansokan@alaskafilmtv.com",
   phone: "+46 XX XXX XX XX",
   accent: "#5b5f43",
   analytics: "Plausible/Fathom placeholder"
@@ -89,8 +91,8 @@ export const nav = {
       label: "Om Alaska",
       children: [
         { href: "/bolaget", label: "Om Alaska" },
-        { href: "/siffror-utmarkelser", label: "Siffror & utmärkelser" },
-        { href: "/bolaget#team", label: "Team" }
+        { href: "/bolaget#team", label: "Team" },
+        { href: "/bolaget#siffror-utmarkelser", label: "Siffror & utmärkelser" }
       ]
     },
     { href: "/kontakt", label: "Kontakt" }
@@ -111,8 +113,8 @@ export const nav = {
       label: "About Alaska",
       children: [
         { href: "/en/company", label: "About Alaska" },
-        { href: "/en/stats-awards", label: "Stats & awards" },
-        { href: "/en/company#team", label: "Team" }
+        { href: "/en/company#team", label: "Team" },
+        { href: "/en/company#stats-awards", label: "Stats & awards" }
       ]
     },
     { href: "/en/contact", label: "Contact" }
@@ -139,98 +141,80 @@ export const productionBuckets: ProductionBucket[] = [
 
 export const placeholderTeamMembers: TeamMember[] = [
   {
-    name: "Barack Obama",
-    role: {
-      sv: "USA:s president, 2009-2017",
-      en: "President of the United States, 2009-2017"
-    },
+    name: "Vivianne Krantz",
+    role: { sv: "VD", en: "CEO" },
     image: {
-      src: "/images/team/barack-obama.jpg",
-      width: 1280,
-      height: 1599,
+      src: "/images/team/vivianne-krantz.jpg",
+      width: 183,
+      height: 275,
       alt: {
-        sv: "Porträtt av Barack Obama",
-        en: "Portrait of Barack Obama"
+        sv: "Porträtt av Vivianne Krantz",
+        en: "Portrait of Vivianne Krantz"
       }
     }
   },
   {
-    name: "George W. Bush",
-    role: {
-      sv: "USA:s president, 2001-2009",
-      en: "President of the United States, 2001-2009"
-    },
+    name: "Hunter S Thompson",
+    role: { sv: "Executive Producer", en: "Executive Producer" },
     image: {
-      src: "/images/team/george-w-bush.jpg",
-      width: 1280,
-      height: 1764,
+      src: "/images/team/hunter-s-thompson.jpg",
+      width: 952,
+      height: 1245,
       alt: {
-        sv: "Porträtt av George W. Bush",
-        en: "Portrait of George W. Bush"
+        sv: "Porträtt av Hunter S Thompson",
+        en: "Portrait of Hunter S Thompson"
       }
     }
   },
   {
-    name: "Bill Clinton",
-    role: {
-      sv: "USA:s president, 1993-2001",
-      en: "President of the United States, 1993-2001"
-    },
+    name: "Donna Tartt",
+    role: { sv: "Utvecklingschef", en: "Head of Development" },
     image: {
-      src: "/images/team/bill-clinton.jpg",
-      width: 1280,
-      height: 1683,
+      src: "/images/team/donna-tartt.webp",
+      width: 615,
+      height: 811,
       alt: {
-        sv: "Porträtt av Bill Clinton",
-        en: "Portrait of Bill Clinton"
+        sv: "Porträtt av Donna Tartt",
+        en: "Portrait of Donna Tartt"
       }
     }
   },
   {
-    name: "George H. W. Bush",
-    role: {
-      sv: "USA:s president, 1989-1993",
-      en: "President of the United States, 1989-1993"
-    },
+    name: "Tosha",
+    role: { sv: "Produktionschef", en: "Production Manager" },
     image: {
-      src: "/images/team/george-hw-bush.jpg",
-      width: 1280,
-      height: 1750,
+      src: "/images/team/tosha.jpg",
+      width: 4032,
+      height: 3024,
       alt: {
-        sv: "Porträtt av George H. W. Bush",
-        en: "Portrait of George H. W. Bush"
+        sv: "Porträtt av Tosha",
+        en: "Portrait of Tosha"
       }
     }
   },
   {
-    name: "Ronald Reagan",
-    role: {
-      sv: "USA:s president, 1981-1989",
-      en: "President of the United States, 1981-1989"
-    },
+    name: "Janne Jönsson",
+    role: { sv: "Ansvarig uppdragsproduktion", en: "Head of Commissioned Work" },
     image: {
-      src: "/images/team/ronald-reagan.jpg",
-      width: 1280,
-      height: 1601,
+      src: "/images/team/janne-jonsson.jpg",
+      width: 554,
+      height: 554,
       alt: {
-        sv: "Porträtt av Ronald Reagan",
-        en: "Portrait of Ronald Reagan"
+        sv: "Porträtt av Janne Jönsson",
+        en: "Portrait of Janne Jönsson"
       }
     }
   },
   {
-    name: "Jimmy Carter",
-    role: {
-      sv: "USA:s president, 1977-1981",
-      en: "President of the United States, 1977-1981"
-    },
+    name: "Christer Petterson",
+    role: { sv: "Presskontakt", en: "Press Contact" },
     image: {
-      src: "/images/team/jimmy-carter.jpg",
-      width: 1280,
-      height: 1698,
+      src: "/images/team/christer-pettersson.jpg",
+      width: 248,
+      height: 362,
       alt: {
-        sv: "Porträtt av Jimmy Carter",
-        en: "Portrait of Jimmy Carter"
+        sv: "Porträtt av Christer Pettersson",
+        en: "Portrait of Christer Pettersson"
       }
     }
   },
@@ -883,8 +867,8 @@ export const productions: Production[] = [
 export const contacts: ContactRole[] = [
   {
     role: { sv: "VD", en: "CEO" },
-    name: "Namn att bekräfta",
-    email: "ceo@alaskafilmtv.com",
+    name: "Vivianne Krantz",
+    email: "bossbitch@gmail.com",
     phone: "+46 XX XXX XX XX",
     bio: {
       sv: "Övergripande bolagsansvar, strategiska samarbeten och större kundrelationer.",
@@ -893,8 +877,8 @@ export const contacts: ContactRole[] = [
   },
   {
     role: { sv: "Executive Producer", en: "Executive Producer" },
-    name: "Namn att bekräfta",
-    email: "executiveproducer@alaskafilmtv.com",
+    name: "Hunter S Thompson",
+    email: "raoulduke@gmail.com",
     phone: "+46 XX XXX XX XX",
     bio: {
       sv: "Broadcasterdialog, produktionell kvalitet och genomförande av större serier.",
@@ -903,8 +887,8 @@ export const contacts: ContactRole[] = [
   },
   {
     role: { sv: "Utvecklingschef", en: "Head of Development" },
-    name: "Namn att bekräfta",
-    email: "development@alaskafilmtv.com",
+    name: "Donna Tartt",
+    email: "judypoovey@gmail.com",
     phone: "+46 XX XXX XX XX",
     bio: {
       sv: "Formatutveckling, pitchar, research och tidig beställardialog.",
@@ -913,8 +897,8 @@ export const contacts: ContactRole[] = [
   },
   {
     role: { sv: "Produktionschef", en: "Production Manager" },
-    name: "Namn att bekräfta",
-    email: "production@alaskafilmtv.com",
+    name: "Tosha",
+    email: "cykablyatvov@gmail.com",
     phone: "+46 XX XXX XX XX",
     bio: {
       sv: "Planering, bemanning, inspelningslogistik, arbetsmiljö och leveransrutiner.",
@@ -923,8 +907,8 @@ export const contacts: ContactRole[] = [
   },
   {
     role: { sv: "Ansvarig uppdragsproduktion", en: "Head of Commissioned Work" },
-    name: "Namn att bekräfta",
-    email: "commissioned@alaskafilmtv.com",
+    name: "Janne Jönsson",
+    email: "theman@gmail.com",
     phone: "+46 XX XXX XX XX",
     bio: {
       sv: "Film, podcast och redaktionell kommunikation för företag och offentliga aktörer.",
@@ -933,22 +917,12 @@ export const contacts: ContactRole[] = [
   },
   {
     role: { sv: "Presskontakt", en: "Press Contact" },
-    name: "Namn att bekräfta",
-    email: "press@alaskafilmtv.com",
+    name: "Christer Petterson",
+    email: "didntdoit@gmail.com",
     phone: "+46 XX XXX XX XX",
     bio: {
       sv: "Pressbilder, intervjuer, nomineringar, prisinformation och branschförfrågningar.",
       en: "Press images, interviews, nominations, awards information and trade enquiries."
-    }
-  },
-  {
-    role: { sv: "Jobbansökningar", en: "Job applications" },
-    name: "Namn att bekräfta",
-    email: "ansokan@alaskafilmtv.com",
-    phone: "+46 XX XXX XX XX",
-    bio: {
-      sv: "Skicka CV, portfolio och spontanansökningar till denna adress.",
-      en: "Send CVs, portfolios and speculative applications to this address."
     }
   }
 ];

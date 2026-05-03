@@ -118,7 +118,7 @@ export const statsAwards: StatsAwardItem[] = [
 export const statsAwardsKpis: StatsKpiItem[] = [
   {
     id: "experience-history",
-    label: { sv: "År av erfarenhet", en: "Years of experience" },
+    label: { sv: "Års erfarenhet", en: "Years of experience" },
     target: 9,
     sublabel: {
       sv: "Samlad erfarenhet bakom Alaska-produktioner, från kortfilm till internationell samproduktion.",
