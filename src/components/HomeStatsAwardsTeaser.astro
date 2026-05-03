@@ -1,0 +1,301 @@
+---
+import type { Locale } from "@/data/site";
+import { statsAwardsKpis } from "@/data/statsAwards";
+
+type Props = {
+  locale?: Locale;
+};
+
+const { locale = "sv" } = Astro.props;
+
+const copy = {
+  sv: {
+    mountainAlt: "Bergssiluett",
+    eyebrow: "Siffror & utmärkelser",
+    title: "Omfång, förtroende och erkännande.",
+    intro: "Ett kort urval från Alaska Film & TV:s produktioner, meriter och priser.",
+    numbersLabel: "I siffror",
+    awardsLabel: "Utmärkelser",
+    awardsBlurb: "Alaska Film & TV har genom åren tilldelats ett flertal utmärkelser. Bolaget har haft förmånen att nomineras till Kristallen, Sveriges mest prestigefyllda tv-pris, 13 gånger. Alaska har dessutom vunnit priset två gånger för storsuccéerna ”Gränsbevakarna” och ”Svenska Truckers”.",
+    galleryAlt: "Bilder från prisutdelningar",
+    cta: "Se alla siffror & utmärkelser",
+    ctaHref: "/siffror-utmarkelser"
+  },
+  en: {
+    mountainAlt: "Mountain silhouette",
+    eyebrow: "Numbers & awards",
+    title: "Scale, trust and recognition.",
+    intro: "A short selection from Alaska Film & TV's productions, credentials and awards.",
+    numbersLabel: "In numbers",
+    awardsLabel: "Awards",
+    awardsBlurb: "Alaska Film & TV has been honored with numerous awards over the years. The company has had the privilege of being nominated for Kristallen, the most prestigious television award in Sweden, 13 times. Alaska has also won the award twice for their hit shows, “Gränsbevakarna” and “Svenska Truckers.”",
+    galleryAlt: "Images from award ceremonies",
+    cta: "See all numbers & awards",
+    ctaHref: "/en/stats-awards"
+  }
+} satisfies Record<Locale, Record<string, string>>;
+
+const teaserKpiIds = ["productions", "awards-nominations", "active-partners", "experience-history"];
+const teaserKpis = teaserKpiIds.flatMap((id) => {
+  const kpi = statsAwardsKpis.find((candidate) => candidate.id === id);
+  return kpi ? [kpi] : [];
+});
+const awardImages = [
+  {
+    src: "/awards/Kristallen_foto.jpg",
+    alt: { sv: "Vinnare på Kristallen-galan", en: "Winners at the Kristallen ceremony" }
+  },
+  {
+    src: "/awards/Kristallen3.jpg",
+    alt: { sv: "Tacktal på Kristallen", en: "Acceptance speech at Kristallen" }
+  },
+  {
+    src: "/awards/Kristallen1.jpg",
+    alt: { sv: "Jubel vid prisutdelning", en: "Celebration at the awards" }
+  },
+  {
+    src: "/awards/Kristallen2.jpg",
+    alt: { sv: "Pristagare med Kristallen-pris", en: "Winners with the Kristallen award" }
+  }
+] satisfies { src: string; alt: Record<Locale, string> }[];
+---
+
+<section class="home-stats-awards" aria-labelledby={`home-stats-awards-title-${locale}`}>
+  <div class="home-stats-awards-mountain">
+    <img src="/mountains/silhouette.png" alt={copy[locale].mountainAlt} loading="lazy" decoding="async" />
+  </div>
+
+  <div class="bg-ink py-16 text-white md:py-24">
+    <div class="container">
+      <div class="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start">
+        <section aria-labelledby={`home-stats-awards-title-${locale}`}>
+          <a class="eyebrow !text-white home-stats-eyebrow-link" href={copy[locale].ctaHref}>{copy[locale].eyebrow}</a>
+          <h2 id={`home-stats-awards-title-${locale}`} class="mt-4 font-serif text-4xl leading-tight md:text-5xl">
+            {copy[locale].title}
+          </h2>
+        </section>
+
+        <section aria-labelledby={`home-stats-numbers-title-${locale}`} class="home-stats-kpis">
+          <a id={`home-stats-numbers-title-${locale}`} class="eyebrow !text-white home-stats-eyebrow-link" href={copy[locale].ctaHref}>
+            {copy[locale].numbersLabel}
+          </a>
+          <div class="home-stats-kpi-grid">
+            {teaserKpis.map((kpi) => (
+              <article class="home-stats-kpi-cell">
+                <p class="home-stats-kpi-number-wrap">
+                  <span class="home-stats-kpi-counter" data-target={kpi.target}>0</span>
+                  {kpi.suffix?.[locale] && <span class="home-stats-kpi-suffix">{kpi.suffix[locale]}</span>}
+                </p>
+                <p class="home-stats-kpi-label">{kpi.label[locale]}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <section class="mt-16 md:mt-24" aria-labelledby={`home-stats-awards-list-title-${locale}`}>
+        <h2 id={`home-stats-awards-list-title-${locale}`} class="font-serif text-4xl leading-tight md:text-5xl">
+          <a class="home-stats-heading-link" href={copy[locale].ctaHref}>{copy[locale].awardsLabel}</a>
+        </h2>
+
+        <p class="mt-6 text-base leading-7 text-white md:text-lg md:leading-8">
+          {copy[locale].awardsBlurb}
+        </p>
+
+        <div class="home-stats-award-gallery" aria-label={copy[locale].galleryAlt}>
+          {awardImages.map((image) => (
+            <figure class="home-stats-award-figure">
+              <img src={image.src} alt={image.alt[locale]} loading="lazy" decoding="async" />
+            </figure>
+          ))}
+        </div>
+
+        <div class="mt-10">
+          <a class="inline-block w-fit border border-bone px-5 py-3 font-semibold no-underline" href={copy[locale].ctaHref}>
+            {copy[locale].cta}
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    function formatHomeKpi(value) {
+      return value.toLocaleString("sv-SE");
+    }
+
+    function easeOutExpo(t) {
+      return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+    }
+
+    function setHomeKpiValue(el, value) {
+      el.textContent = formatHomeKpi(value);
+    }
+
+    function animateHomeKpi(el) {
+      const target = Number.parseInt(el.dataset.target || "0", 10);
+      const duration = target > 500 ? 3200 : target > 100 ? 2600 : 2100;
+      const startTime = performance.now();
+
+      function tick(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const current = Math.round(easeOutExpo(progress) * target);
+        setHomeKpiValue(el, current);
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          setHomeKpiValue(el, target);
+        }
+      }
+
+      requestAnimationFrame(tick);
+    }
+
+    const counters = document.querySelectorAll(".home-stats-kpi-counter[data-target]");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!("IntersectionObserver" in window) || reduceMotion) {
+      counters.forEach((counter) => {
+        setHomeKpiValue(counter, Number.parseInt(counter.dataset.target || "0", 10));
+      });
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        animateHomeKpi(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.3 });
+
+    counters.forEach((counter) => observer.observe(counter));
+  })();
+</script>
+
+<style>
+  .home-stats-awards {
+    background: #fffaf2;
+  }
+
+  .home-stats-awards-mountain {
+    background: #fffaf2;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .home-stats-awards-mountain img {
+    display: block;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom;
+    width: 100%;
+  }
+
+  .home-stats-kpis {
+    margin-top: 0;
+  }
+
+  .home-stats-eyebrow-link,
+  .home-stats-heading-link {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+  }
+
+  .home-stats-eyebrow-link:hover,
+  .home-stats-heading-link:hover {
+    opacity: 0.7;
+  }
+
+  .home-stats-kpi-grid {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .home-stats-kpi-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .home-stats-kpi-cell {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    min-width: 0;
+    overflow: hidden;
+    padding: 1.5rem 1.25rem 1.25rem;
+    text-align: center;
+  }
+
+  .home-stats-kpi-number-wrap {
+    align-items: baseline;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "EB Garamond", Georgia, Cambria, "Times New Roman", serif;
+    font-weight: 400;
+    gap: 0.35rem;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .home-stats-kpi-counter {
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    letter-spacing: 0;
+  }
+
+  .home-stats-kpi-suffix {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    letter-spacing: 0.02em;
+  }
+
+  .home-stats-kpi-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.72rem;
+    font-weight: 700;
+    hyphens: auto;
+    letter-spacing: 0.06em;
+    line-height: 1.35;
+    margin: 0.85rem 0 0;
+    overflow-wrap: anywhere;
+    text-transform: uppercase;
+    word-break: break-word;
+  }
+
+  .home-stats-award-gallery {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .home-stats-award-gallery {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .home-stats-award-figure {
+    aspect-ratio: 4 / 3;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .home-stats-award-figure img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+</style>

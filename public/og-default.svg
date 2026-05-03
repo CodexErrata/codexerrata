@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Alaska Film &amp; TV">
+  <rect width="1200" height="630" fill="#fffaf2"/>
+  <path d="M0 420h1200" stroke="#000000" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M90 100h1020v430H90z" fill="none" stroke="#000000" stroke-width="3"/>
+  <text x="120" y="260" fill="#000000" font-family="Georgia, serif" font-size="94">Alaska Film &amp; TV</text>
+  <text x="125" y="338" fill="#000000" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="5">STOCKHOLM / FACTUAL / DOCUMENTARY</text>
+  <text x="125" y="438" fill="#000000" font-family="Arial, sans-serif" font-size="36">Production in demanding environments</text>
+</svg>

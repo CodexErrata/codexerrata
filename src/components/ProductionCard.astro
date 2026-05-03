@@ -1,0 +1,57 @@
+---
+import { productionBucketId, productionPath, type Locale, type Production } from "@/data/site";
+
+type Props = {
+  production: Production;
+  locale?: Locale;
+  hidden?: boolean;
+};
+
+const { production, locale = "sv", hidden = false } = Astro.props;
+const hasArtwork = Boolean(production.artwork);
+---
+
+<article
+  class="production-card border-t border-line py-7"
+  hidden={hidden}
+  data-title={production.title.toLowerCase()}
+  data-category={productionBucketId(production)}
+  data-genres={production.genres.join(",")}
+  data-year={production.yearSort}
+>
+  <a
+    class:list={[
+      "grid gap-5 no-underline",
+      hasArtwork ? "md:grid-cols-[0.8fr_0.75fr_1fr_0.5fr]" : "md:grid-cols-[0.8fr_1fr_0.6fr]"
+    ]}
+    href={productionPath(production, locale)}
+  >
+    {
+      production.artwork && (
+        <img
+          class="aspect-video w-full border border-ink object-cover"
+          src={production.artwork.cardSrc}
+          width={production.artwork.cardWidth}
+          height={production.artwork.cardHeight}
+          alt={production.artwork.alt[locale]}
+          loading="lazy"
+          decoding="async"
+        />
+      )
+    }
+    <div>
+      <h2 class="mt-3 font-serif text-3xl leading-tight">{production.title}</h2>
+    </div>
+    <p class="text-lg leading-7 text-ink">{production.summary[locale]}</p>
+    <dl class="grid grid-cols-1 gap-x-4 gap-y-3 text-sm sm:grid-cols-2 md:block md:space-y-3">
+      <div>
+        <dt class="font-semibold text-ink">{locale === "sv" ? "År" : "Years"}</dt>
+        <dd>{production.years}</dd>
+      </div>
+      <div>
+        <dt class="font-semibold text-ink">{locale === "sv" ? "Genre" : "Genre"}</dt>
+        <dd>{production.genres.join(", ")}</dd>
+      </div>
+    </dl>
+  </a>
+</article>

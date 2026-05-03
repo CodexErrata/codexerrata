@@ -1,0 +1,30 @@
+---
+import { placeholderTeamMembers, type Locale } from "@/data/site";
+
+type Props = {
+  locale?: Locale;
+};
+
+const { locale = "sv" } = Astro.props;
+---
+
+<div class="grid gap-x-4 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+  {placeholderTeamMembers.map((member) => (
+    <article>
+      <div class="relative aspect-[5/4] overflow-hidden bg-[#c9c9c4]">
+        <img
+          class="h-full w-full object-cover object-top saturate-[0.92]"
+          src={member.image.src}
+          width={member.image.width}
+          height={member.image.height}
+          alt={member.image.alt[locale]}
+          loading="lazy"
+          decoding="async"
+        />
+        <span class="absolute right-4 top-4 text-4xl font-light leading-none text-white/90" aria-hidden="true">+</span>
+      </div>
+      <h3 class="mt-5 font-serif text-3xl leading-none md:text-4xl">{member.name}</h3>
+      <p class="mt-2 text-sm leading-5 text-stone-500">{member.role[locale]}</p>
+    </article>
+  ))}
+</div>

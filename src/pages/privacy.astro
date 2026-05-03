@@ -1,0 +1,22 @@
+---
+import PageHero from "@/components/PageHero.astro";
+import SiteLayout from "@/layouts/SiteLayout.astro";
+---
+
+<SiteLayout
+  title="Privacy"
+  description="Privacy information for Alaska Film & TV."
+  path="/privacy"
+  alternatePath={null}
+>
+  <PageHero
+    eyebrow="Privacy"
+    title="Privacy and analytics."
+    intro="This placeholder page is prepared for a cookieless analytics setup such as Plausible or Fathom. Legal text should be reviewed before launch."
+  />
+  <section class="container py-16">
+    <div class="measure text-lg leading-8 text-ink">
+      <p>Alaska Film & TV should publish a clear privacy notice covering contact emails, press enquiries, analytics, embedded video and recruitment-related messages. No contact form is implemented as the primary conversion path.</p>
+    </div>
+  </section>
+</SiteLayout>

@@ -1,0 +1,29 @@
+---
+import ContactGrid from "@/components/ContactGrid.astro";
+import PageHero from "@/components/PageHero.astro";
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import { site } from "@/data/site";
+---
+
+<SiteLayout
+  title="Contact"
+  description="Direct contact routes to Alaska Film & TV for commissioners, commissioned work, press and production."
+  locale="en"
+  path="/en/contact"
+  alternatePath="/kontakt"
+>
+  <PageHero
+    eyebrow="Contact"
+    title="Speak directly with the right function."
+    intro="Contact should be person-led, not form-led. The roles and addresses below are structured for publication once names are approved."
+  />
+
+  <section class="container py-16">
+    <div class="mb-8 border-b border-ink pb-6">
+      <p class="eyebrow">General</p>
+      <a class="mt-3 block font-serif text-4xl underline" href={`mailto:${site.email}`}>{site.email}</a>
+      <p class="mt-4 text-ink">{site.address}</p>
+    </div>
+    <ContactGrid locale="en" />
+  </section>
+</SiteLayout>

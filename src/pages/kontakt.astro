@@ -1,0 +1,28 @@
+---
+import ContactGrid from "@/components/ContactGrid.astro";
+import PageHero from "@/components/PageHero.astro";
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import { site } from "@/data/site";
+---
+
+<SiteLayout
+  title="Kontakt"
+  description="Direkta kontaktvägar till Alaska Film & TV för beställare, uppdrag, press och produktion."
+  path="/kontakt"
+  alternatePath="/en/contact"
+>
+  <PageHero
+    eyebrow="Kontakt"
+    title="Prata direkt med rätt funktion."
+    intro="Kontakt ska vara personburen, inte formulärburen. Roller och adresser nedan är strukturerade för publicering när namnen är godkända."
+  />
+
+  <section class="container py-16">
+    <div class="mb-8 border-b border-ink pb-6">
+      <p class="eyebrow">Växel</p>
+      <a class="mt-3 block font-serif text-4xl underline" href={`mailto:${site.email}`}>{site.email}</a>
+      <p class="mt-4 text-ink">{site.address}</p>
+    </div>
+    <ContactGrid />
+  </section>
+</SiteLayout>
