@@ -1,0 +1,271 @@
+---
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import { productions } from "@/data/site";
+
+const teamMembers = [
+  {
+    name: "Vivianne Krantz",
+    role: "CEO",
+    image: "/images/team/vivianne-krantz.jpg",
+    alt: "Portrait of Vivianne Krantz"
+  },
+  {
+    name: "Hunter S Thompson",
+    role: "Executive Producer",
+    image: "/images/team/hunter-s-thompson.jpg",
+    alt: "Portrait of Hunter S Thompson"
+  },
+  {
+    name: "Donna Tartt",
+    role: "Head of Development",
+    image: "/images/team/donna-tartt.webp",
+    alt: "Portrait of Donna Tartt"
+  },
+  {
+    name: "Tosha",
+    role: "Production Manager",
+    image: "/images/team/tosha.jpg",
+    alt: "Portrait of Tosha"
+  },
+  {
+    name: "Janne Jonsson",
+    role: "Head of Commissioned Work",
+    image: "/images/team/janne-jonsson.jpg",
+    alt: "Portrait of Janne Jonsson"
+  },
+  {
+    name: "Christer Petterson",
+    role: "Press Contact",
+    image: "/images/team/christer-pettersson.avif",
+    alt: "Portrait of Christer Petterson"
+  },
+  {
+    name: "Gerald Ford",
+    role: "President of the United States, 1974-1977",
+    image: "/images/team/gerald-ford.jpg",
+    alt: "Portrait of Gerald Ford"
+  },
+  {
+    name: "Richard Nixon",
+    role: "President of the United States, 1969-1974",
+    image: "/images/team/richard-nixon.jpg",
+    alt: "Portrait of Richard Nixon"
+  }
+];
+
+const awardImages = [
+  {
+    src: "/awards/Kristallen_foto.jpg",
+    alt: "Kristallen award event photograph",
+    label: "Kristallen"
+  },
+  {
+    src: "/awards/Kristallen1.jpg",
+    alt: "Award ceremony photograph",
+    label: "Awards"
+  },
+  {
+    src: "/awards/Kristallen2.jpg",
+    alt: "Kristallen winners photograph",
+    label: "Kristallen"
+  }
+];
+
+const awards = [
+  {
+    year: "2024",
+    award: "Kristallen",
+    show: "Gransbevakarna Sverige",
+    status: "Winner",
+    statusKind: "won",
+    category: "Best documentary series"
+  },
+  {
+    year: "2024",
+    award: "Guldspaden",
+    show: "Svenska Truckers",
+    status: "Nominated",
+    statusKind: "nominated",
+    category: "Investigative programme of the year"
+  },
+  {
+    year: "2023",
+    award: "Prix Europa",
+    show: "Production to be confirmed",
+    status: "Winner",
+    statusKind: "won",
+    category: "Best European Documentary"
+  },
+  {
+    year: "2023",
+    award: "Kristallen",
+    show: "Gransbevakarna Sverige",
+    status: "Winner",
+    statusKind: "won",
+    category: "Best reality programme"
+  },
+  {
+    year: "2022",
+    award: "Nordisk Rads filmpris",
+    show: "Drama, Nordic co-production",
+    status: "Nominated",
+    statusKind: "nominated",
+    category: "Best Nordic film"
+  },
+  {
+    year: "2021",
+    award: "Kristallen",
+    show: "Factual series",
+    status: "Winner",
+    statusKind: "won",
+    category: "Entertainment programme of the year"
+  }
+];
+
+const kpis = [
+  {
+    label: "Produced hours",
+    target: 1200,
+    suffix: "+",
+    sublabel: "Broadcast hours across Swedish and international channels.",
+    featured: true
+  },
+  {
+    label: "Years of experience",
+    target: 9,
+    sublabel: "Combined experience behind Alaska productions, from short film to international co-production."
+  },
+  {
+    label: "Productions",
+    target: productions.length,
+    sublabel: "Series, films and standalone programmes since launch."
+  },
+  {
+    label: "International markets",
+    target: 4,
+    sublabel: "Countries where Alaska productions have aired or sold."
+  },
+  {
+    label: "Awards & nominations",
+    target: 24,
+    sublabel: "National and international recognition since 2017."
+  },
+  {
+    label: "Partners",
+    target: 18,
+    sublabel: "Broadcasters, streaming platforms and funding partners."
+  },
+  {
+    label: "Average watch time",
+    target: 920,
+    suffix: "k",
+    sublabel: "Prime-time broadcasts on SVT and TV4."
+  },
+  {
+    label: "Team",
+    target: 45,
+    sublabel: "Permanent staff - plus a network of 200+ freelancers."
+  },
+  {
+    label: "Episodes",
+    target: 620,
+    suffix: "+",
+    sublabel: "Individual episodes delivered across returning factual and documentary series."
+  }
+];
+---
+
+<SiteLayout
+  title="About"
+  description="About Alaska Film & TV's position, history, working method and Efterlyst legacy."
+  canonicalPath="/about"
+>
+  <section class="about-hero" aria-labelledby="about-title">
+    <img src="/mountains/skyline.png" alt="Mountain skyline" />
+    <div class="about-hero__content">
+      <h1 id="about-title">A production company built for editorial presence and difficult environments.</h1>
+    </div>
+  </section>
+
+  <section id="team" class="about-team">
+    <div class="about-section-heading">
+      <h2>The people behind the production.</h2>
+    </div>
+
+    <div class="about-team-grid">
+      {
+        teamMembers.map((member) => (
+          <article>
+            <div class="about-team-image">
+              <img src={member.image} alt={member.alt} loading="lazy" decoding="async" />
+              <span aria-hidden="true">+</span>
+            </div>
+            <h3>{member.name}</h3>
+            <p>{member.role}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section id="stats-awards" class="about-stats">
+    <header class="about-stats-header">
+      <h2>Stats & <em>awards</em></h2>
+    </header>
+
+    <div class="about-stats-split">
+      <section class="about-awards-panel" aria-label="Awards">
+        <div class="about-image-grid" aria-label="Productions">
+          {
+            awardImages.map((image, index) => (
+              <figure class:list={["about-image-cell", { "is-tall": index === 0 }]}>
+                <img src={image.src} alt={image.alt} loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+              </figure>
+            ))
+          }
+        </div>
+
+        <div class="about-awards-list">
+          {
+            awards.map((award) => (
+              <article class="about-award-row">
+                <span class="about-award-year">{award.year}</span>
+                <div class="about-award-body">
+                  <h4>{award.award}</h4>
+                  <p>{award.show}</p>
+                  <span class:list={["about-award-status", { "is-won": award.statusKind === "won" }]}>
+                    {award.status}
+                  </span>
+                </div>
+                <p class="about-award-category">{award.category}</p>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="about-kpi-panel" aria-label="Production figures">
+        <div class="about-kpi-grid">
+          {
+            kpis.map((kpi) => (
+              <article class:list={["about-kpi-cell", { "is-featured": kpi.featured }]}>
+                <p class="about-kpi-label">{kpi.label}</p>
+                <div class="about-kpi-number-wrap">
+                  <span class="js-countup" data-countup-target={String(kpi.target)} data-countup-suffix={kpi.suffix ?? ""}>
+                    0
+                  </span>
+                </div>
+                <p class="about-kpi-sublabel">{kpi.sublabel}</p>
+              </article>
+            ))
+          }
+        </div>
+
+        <p class="about-kpi-note">
+          <strong>Alaska Film & TV AB</strong> - Figures cover the period 1996-2024.
+          Production volume includes both owned projects and commissioned productions for external clients.
+        </p>
+      </section>
+    </div>
+  </section>
+</SiteLayout>

@@ -1,0 +1,36 @@
+---
+import ContactGrid from "@/components/ContactGrid.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import { alaskaSite } from "@/data/site";
+---
+
+<SiteLayout
+  title="Contact"
+  description="Contact Alaska Film & TV in Stockholm."
+  canonicalPath="/contact"
+>
+  <section class="page-intro" aria-labelledby="contact-title">
+    <h1 id="contact-title">Contact us</h1>
+  </section>
+
+  <section class="contact-page" aria-label="Contact details">
+    <div class="contact-primary">
+      <div class="contact-primary__item">
+        <p class="contact-primary__label">Email</p>
+        <a class="contact-primary__link" href={`mailto:${alaskaSite.email}`}>{alaskaSite.email}</a>
+      </div>
+      <div class="contact-primary__item">
+        <p class="contact-primary__label">Job applications</p>
+        <a class="contact-primary__link" href={`mailto:${alaskaSite.jobApplicationsEmail}`}>
+          {alaskaSite.jobApplicationsEmail}
+        </a>
+      </div>
+      <p>Send CVs, portfolios and applications to this address.</p>
+      <p>{alaskaSite.address}</p>
+      <SocialLinks />
+    </div>
+
+    <ContactGrid />
+  </section>
+</SiteLayout>

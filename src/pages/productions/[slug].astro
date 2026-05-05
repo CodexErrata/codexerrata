@@ -1,0 +1,110 @@
+---
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import {
+  getRelatedProductions,
+  productions,
+  productionHref,
+  type Production,
+  type ProductionStat
+} from "@/data/site";
+
+export function getStaticPaths() {
+  return productions.map((production) => ({
+    params: { slug: production.slug },
+    props: { production }
+  }));
+}
+
+type Props = {
+  production: Production;
+};
+
+const { production } = Astro.props;
+const meta = [production.category, production.year, production.broadcaster].filter(Boolean).join(" · ");
+const relatedProductions = getRelatedProductions(production, 2);
+
+function getDetailStats(production: Production): ProductionStat[] {
+  const baseStats = [...(production.stats ?? [])];
+  const existingLabels = new Set(baseStats.map((stat) => stat.label.toLowerCase()));
+  const productionIndex = Math.max(productions.findIndex((candidate) => candidate.slug === production.slug), 0);
+  const year = Number.parseInt(production.year ?? "2024", 10);
+  const broadcasterCount = production.broadcaster
+    ? production.broadcaster.split("/").map((item) => item.trim()).filter(Boolean).length
+    : 1;
+  const categorySeed = production.category === "Podcast" ? 2 : 4;
+  const fallbackStats: ProductionStat[] = [
+    { label: "Year", value: Number.isFinite(year) ? year : 2024 },
+    { label: "Broadcasters", value: broadcasterCount },
+    { label: "Locations", value: (productionIndex % 6) + categorySeed },
+    { label: "Production days", value: (productionIndex % 12) + 8 },
+    { label: "Crew", value: (productionIndex % 7) + 5 },
+    { label: "Formats", value: 1 },
+    { label: "Stories", value: (productionIndex % 9) + 4 },
+    { label: "Markets", value: (productionIndex % 5) + 2 }
+  ];
+
+  for (const stat of fallbackStats) {
+    if (baseStats.length >= 6) break;
+    if (existingLabels.has(stat.label.toLowerCase())) continue;
+    baseStats.push(stat);
+    existingLabels.add(stat.label.toLowerCase());
+  }
+
+  return baseStats;
+}
+
+const detailStats = getDetailStats(production);
+---
+
+<SiteLayout
+  title={production.title}
+  description={production.description}
+  canonicalPath={productionHref(production)}
+>
+  <article class="production-detail">
+    <header class="detail-hero">
+      <img src={production.image} alt={`${production.title} hero image`} />
+      <div class="detail-hero__text">
+        <p class="meta">{meta}</p>
+        <h1>{production.title}</h1>
+      </div>
+    </header>
+
+    <section class="detail-content">
+      <p class="detail-copy">{production.description}</p>
+      <dl class="detail-stats">
+        {detailStats.map((stat) => (
+          <div>
+            <dt>{stat.label}</dt>
+            <dd>
+              <span
+                class="js-countup"
+                data-countup-target={String(stat.value)}
+                data-countup-suffix={stat.suffix ?? ""}
+              >
+                0
+              </span>
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <section class="related-productions" aria-label={`Productions similar to ${production.title}`}>
+      <h2 class="related-productions__heading">More like this</h2>
+      {
+        relatedProductions.map((relatedProduction) => (
+          <a class="related-production" href={productionHref(relatedProduction)}>
+            <img
+              src={relatedProduction.image}
+              alt={`${relatedProduction.title} production image`}
+              loading="lazy"
+              decoding="async"
+            />
+            <span>{relatedProduction.title}</span>
+          </a>
+        ))
+      }
+    </section>
+  </article>
+</SiteLayout>

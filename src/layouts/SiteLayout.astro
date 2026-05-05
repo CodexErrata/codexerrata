@@ -1,437 +1,187 @@
 ---
+import SocialLinks from "@/components/SocialLinks.astro";
+import { alaskaSite, pageTitle } from "@/data/site";
 import "@/styles/global.css";
-import { nav, site, type Locale } from "@/data/site";
 
 type Props = {
-  title: string;
-  description: string;
-  locale?: Locale;
-  path?: string;
-  alternatePath?: string | null;
-  image?: string;
-  structuredData?: Record<string, unknown> | Record<string, unknown>[];
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  bodyClass?: string;
 };
 
 const {
   title,
-  description,
-  locale = "sv",
-  path = Astro.url.pathname,
-  alternatePath: providedAlternatePath,
-  image = "/og-default.svg",
-  structuredData
+  description = "A minimalist portfolio for Alaska Film & TV, a Stockholm-based production company.",
+  canonicalPath = Astro.url.pathname,
+  bodyClass = ""
 } = Astro.props;
 
-const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
-const canonical = new URL(path, site.url).toString();
-const productionSearchPath = locale === "sv" ? "/produktioner" : "/en/productions";
-const currentSearch = Astro.url.searchParams.get("q") ?? "";
-const alternatePath = providedAlternatePath === undefined
-  ? locale === "sv" ? `/en${path === "/" ? "" : path}` : path.replace(/^\/en/, "") || "/"
-  : providedAlternatePath;
-const alternateLocale = locale === "sv" ? "en" : "sv";
-const homePath = locale === "sv" ? "/" : "/en";
-const languagePath = alternatePath ?? (locale === "sv" ? "/en" : "/");
-const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
-const currentSearchString = Astro.url.search;
-const normalizePath = (href: string) => {
-  const url = new URL(href, site.url);
-  return url.pathname.replace(/\/$/, "") || "/";
-};
-const isCurrentHref = (href: string) => {
-  const url = new URL(href, site.url);
-  const hrefPath = normalizePath(href);
-  if (url.search) return hrefPath === currentPath && url.search === currentSearchString;
-  return hrefPath === currentPath;
-};
-const socialLinks = [
-  {
-    href: "https://www.instagram.com/alaskafilmtv/",
-    label: "Instagram",
-    icon: "instagram"
-  },
-  {
-    href: "https://www.facebook.com/alaskafilmtv/",
-    label: "Facebook",
-    icon: "facebook"
-  }
-];
-const copy = {
-  sv: {
-    closeMenu: "Stäng meny",
-    contact: "Kontakt",
-    language: "Språk",
-    mainNavigation: "Huvudmeny",
-    menu: "Meny",
-    openMenu: "Öppna meny",
-    search: "Sök",
-    searchProductions: "Sök produktioner"
-  },
-  en: {
-    closeMenu: "Close menu",
-    contact: "Contact",
-    language: "Language",
-    mainNavigation: "Main navigation",
-    menu: "Menu",
-    openMenu: "Open menu",
-    search: "Search",
-    searchProductions: "Search productions"
-  }
-} satisfies Record<Locale, Record<string, string>>;
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: site.name,
-  legalName: site.legalName,
-  url: site.url,
-  logo: new URL("/alaska-logo-white.png", site.url).toString(),
-  email: site.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Stockholm",
-    addressCountry: "SE"
-  }
-};
-
-const schemas = structuredData
-  ? [organizationSchema, ...(Array.isArray(structuredData) ? structuredData : [structuredData])]
-  : [organizationSchema];
+const fullTitle = title ? pageTitle(title) : alaskaSite.name;
+const canonicalUrl = new URL(canonicalPath, alaskaSite.url).toString();
 ---
 
 <!doctype html>
-<html lang={locale === "sv" ? "sv" : "en"}>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{pageTitle}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang={locale === "sv" ? "sv-SE" : "en"} href={canonical} />
-    {alternatePath && <link rel="alternate" hreflang={alternateLocale === "sv" ? "sv-SE" : "en"} href={new URL(alternatePath, site.url).toString()} />}
-    <link rel="alternate" hreflang="x-default" href={new URL("/", site.url).toString()} />
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL(image, site.url).toString()} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og-default.svg" />
+    <meta property="og:url" content={canonicalUrl} />
     <meta name="twitter:card" content="summary_large_image" />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(schemas)} />
   </head>
-  <body>
-    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-bone focus:px-4 focus:py-3" href="#main">
-      {locale === "sv" ? "Hoppa till innehåll" : "Skip to content"}
-    </a>
-    <header class="border-b border-line bg-paper/95">
-      <nav class="container flex min-h-20 items-center justify-between gap-6 py-4" aria-label={copy[locale].mainNavigation}>
-        <a href={homePath} class="brand-lockup font-serif text-2xl leading-none no-underline" aria-label={site.name}>
-          <img class="brand-logo brand-logo-dark" src="/alaska-logo-white.png" width="750" height="157" alt="" />
-        </a>
-        <div class="header-search hidden lg:flex">
-          <button class="search-icon" type="button" aria-label={copy[locale].searchProductions}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="11" cy="11" r="7"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
-          <div class="header-search-popup">
-            <form action={productionSearchPath} method="get" role="search">
-              <label class="sr-only" for={`site-search-${locale}`}>{copy[locale].searchProductions}</label>
-              <input
-                id={`site-search-${locale}`}
-                data-filter-search
-                name="q"
-                type="search"
-                value={currentSearch}
-                placeholder={copy[locale].searchProductions}
-                autocomplete="off"
-              />
-              <button type="submit" aria-label={copy[locale].search}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="11" cy="11" r="7"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-              </button>
-            </form>
-          </div>
-        </div>
-        <ul class="main-navigation hidden flex-wrap items-center justify-end gap-x-5 gap-y-3 font-serif text-lg lg:flex">
-          {nav[locale].map((item) => (
-            <li class:list={["nav-item", { "has-submenu": item.children }]}>
-              <a class="muted-link no-underline" href={item.href} aria-current={isCurrentHref(item.href) ? "page" : undefined}>{item.label}</a>
-              {item.children && (
-                <div class="nav-submenu">
-                  <ul>
-                    {item.children.map((child) => (
-                      <li><a href={child.href} aria-current={isCurrentHref(child.href) ? "page" : undefined}>{child.label}</a></li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </li>
-          ))}
-          <li class="nav-social-links" aria-label="Social media">
-            {socialLinks.map((link) => (
-              <a class="social-link" href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`${site.name} on ${link.label}`}>
-                {
-                  link.icon === "instagram" ? (
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"></rect>
-                      <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle>
-                      <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"></circle>
-                    </svg>
-                  ) : (
-                    <svg class="facebook-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-                      <circle cx="12" cy="12" r="11" fill="currentColor"></circle>
-                      <path d="M13.4 19v-6.2h2.1l0.4-2.5h-2.5V8.7c0-0.7 0.2-1.2 1.2-1.2h1.4V5.2C15.4 5.1 14.7 5 13.9 5c-2.2 0-3.7 1.4-3.7 3.8v1.5H7.8v2.5h2.4V19h3.2Z" fill="#ffffff"></path>
-                    </svg>
-                  )
-                }
-              </a>
-            ))}
-          </li>
-          <li><a class="border-l border-line pl-5 no-underline" href={languagePath}>{locale === "sv" ? "EN" : "SV"}</a></li>
-        </ul>
-        <button
-          class="mobile-menu-toggle lg:hidden"
-          type="button"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-          aria-label={copy[locale].openMenu}
-          data-menu-toggle
-          data-label-open={copy[locale].openMenu}
-          data-label-close={copy[locale].closeMenu}
-        >
-          <span class="mobile-menu-toggle__text">{copy[locale].menu}</span>
-          <span class="mobile-menu-toggle__bars" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
+  <body class={bodyClass || undefined}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand-lockup" href="/" aria-label="Alaska Film & TV home">
+        <img class="brand-logo" src="/alaska-logo-white.png" alt="Alaska Film & TV" />
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </nav>
-
-      <div class="mobile-menu-panel lg:hidden" id="mobile-menu" hidden data-menu-panel>
-        <button class="mobile-menu-backdrop" type="button" aria-label={copy[locale].closeMenu} data-menu-close></button>
-        <div class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label={copy[locale].mainNavigation} tabindex="-1" data-menu-drawer>
-          <div class="mobile-menu-header">
-            <a href={homePath} class="brand-lockup font-serif text-2xl leading-none no-underline" aria-label={site.name}>
-              <img class="brand-logo brand-logo-dark" src="/alaska-logo-white.png" width="750" height="157" alt="" />
-            </a>
-            <button class="mobile-menu-close" type="button" data-menu-close aria-label={copy[locale].closeMenu}>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </button>
-          </div>
-
-          <form class="mobile-menu-search" action={productionSearchPath} method="get" role="search">
-            <label class="sr-only" for={`mobile-site-search-${locale}`}>{copy[locale].searchProductions}</label>
-            <input
-              id={`mobile-site-search-${locale}`}
-              data-filter-search
-              name="q"
-              type="search"
-              value={currentSearch}
-              placeholder={copy[locale].searchProductions}
-              autocomplete="off"
-            />
-            <button type="submit" aria-label={copy[locale].search}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="7"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </button>
-          </form>
-
-          <ul class="mobile-menu-list" aria-label={copy[locale].mainNavigation}>
-            {nav[locale].map((item) => (
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href={item.href} aria-current={isCurrentHref(item.href) ? "page" : undefined}>{item.label}</a>
-                {item.children && (
-                  <ul class="mobile-submenu">
-                    {item.children.map((child) => (
-                      <li><a href={child.href} aria-current={isCurrentHref(child.href) ? "page" : undefined}>{child.label}</a></li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-
-          <div class="mobile-menu-footer">
-            <div>
-              <p class="eyebrow">Social</p>
-              <div class="mobile-social-links">
-                {socialLinks.map((link) => (
-                  <a class="mobile-social-link" href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`${site.name} on ${link.label}`}>
-                    {
-                      link.icon === "instagram" ? (
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                          <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"></rect>
-                          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle>
-                          <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"></circle>
-                        </svg>
-                      ) : (
-                        <svg class="facebook-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-                          <circle cx="12" cy="12" r="11" fill="currentColor"></circle>
-                          <path d="M13.4 19v-6.2h2.1l0.4-2.5h-2.5V8.7c0-0.7 0.2-1.2 1.2-1.2h1.4V5.2C15.4 5.1 14.7 5 13.9 5c-2.2 0-3.7 1.4-3.7 3.8v1.5H7.8v2.5h2.4V19h3.2Z" fill="#ffffff"></path>
-                        </svg>
-                      )
-                    }
-                    <span>{link.label}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div>
-              <p class="eyebrow">{copy[locale].language}</p>
-              <div class="mobile-menu-language">
-                <a href={locale === "sv" ? "/" : (alternatePath ?? "/")} aria-current={locale === "sv" ? "true" : undefined}>Svenska</a>
-                <a href={locale === "en" ? "/en" : (alternatePath ?? "/en")} aria-current={locale === "en" ? "true" : undefined}>English</a>
-              </div>
-            </div>
-            <div>
-              <p class="eyebrow">{copy[locale].contact}</p>
-              <a class="mobile-menu-contact" href={`mailto:${site.email}`}>{site.email}</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <main id="main">
       <slot />
     </main>
-    <footer class="border-t border-ink bg-ink pb-12 pt-32 text-white">
-      <div class="container grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
-        <div>
-          <img class="footer-logo" src="/alaska-logo-white.png" width="750" height="157" alt={site.name} />
-          <p class="mt-4 max-w-md text-white">
-            {locale === "sv"
-              ? "Produktion för broadcaster, företag och offentliga aktörer i miljöer där förtroende, tillträde och leveransdisciplin är avgörande."
-              : "Production for broadcasters, companies and public bodies in environments where trust, access and delivery discipline matter."}
-          </p>
-        </div>
-        <div>
-          <p class="eyebrow !text-white">{locale === "sv" ? "Kontakt" : "Contact"}</p>
-          <a class="mt-4 block text-xl underline" href={`mailto:${site.email}`}>{site.email}</a>
-          <p class="mt-2 text-white">{site.address}</p>
-        </div>
-        <div>
-          <p class="eyebrow !text-white">{locale === "sv" ? "Språk" : "Language"}</p>
-          <div class="mt-4 flex gap-4">
-            <a class="underline" href={locale === "sv" ? "/" : (alternatePath ?? "/")}>Svenska</a>
-            <a class="underline" href={locale === "en" ? "/en" : (alternatePath ?? "/en")}>English</a>
-          </div>
-          <a class="mt-6 block text-white underline" href="/privacy">Privacy</a>
-        </div>
+    <footer class="site-footer">
+      <div>
+        <img class="footer-logo" src="/alaska-logo-white.png" alt="Alaska Film & TV" />
       </div>
+      <address>
+        <span>{alaskaSite.legalName}</span>
+        <span>{alaskaSite.address}</span>
+        <a href={`mailto:${alaskaSite.email}`}>{alaskaSite.email}</a>
+      </address>
+      <SocialLinks />
     </footer>
-    <script>
-      const menuToggle = document.querySelector<HTMLButtonElement>("[data-menu-toggle]");
-      const menuPanel = document.querySelector<HTMLElement>("[data-menu-panel]");
-      const menuDrawer = document.querySelector<HTMLElement>("[data-menu-drawer]");
-      const menuCloseButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-menu-close]"));
-      const focusableSelector = [
-        "a[href]",
-        "button:not([disabled])",
-        "input:not([disabled])",
-        "select:not([disabled])",
-        "textarea:not([disabled])",
-        "[tabindex]:not([tabindex='-1'])"
-      ].join(",");
-      let restoreScrollY = 0;
+    <script is:inline>
+      (() => {
+        const counters = document.querySelectorAll(".js-countup[data-countup-target]");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      function getFocusableElements() {
-        if (!menuDrawer) return [];
-        return Array.from(menuDrawer.querySelectorAll<HTMLElement>(focusableSelector))
-          .filter((element) => !element.hasAttribute("hidden") && element.getClientRects().length > 0);
-      }
-
-      function lockBodyScroll() {
-        restoreScrollY = window.scrollY;
-        document.body.style.position = "fixed";
-        document.body.style.top = `-${restoreScrollY}px`;
-        document.body.style.left = "0";
-        document.body.style.right = "0";
-        document.body.style.width = "100%";
-      }
-
-      function unlockBodyScroll() {
-        document.body.style.position = "";
-        document.body.style.top = "";
-        document.body.style.left = "";
-        document.body.style.right = "";
-        document.body.style.width = "";
-        window.scrollTo(0, restoreScrollY);
-      }
-
-      function openMenu() {
-        if (!menuToggle || !menuPanel || !menuDrawer) return;
-        menuPanel.hidden = false;
-        menuToggle.setAttribute("aria-expanded", "true");
-        menuToggle.setAttribute("aria-label", menuToggle.dataset.labelClose ?? "Close menu");
-        document.documentElement.classList.add("mobile-menu-open");
-        lockBodyScroll();
-        window.requestAnimationFrame(() => {
-          menuPanel.dataset.open = "true";
-          const focusable = getFocusableElements();
-          (focusable[0] ?? menuDrawer).focus();
-        });
-      }
-
-      function closeMenu({ returnFocus = true } = {}) {
-        if (!menuToggle || !menuPanel) return;
-        menuPanel.dataset.open = "false";
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", menuToggle.dataset.labelOpen ?? "Open menu");
-        document.documentElement.classList.remove("mobile-menu-open");
-        unlockBodyScroll();
-        menuPanel.hidden = true;
-        if (returnFocus) menuToggle.focus();
-      }
-
-      menuToggle?.addEventListener("click", () => {
-        if (menuToggle.getAttribute("aria-expanded") === "true") closeMenu();
-        else openMenu();
-      });
-
-      menuCloseButtons.forEach((button) => {
-        button.addEventListener("click", () => closeMenu());
-      });
-
-      document.addEventListener("keydown", (event) => {
-        if (!menuPanel || menuPanel.hidden) return;
-
-        if (event.key === "Escape") {
-          event.preventDefault();
-          closeMenu();
-          return;
+        function formatNumber(value) {
+          return value.toLocaleString("sv-SE");
         }
 
-        if (event.key !== "Tab") return;
-
-        const focusable = getFocusableElements();
-        if (!focusable.length) {
-          event.preventDefault();
-          menuDrawer?.focus();
-          return;
+        function easeOutExpo(t) {
+          return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
         }
 
-        const first = focusable[0];
-        const last = focusable[focusable.length - 1];
-        const active = document.activeElement;
-
-        if (event.shiftKey && active === first) {
-          event.preventDefault();
-          last.focus();
-        } else if (!event.shiftKey && active === last) {
-          event.preventDefault();
-          first.focus();
+        function setCounterValue(el, value) {
+          const suffix = el.dataset.countupSuffix || "";
+          el.textContent = `${formatNumber(value)}${suffix}`;
         }
-      });
 
-      menuDrawer?.querySelectorAll("a[href]").forEach((link) => {
-        link.addEventListener("click", () => closeMenu({ returnFocus: false }));
-      });
+        function animateCounter(el) {
+          const target = Number.parseInt(el.dataset.countupTarget || "0", 10);
+          const duration = target > 500 ? 3200 : target > 100 ? 2600 : 2100;
+          const startTime = performance.now();
+          const runId = `${startTime}-${target}`;
+          el.dataset.countupRunId = runId;
+
+          function tick(now) {
+            if (el.dataset.countupRunId !== runId) return;
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const current = Math.round(easeOutExpo(progress) * target);
+
+            setCounterValue(el, current);
+
+            if (progress < 1) {
+              requestAnimationFrame(tick);
+            } else {
+              setCounterValue(el, target);
+            }
+          }
+
+          requestAnimationFrame(tick);
+        }
+
+        function resetCounter(el) {
+          delete el.dataset.countupRunId;
+          setCounterValue(el, 0);
+        }
+
+        function initCardCounters() {
+          document.querySelectorAll(".production-card").forEach((card) => {
+            const cardCounters = card.querySelectorAll(".js-countup[data-countup-target]");
+            if (!cardCounters.length) return;
+
+            function show() {
+              cardCounters.forEach((counter) => {
+                const target = Number.parseInt(counter.dataset.countupTarget || "0", 10);
+                if (reduceMotion) {
+                  setCounterValue(counter, target);
+                  return;
+                }
+
+                resetCounter(counter);
+                animateCounter(counter);
+              });
+            }
+
+            function hide() {
+              if (reduceMotion) return;
+              cardCounters.forEach(resetCounter);
+            }
+
+            card.addEventListener("mouseenter", show);
+            card.addEventListener("mouseleave", hide);
+            card.addEventListener("focusin", show);
+            card.addEventListener("focusout", hide);
+          });
+        }
+
+        function initViewportCounters() {
+          const standaloneCounters = [...counters].filter(
+            (counter) => !counter.closest(".production-card")
+          );
+
+          if (!standaloneCounters.length) return;
+
+          if (!("IntersectionObserver" in window) || reduceMotion) {
+            standaloneCounters.forEach((counter) => {
+              setCounterValue(
+                counter,
+                Number.parseInt(counter.dataset.countupTarget || "0", 10)
+              );
+            });
+            return;
+          }
+
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+              });
+            },
+            { threshold: 0.3 }
+          );
+
+          standaloneCounters.forEach((counter) => observer.observe(counter));
+        }
+
+        function init() {
+          initCardCounters();
+          initViewportCounters();
+        }
+
+        document.readyState === "loading"
+          ? document.addEventListener("DOMContentLoaded", init)
+          : init();
+      })();
     </script>
   </body>
 </html>

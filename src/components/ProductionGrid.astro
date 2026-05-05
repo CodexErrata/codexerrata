@@ -1,0 +1,72 @@
+---
+import ProductionCard from "@/components/ProductionCard.astro";
+import type { Production } from "@/data/site";
+
+type Props = {
+  productions: Production[];
+  labelledBy?: string;
+  variant?: "standard" | "mosaic" | "podcast";
+};
+
+const { productions, labelledBy, variant = "standard" } = Astro.props;
+const displayProductions = [...productions];
+
+if (variant === "mosaic") {
+  const swapProductions = (firstSlug: string, secondSlug: string) => {
+    const firstIndex = displayProductions.findIndex((production) => production.slug === firstSlug);
+    const secondIndex = displayProductions.findIndex((production) => production.slug === secondSlug);
+
+    if (firstIndex !== -1 && secondIndex !== -1) {
+      [displayProductions[firstIndex], displayProductions[secondIndex]] = [
+        displayProductions[secondIndex],
+        displayProductions[firstIndex]
+      ];
+    }
+  }
+
+  swapProductions("gransbevakarna-sverige", "efterlyst");
+  swapProductions("havets-hjaltar", "vara-tonaringar");
+  swapProductions("bra-surr", "vara-tonaringar");
+  swapProductions("mamma-jimmy-guo", "ronnasfallet");
+  swapProductions("stockholmspolisen", "vara-tonaringar");
+  swapProductions("stockholmspolisen", "kvartsamtalet");
+  swapProductions("stockholmspolisen", "vara-tonaringar");
+}
+
+const ratioPattern = [0.78, 1.72, 1.34, 1.12, 1.45, 1.68, 0.9, 1.28, 1.52, 1.74, 1.05, 1.4];
+const rowPattern = [16, 8, 10, 11, 9, 8, 14, 10, 9, 8, 12, 10];
+const tileRowsBySlug: Record<string, number> = {
+  "gruvan": 10,
+  "johanna-moller": 10,
+  "mamma-jimmy-guo": 12,
+  "ronnasfallet": 13,
+  "det-stora-tartslaget": 16,
+  "norrlandspolisen": 10,
+  "stockholmspolisen": 14,
+  "bra-surr": 11,
+  "vara-tonaringar": 9,
+  "kvartsamtalet": 11
+};
+---
+
+<div
+  class:list={["production-grid", `production-grid--${variant}`]}
+  data-production-grid
+  aria-labelledby={labelledBy}
+>
+  {
+    displayProductions.map((production, index) => {
+      return (
+        <ProductionCard
+          production={production}
+          cardRatio={variant === "mosaic" ? ratioPattern[index % ratioPattern.length] : undefined}
+          cardRows={
+            variant === "mosaic"
+              ? tileRowsBySlug[production.slug] ?? rowPattern[index % rowPattern.length]
+              : undefined
+          }
+        />
+      );
+    })
+  }
+</div>

@@ -1,23 +1,19 @@
 ---
-import { contacts, type Locale } from "@/data/site";
-
-type Props = {
-  locale?: Locale;
-};
-
-const { locale = "sv" } = Astro.props;
+import { contacts } from "@/data/site";
 ---
 
-<div class="grid gap-px border border-line bg-line md:grid-cols-2 lg:grid-cols-3">
-  {contacts.map((contact) => (
-    <article class="bg-bone p-6">
-      <p class="eyebrow">{contact.role[locale]}</p>
-      <h2 class="mt-4 font-serif text-3xl">{contact.name}</h2>
-      <p class="mt-4 min-h-20 text-ink">{contact.bio[locale]}</p>
-      <div class="mt-6 space-y-2 text-sm font-semibold">
-        <a class="block underline" href={`mailto:${contact.email}`}>{contact.email}</a>
-        <a class="block underline" href={`tel:${contact.phone.replaceAll(" ", "")}`}>{contact.phone}</a>
-      </div>
-    </article>
-  ))}
+<div class="contact-people-grid">
+  {
+    contacts.map((contact) => (
+      <article class="contact-person">
+        <p class="meta">{contact.role}</p>
+        <h2>{contact.name}</h2>
+        <p>{contact.bio}</p>
+        <div class="contact-person__links">
+          <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          <a href={`tel:${contact.phone.replaceAll(" ", "")}`}>{contact.phone}</a>
+        </div>
+      </article>
+    ))
+  }
 </div>

@@ -1,112 +1,21 @@
 ---
-import HomeStatsAwardsTeaser from "@/components/HomeStatsAwardsTeaser.astro";
-import PageHero from "@/components/PageHero.astro";
-import ProductionCard from "@/components/ProductionCard.astro";
+import ProductionGrid from "@/components/ProductionGrid.astro";
 import SiteLayout from "@/layouts/SiteLayout.astro";
-import { productionBucketId, productions } from "@/data/site";
-
-const initialProductionCount = 3;
-const productionBatchSize = 8;
-const featuredProductionSlugs = ["efterlyst", "gruvan", "gransbevakarna-sverige"];
-const featuredProductions = featuredProductionSlugs.flatMap((slug) => {
-  const production = productions.find((candidate) => candidate.slug === slug);
-  return production ? [production] : [];
-});
-const orderedProductions = [
-  ...featuredProductions,
-  ...productions.filter((production) => productionBucketId(production) !== "podcasts"),
-  ...productions.filter((production) => productionBucketId(production) === "podcasts")
-].filter((production, index, allProductions) => allProductions.findIndex((candidate) => candidate.slug === production.slug) === index);
+import { podcastProductions, showProductions } from "@/data/site";
 ---
 
 <SiteLayout
-  title="Produktion i krävande miljöer"
-  description="Alaska Film & TV producerar faktabaserad tv, dokumentär, true crime och uppdragsproduktion för broadcaster, företag och offentliga aktörer."
-  path="/"
-  alternatePath="/en"
+  description="Alaska Film & TV is a Stockholm-based production company for factual television, documentary, reality, true crime and audio."
 >
-  <PageHero
-    title={"Berättelser som kräver tillit innan de kräver kamera"}
-    intro="Grundat 2017 med mottot “ett litet bolag med ett stort hjärta” startade Alaska med en vision om att bli ett enastående produktionsbolag – ett som inte bara levererar de mest fängslande berättelserna, utan också bygger en arbetsplats präglad av omtanke och stöd för varandra. Visionen blev en framgång! Och idag, även om vi kanske inte är så små längre, är vårt engagemang för varandra och vår passion för bra innehåll starkare än någonsin!"
-  />
-
-  <section class="container py-16" data-home-productions>
-    <div class="mb-8 flex flex-col justify-between gap-4 pb-6 md:flex-row md:items-end">
-      <div>
-        <h2 class="font-serif text-5xl"><a class="no-underline transition-opacity hover:opacity-70" href="/produktioner">Produktioner</a></h2>
-      </div>
-    </div>
-    <div data-production-list>
-      {orderedProductions.map((production, index) => (
-        <ProductionCard production={production} hidden={index >= initialProductionCount} />
-      ))}
-    </div>
-    {
-      orderedProductions.length > initialProductionCount && (
-        <div class="mt-8 flex justify-center">
-          <button
-            class="border border-ink px-5 py-3 font-semibold"
-            type="button"
-            data-production-action
-            data-initial-count={initialProductionCount}
-            data-batch-size={productionBatchSize}
-            data-label-more="Fler produktioner"
-            data-label-hide="Göm produktioner"
-            aria-expanded="false"
-          >
-            Fler produktioner
-          </button>
-        </div>
-      )
-    }
+  <section class="section-block section-block--archive-grid" aria-labelledby="home-productions-title">
+    <h1 id="home-productions-title" class="visually-hidden">Alaska Film & TV productions</h1>
+    <ProductionGrid productions={showProductions} labelledBy="home-productions-title" variant="mosaic" />
   </section>
 
-  <HomeStatsAwardsTeaser />
-
-  <script>
-    const productionSection = document.querySelector<HTMLElement>("[data-home-productions]");
-    const productionList = document.querySelector<HTMLElement>("[data-production-list]");
-    const actionButton = document.querySelector<HTMLButtonElement>("[data-production-action]");
-    const productionCards = Array.from(productionList?.querySelectorAll<HTMLElement>(".production-card") ?? []);
-    const initialCount = Number(actionButton?.dataset.initialCount ?? 5);
-    const batchSize = Number(actionButton?.dataset.batchSize ?? 8);
-    let visibleCount = productionCards.filter((card) => !card.hidden).length;
-
-    function updateProductionControls() {
-      const isExpanded = visibleCount > initialCount;
-      const allVisible = visibleCount >= productionCards.length;
-
-      if (!actionButton) return;
-      actionButton.hidden = productionCards.length <= initialCount;
-      actionButton.textContent = allVisible
-        ? actionButton.dataset.labelHide ?? "Göm produktioner"
-        : actionButton.dataset.labelMore ?? "Fler produktioner";
-      actionButton.setAttribute("aria-expanded", String(isExpanded));
-    }
-
-    function hideExtraProductions({ scrollToTop = false } = {}) {
-      productionCards.slice(initialCount).forEach((card) => {
-        card.hidden = true;
-      });
-      visibleCount = Math.min(initialCount, productionCards.length);
-      updateProductionControls();
-      if (scrollToTop) productionSection?.scrollIntoView({ block: "start" });
-    }
-
-    actionButton?.addEventListener("click", () => {
-      if (visibleCount >= productionCards.length) {
-        hideExtraProductions({ scrollToTop: true });
-        return;
-      }
-
-      const nextVisibleCount = Math.min(visibleCount + batchSize, productionCards.length);
-      productionCards.slice(visibleCount, nextVisibleCount).forEach((card) => {
-        card.hidden = false;
-      });
-      visibleCount = nextVisibleCount;
-      updateProductionControls();
-    });
-
-    updateProductionControls();
-  </script>
+  <section class="section-block podcast-section" aria-labelledby="home-podcast-productions-title">
+    <div class="section-heading">
+      <h2 id="home-podcast-productions-title">Podcasts</h2>
+    </div>
+    <ProductionGrid productions={podcastProductions} labelledBy="home-podcast-productions-title" variant="podcast" />
+  </section>
 </SiteLayout>
