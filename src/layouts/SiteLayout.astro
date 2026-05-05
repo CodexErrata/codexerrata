@@ -8,13 +8,15 @@ type Props = {
   description?: string;
   canonicalPath?: string;
   bodyClass?: string;
+  prefetchImages?: string[];
 };
 
 const {
   title,
   description = "A minimalist portfolio for Alaska Film & TV, a Stockholm-based production company.",
   canonicalPath = Astro.url.pathname,
-  bodyClass = ""
+  bodyClass = "",
+  prefetchImages = []
 } = Astro.props;
 
 const fullTitle = title ? pageTitle(title) : alaskaSite.name;
@@ -37,6 +39,11 @@ const canonicalUrl = new URL(canonicalPath, alaskaSite.url).toString();
     <meta property="og:image" content="/og-default.svg" />
     <meta property="og:url" content={canonicalUrl} />
     <meta name="twitter:card" content="summary_large_image" />
+    {
+      prefetchImages.map((src) => (
+        <link rel="prefetch" as="image" href={src} />
+      ))
+    }
   </head>
   <body class={bodyClass || undefined}>
     <a class="skip-link" href="#main">Skip to content</a>

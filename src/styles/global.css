@@ -773,7 +773,7 @@ select {
   margin: 0;
   width: 100%;
   max-width: none;
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--white);
   font-family: var(--support-font);
   font-size: clamp(1.35rem, 2.4vw, 2.1rem);
   line-height: 1.45;
