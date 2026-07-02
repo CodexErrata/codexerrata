@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <style>
+    @media (prefers-color-scheme: dark) { :root { color: #e0e0e0; } }
+    @media (prefers-color-scheme: light) { :root { color: #1a1a1a; } }
+    text {
+      font-family: "Courier New", Courier, monospace;
+      fill: currentColor;
+      font-size: 13px;
+    }
+  </style>
+
+  <!-- Outer ring (Far-group) — lightest fill -->
+  <circle cx="200" cy="200" r="150"
+    fill="currentColor" fill-opacity="0.05"
+    stroke="currentColor" stroke-width="0.8" stroke-opacity="0.45"/>
+
+  <!-- Middle ring (Out-group) -->
+  <circle cx="200" cy="200" r="100"
+    fill="currentColor" fill-opacity="0.07"
+    stroke="currentColor" stroke-width="0.8" stroke-opacity="0.45"/>
+
+  <!-- Inner ring (In-group) — most opaque -->
+  <circle cx="200" cy="200" r="50"
+    fill="currentColor" fill-opacity="0.10"
+    stroke="currentColor" stroke-width="0.8" stroke-opacity="0.45"/>
+
+  <!-- Labels -->
+  <text x="200" y="204" text-anchor="middle">In-group</text>
+  <text x="200" y="132" text-anchor="middle">Out-group</text>
+  <text x="200" y="70" text-anchor="middle">Far-group</text>
+</svg>

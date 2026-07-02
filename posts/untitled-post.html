@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untitled Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css">
+  
+</head>
+<body>
+  <button id="theme-toggle" onclick="toggleTheme()">light</button>
+  <script>
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('theme-toggle').textContent = 'dark';
+        });
+      }
+    })();
+    function toggleTheme() {
+      var btn = document.getElementById('theme-toggle');
+      if (document.documentElement.getAttribute('data-theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    }
+  </script>
+  <nav>
+    <ul>
+      <li><a href="../index.html" class="nav-site-title">Codex <span class="errata">Errata</span></a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="article-header">
+      <h1 class="article-title">Untitled Post</h1>
+      <div class="article-meta">14/03-2026 · 1 min read</div>
+    </header>
+
+    <section class="content">
+
+</section>
+  </article>
+
+  <footer>
+  </footer>
+</body>
+</html>
