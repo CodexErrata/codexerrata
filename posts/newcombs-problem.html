@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newcombs problem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css">
+  
+</head>
+<body>
+  <button id="theme-toggle" onclick="toggleTheme()">dark</button>
+  <script>
+    (function() {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('theme-toggle').textContent = 'light';
+        });
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+    function toggleTheme() {
+      var btn = document.getElementById('theme-toggle');
+      if (document.documentElement.getAttribute('data-theme') === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    }
+  </script>
+  <nav>
+    <ul>
+      <li><a href="../index.html" class="nav-site-title">Codex <span class="errata">Errata</span></a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="article-header">
+      <h1 class="article-title">Newcombs problem</h1>
+      <div class="article-meta">18-3/-2026 · 1 min read</div>
+    </header>
+
+    <section class="content">
+<blockquote class="dynoquote">
+
+<p>
+Plötsligt befinner du dig i ett rum. Framför dig har du två lådor: den första, med tusen kronor i sig, och den andra, med ett stort, fett X.
+
+<p>En man kliver fram och förklarar situationen. Du har möjlighet att ta båda lådor, tusen kronor plus den okända lådan, med chans på en miljon, eller att bara ta chanslådan. <em>Jättedumt</em>, tänker du, <em>antingen</em> jag förlorar ju inget på att ta båda lådor över endast en.</p>
+
+<p>Sedan berättar mannen att en superintelligent dator, Grok, analyserade din hjärna när du låg och sov samma morgon. Om Grok förutspått att du skulle ta endast den okända lådan placerade han miljonen i den lådan. Om Grok förutspådde att du skulle gå ut med båda lådor placerades ingen miljon i låda X.</p>
+
+<p>Datorn är otroligt bra på vad den gör; med 776 tidigare deltagare har den gissat rätt 775 gånger. Går du ut med en eller två lådor?</p></p>
+
+<footer></footer>
+
+</blockquote>
+Det här är Newcombs problem.
+
+<p>Newcombs problem är intressant eftersom det verkar splittra folk ungefär 50/50, och att oavsett vad du svarade tycker du troligtvis att svaret är helt uppenbart.</p>
+
+<p class="no-indent" style="margin-top: 7em">18/3-2026, på planet någonstans mellan Saigon och Brisbane</p>
+</section>
+  </article>
+
+  <footer>
+  </footer>
+</body>
+</html>

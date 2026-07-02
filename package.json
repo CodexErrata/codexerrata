@@ -1,0 +1,8 @@
+{
+  "name": "codexerrata",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python3 build.py && mkdir -p dist && cp -R index.html css posts images dist/"
+  }
+}
