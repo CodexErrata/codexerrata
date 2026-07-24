@@ -99,7 +99,7 @@ Vi och dem dikotomin, tagen till sin naturliga gräns, insinuerar att antagonism
 
 Min pappa har ofta pratat om *den goda fienden*. Jag förstår termen som att "den goda fienden" är en illusion, påhittad eller överdriven, för att rättfärdiga något som annars aldrig skulle accepteras -- en bekvämlig fiende. 
 
-*Den goda fienden*, menar jag, kan anta en annan mening: den goda fienden har i många fall både en samhällsviktig funktion, och är verklig. 
+Jag vill omdefiniera termen. Den goda fienden är riktig, och han är god just p g a vetskapen att han är riktig.
 
-När haven stormar och gatorna står i brand, stanna upp en sekund och säkerställ att du inte är förblindad av små skillnaders narcissism. Kain dödade inte en främling. Han dödade sin bror. 
+När haven stormar och gatorna står i brand, stanna upp en sekund och se vem du krigar mot. Kain dödade inte en främling. Han dödade sin bror. 
 
