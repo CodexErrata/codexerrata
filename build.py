@@ -479,7 +479,7 @@ class BlogBuilder:
   <article>
     <section class="content">
       <h1 class="site-title">Codex <span class="errata">Errata</span></h1>
-      <blockquote style="font-size: 1.4rem;"><p>I can tolerate anything except the outgroup</p><footer>— Scott Alexander</footer></blockquote>
+      <p style="font-size: 1.4rem;">Moloch delenda est</p>
 
       <hr style="width: 100%">
 
