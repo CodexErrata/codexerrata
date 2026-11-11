@@ -1,4 +1,4 @@
-<!-- title: Kain och Abel -->
+<!-- title: Kain och Abel (work in progress) -->
 <!-- date: 14/3-2026 -->
 
 
@@ -75,7 +75,7 @@ Föga förvånande kom vi inte överens om särskilt mycket, men trots det var d
 
 
 #IV
-Vi och dem-dikotomin har kilat fast sig i modernt metapolitiskt tänkande. Detta är ett problem eftersom den, om den tas till sin logiska slutpunkt, visar en relation som inte finns. Ingruppen och utgruppen måste komplementeras med en tredje klass: en grupp för långt borta för att identifieras som antagonistisk -- en spökgrupp. 
+Vi och dem-dikotomin har kilat fast sig i modernt metapolitiskt tänkande. Detta är ett problem eftersom den, om den tas till sin logiska slutpunkt, visar en relation som inte finns. Ingruppen och utgruppen måste komplementeras med en tredje klass, en grupp för långt borta för att identifieras som antagonistisk -- en spökgrupp. 
 
 <img src="images/concentric-circles.svg" class="content-image invertible"> 
 
@@ -97,9 +97,15 @@ Vi och dem dikotomin, tagen till sin naturliga gräns, insinuerar att antagonism
 <footer>Carl Schmitt, The Concept of the Political</footer>
 </blockquote>
 
-Min pappa har ofta pratat om *den goda fienden*. Jag förstår termen som att "den goda fienden" är en illusion, påhittad eller överdriven, för att rättfärdiga något som annars aldrig skulle accepteras -- en bekvämlig fiende. 
+Min pappa har ofta pratat om *den goda fienden*. Risken finns att jag har feltolkat honom, men jag att han med termen menar att "den goda fienden" är en illusion, påhittad eller överdriven, för att rättfärdiga något som annars aldrig skulle accepteras -- en bekvämlig fiende. 
 
-Jag vill omdefiniera termen. Den goda fienden är riktig, och han är god just p g a vetskapen att han är riktig.
+*Den goda fienden* behöver inte nödvändigtvis användas cyniskt. Den behöver inte vara bara bekvämlig för en viss grupp, utan en fiende kan vara i sig bra för samhället i stort.
 
-När haven stormar och gatorna står i brand, stanna upp en sekund och se vem du krigar mot. Kain dödade inte en främling. Han dödade sin bror. 
+Det omvända, vad vi kan kalla *den besvärliga fienden*, är då en riktig fiende, vars kännedom om är kontraproduktiv. Denna figur tillhör utgruppen, men är inte olik nog att tillhöra den svårförstådda spökgruppen. 
+
+Den besvärliga fienden är besvärlig just för att den grumlar vän-fiende-distinktionen. 
+
+#VI
+För drygt sju månader sedan liftade jag genom en mindre svensk stad, någon köping tror jag. 
+
 

@@ -444,10 +444,6 @@ class BlogBuilder:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>codexerrata</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap"></noscript>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -479,7 +475,6 @@ class BlogBuilder:
   <article>
     <section class="content">
       <h1 class="site-title">Codex <span class="errata">Errata</span></h1>
-      <p style="font-size: 1.4rem;">Moloch delenda est</p>
 
       <hr style="width: 100%">
 

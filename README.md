@@ -4,7 +4,7 @@ A static site blog featuring long-form classic typography inspired by Edward Tuf
 
 ## Features
 
-- **Typography**: Source Serif 4 font (gwern.net style) at 1.15rem with classic typographic rules
+- **Typography**: Georgia at 1.15rem with classic typographic rules
 - **Markdown Processing**: Automatic conversion from `.md` files to HTML pages
 - **Paragraph Indentation**: 1.5em indent for all paragraphs
 - **Smart Indentation**: First paragraph after headings and blockquotes has no indent
