@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc"><title id="title">Om normativ etik — måltavlan i efterhand</title><desc id="desc">En pil sitter redan i väggen. Runt träffen ritas koncentriska ringar; en penna fullbordar den yttersta cirkeln.</desc><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0V6" stroke="#30424b" stroke-width="1"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5 1 9" fill="none" stroke="#30424b" stroke-width="1.1"/></marker></defs><path fill="#c1c8a8" d="M0 0H900V640H0Z"/><g fill="none" stroke="#30424b"><path d="M290 82H818V537H290Z" stroke-width="1" opacity=".35"/><path d="M306 98H802V521H306Z" stroke-width="1" opacity=".25"/><path d="M319 280H791M560 112V487" stroke-dasharray="2 7" opacity=".4"/></g>
+<circle cx="560" cy="280" r="141" fill="#eee6ce"/>
+<circle cx="560" cy="280" r="94" fill="#b6422f" opacity=".85"/>
+<circle cx="560" cy="280" r="47" fill="#eee6ce"/>
+<g stroke="#30424b" stroke-width="1.5" fill="none"><circle cx="560" cy="280" r="47"/><circle cx="560" cy="280" r="94"/><circle cx="560" cy="280" r="141"/>
+<path d="M714 388A188 188 0 1 1 727 194" stroke-width="2"/>
+<path d="M727 194A188 188 0 0 1 714 388" stroke-dasharray="3 9" stroke-width="1" opacity=".4"/>
+<path d="M713 391A191 191 0 1 1 727 190" opacity=".3"/></g>
+<path d="M560 280L750 125" stroke="#30424b" stroke-width="10" opacity=".12" transform="translate(6 9)"/>
+<circle cx="560" cy="280" r="7" fill="#30424b"/>
+<g stroke="#30424b" stroke-width="2" stroke-linejoin="round"><path d="M559 282L752 111 759 119 565 286Z" fill="#eee6ce"/><path d="M703 155L708 119 747 91 741 122Z" fill="#b6422f"/><path d="M710 160L747 158 779 128 749 127Z" fill="#b6422f"/><path d="M714 145L739 120M725 159L751 135" fill="none" stroke-width="1"/><path d="M565 286L553 291 559 277" fill="#30424b"/></g>
+<!-- The graphite tip touches the unfinished outer circumference. -->
+<g stroke="#30424b" stroke-width="1.5" stroke-linejoin="round"><path d="M714 388L736 402 816 492 804 503 724 413Z" fill="#eee6ce"/><path d="M736 402L816 492 812 496 731 407Z" fill="#b6422f"/><path d="M731 407L812 496 808 500 727 411Z" fill="url(#hatch)"/><path d="M714 388L724 413 736 402Z" fill="#d5b88f"/><path d="M714 388L719 399 724 395Z" fill="#30424b"/><path d="M804 503L816 492 824 501 812 512Z" fill="#30424b"/></g></svg>

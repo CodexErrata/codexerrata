@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+<title id="title">Nollsummespel — balansvåg</title><desc id="desc">En gammaldags balansvåg med två skålar. Den ena sjunker när den andra stiger.</desc>
+<defs>
+
+<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><path d="M0 0V6" stroke="#243745" stroke-width="1"/></pattern>
+<pattern id="flutes" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 0V7" stroke="#304e50" stroke-width="1"/></pattern>
+</defs>
+<path fill="#c1c8a8" d="M0 0H900V640H0Z"/>
+<g stroke="#304e50" fill="none" stroke-width="1">
+<path d="M140 548H830M140 555H830"/>
+<path d="M500 79V548" stroke-dasharray="2 7" opacity=".45"/>
+<path d="M341 200a159 159 0 0 1 318 0" opacity=".5"/>
+<path d="M346 163l14 4m-1-44 13 8m13-41 10 11m23-29 6 15m33-25 3 16m40-20v17m40-13-3 16m37-8-6 15m36 3-10 11m35 11-13 8m27 25-14 4" opacity=".65"/>
+</g>
+<!-- Turned pedestal and engraved central column. -->
+<g stroke="#304e50" stroke-width="2" fill="#eee6ce">
+<path d="M480 245H520L531 487H469Z"/>
+<path d="M480 245H520L531 487H469Z" fill="url(#flutes)"/>
+<path d="M471 474H529V489H471Z"/>
+<path d="M469 489Q455 509 426 516H574Q545 509 531 489Z"/>
+<path d="M410 516H590V532H410Z"/>
+<path d="M393 532H607V547H393Z"/>
+<path d="M405 539H595"/>
+<path d="M481 247L500 186 519 247Z" fill="#304e50"/>
+</g>
+<!-- A single rigid beam: raising one pan lowers the other. -->
+<g stroke="#304e50" stroke-width="2" stroke-linejoin="round">
+<path d="M245 142L500 190 755 242 752 257 500 210 242 157Z" fill="#eee6ce"/>
+<path d="M245 150L500 200 753 250" fill="none"/>
+<path d="M500 185V117" fill="none" stroke-width="5"/>
+<circle cx="500" cy="106" r="12" fill="#b6422f"/>
+<circle cx="500" cy="200" r="19" fill="#eee6ce"/>
+<circle cx="500" cy="200" r="11" fill="#b6422f"/>
+<circle cx="500" cy="200" r="3" fill="#304e50"/>
+<circle cx="245" cy="150" r="7" fill="#eee6ce"/>
+<circle cx="753" cy="250" r="7" fill="#eee6ce"/>
+</g>
+<!-- Fine suspension wires remain vertical as the beam tilts. -->
+<g stroke="#304e50" stroke-width="2" fill="none">
+<path d="M245 157L151 334M245 157V334M245 157L339 334"/>
+<path d="M753 257L659 434M753 257V434M753 257L847 434"/>
+</g>
+<!-- Weights and the two shallow brass pans. -->
+<g stroke="#304e50" stroke-width="2" stroke-linejoin="round">
+<path d="M222 331L228 298H262L268 331Z" fill="#eee6ce"/>
+<ellipse cx="245" cy="295" rx="12" ry="5" fill="#eee6ce"/>
+<path d="M228 303h34m-31 6h28m-29 6h30m-31 6h32" fill="none" stroke-width="1"/>
+<path d="M151 334Q170 391 245 391Q320 391 339 334Z" fill="#eee6ce"/>
+<path d="M151 334Q170 391 245 391Q320 391 339 334Z" fill="url(#hatch)"/>
+<ellipse cx="245" cy="334" rx="94" ry="6" fill="#eee6ce"/>
+<path d="M712 428L722 369H783L793 428Z" fill="#b6422f"/>
+<ellipse cx="752" cy="365" rx="19" ry="7" fill="#b6422f"/>
+<path d="M722 378h62m-63 8h65m-67 8h69m-70 8h72m-73 8h75m-77 8h79" fill="none" stroke-width="1" opacity=".6"/>
+<path d="M659 434Q678 491 753 491Q828 491 847 434Z" fill="#b6422f"/>
+<path d="M659 434Q678 491 753 491Q828 491 847 434Z" fill="url(#hatch)"/>
+<ellipse cx="753" cy="434" rx="94" ry="6" fill="#eee6ce"/>
+</g>
+
+</svg>

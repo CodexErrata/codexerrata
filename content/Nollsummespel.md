@@ -1,5 +1,6 @@
 <!-- Title: Nollsummespel -->
 <!-- Date: 2/2-2026 -->
+<!-- description: Vissa branscher blir rikare utan att världen blir det. -->
 Sedan Adam Smith och merkantilismens slut ser folk, med undantag för ekonomiskt populistiska bottenskrap som Trump och VPK, inte längre på ekonomi som ett nollsummespel. Det idéskiftet har tjänat oss väl -- världen är bra mycket rikare än den varit utan samarbete och tillväxtpolitik. Med det sagt finns det ett fåtal branscher som faktiskt är nollsummespel. 
 
 En sådan bransch är sport. Sport erbjuder värde i form av underhållning (ekvivalent till priset man betalar för att se sporten, om vi utgår från människan som rationell aktör), och samhällspositiva effekter som social sammanhållning och [[post:Till giljotinens försvar|girardisk syndabocksmekanism]]. Däremot vill jag ställa den retoriska frågan om sport var avsevärt mycket mindre underhållande på 80-talet? Vi är nämligen så mycket bättre idag att ett medelmåttigt Championshipfotbollslag idag hade förväntas vinna över 80-talets bästa. Om du svarade nej, fotboll är inte avsevärt mycket roligare att kolla på idag, är den logiska slutsatsen att fotbollens underhållning inte korrelerar nära med fotbollens kvalitet. 

@@ -1,5 +1,6 @@
 <!-- title: Kain och Abel (work in progress) -->
 <!-- date: 14/3-2026 -->
+<!-- description: De bittraste fienderna är sällan de som har minst gemensamt. -->
 
 
 

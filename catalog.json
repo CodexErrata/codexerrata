@@ -1,0 +1,130 @@
+[
+  {
+    "source": "content/<!-- title: Lajva Trump -->.md",
+    "title": "Lajva Trump",
+    "slug": "lajva-trump",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  },
+  {
+    "source": "content/Jerusalem-och-Aten.md",
+    "title": "Jerusalem och Aten",
+    "slug": "jerusalem-och-aten",
+    "topic": "Samhälle",
+    "art": "columns",
+    "status": "Publicerat"
+  },
+  {
+    "source": "content/Kain-och-abel.md",
+    "title": "Kain och Abel (work in progress)",
+    "slug": "kain-och-abel",
+    "topic": "Samhälle",
+    "art": "circles",
+    "status": "Publicerat"
+  },
+  {
+    "source": "content/Min epistemiska kompass.md",
+    "title": "En epistemisk kompasspekare",
+    "slug": "en-epistemisk-kompasspekare",
+    "topic": "Kunskap",
+    "art": "compass",
+    "status": "Publicerat"
+  },
+  {
+    "source": "content/Moralens-ontologiska-problem.md",
+    "title": "Pascals vad som lösning av moralens ontologiska problem",
+    "slug": "pascals-vad-som-lösning-av-moralens-onto",
+    "topic": "Filosofi",
+    "art": "wager",
+    "status": "Publicerat"
+  },
+  {
+    "source": "content/Nollsummespel.md",
+    "title": "Nollsummespel",
+    "slug": "nollsummespel",
+    "topic": "Ekonomi",
+    "art": "scales",
+    "status": "Publicerat"
+  },
+  {
+    "source": "content/Normativ-etik.md",
+    "title": "Om normativ etik",
+    "slug": "om-normativ-etik",
+    "topic": "Filosofi",
+    "art": "target",
+    "status": "Publicerat"
+  },
+  {
+    "source": "content/Optimeringskillar",
+    "title": "Optimeringskillar",
+    "slug": "optimeringskillar",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  },
+  {
+    "source": "content/självbevarelsedrift.md",
+    "title": "Självbevarelsedrift",
+    "slug": "självbevarelsedrift",
+    "topic": "Filosofi",
+    "art": "identity",
+    "status": "Publicerat"
+  },
+  {
+    "source": "content/spelar-och-giljotiner.md",
+    "title": "Till giljotinens försvar",
+    "slug": "till-giljotinens-försvar",
+    "topic": "Samhälle",
+    "art": "scapegoat",
+    "status": "Publicerat"
+  },
+  {
+    "source": "drafts/Giljotiner.txt",
+    "title": "Giljotiner",
+    "slug": "giljotiner",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  },
+  {
+    "source": "drafts/Hedoniska trappan.md",
+    "title": "Hedoniska löpbandet (work in progress)",
+    "slug": "hedoniska-löpbandet-work-in-progress",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  },
+  {
+    "source": "drafts/Newcombs-problen.md",
+    "title": "Newcombs problem",
+    "slug": "newcombs-problem",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  },
+  {
+    "source": "drafts/Om-amerikansk-hegemoni.md",
+    "title": "Om amerikansk hegemoni",
+    "slug": "om-amerikansk-hegemoni",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  },
+  {
+    "source": "drafts/kultur.txt",
+    "title": "Kulturlager (anteckningar)",
+    "slug": "kulturlager-anteckningar",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  },
+  {
+    "source": "drafts/your-first-post.md",
+    "title": "Kulturlager",
+    "slug": "kulturlager",
+    "topic": "Anteckningar",
+    "art": "compass",
+    "status": "Manuskript"
+  }
+]

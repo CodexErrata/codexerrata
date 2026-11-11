@@ -1,5 +1,6 @@
 <!-- title: Självbevarelsedrift -->
 <!-- date: 24-8/-2026 -->
+<!-- description: Hur bevarar man sig själv när det man vill bevara hela tiden förändras? -->
 
 
 #I

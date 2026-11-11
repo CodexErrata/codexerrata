@@ -1,5 +1,6 @@
 <!-- title: Pascals vad som lösning av moralens ontologiska problem -->
 <!-- date: 30/01-2026 -->
+<!-- description: Vi behöver inte veta om objektiv moral finns för att ha skäl att handla som om den gör det. -->
 <div class="container">Moralens ontologiska problem är frågan om objektiv moral finns. 
 </div>
 

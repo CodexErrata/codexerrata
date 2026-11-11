@@ -1,0 +1,225 @@
+{
+  "source_manuscripts": 16,
+  "published": 8,
+  "drafts": 8,
+  "historical_pages": 20,
+  "pages": 37,
+  "records": [
+    {
+      "source": "content/självbevarelsedrift.md",
+      "title": "Självbevarelsedrift",
+      "status": "Publicerat",
+      "url": "posts/självbevarelsedrift.html"
+    },
+    {
+      "source": "content/<!-- title: Lajva Trump -->.md",
+      "title": "Lajva Trump",
+      "status": "Manuskript",
+      "url": "posts/lajva-trump.html"
+    },
+    {
+      "source": "drafts/Newcombs-problen.md",
+      "title": "Newcombs problem",
+      "status": "Manuskript",
+      "url": "posts/newcombs-problem.html"
+    },
+    {
+      "source": "content/Kain-och-abel.md",
+      "title": "Kain och Abel (work in progress)",
+      "status": "Publicerat",
+      "url": "posts/kain-och-abel.html"
+    },
+    {
+      "source": "drafts/Hedoniska trappan.md",
+      "title": "Hedoniska löpbandet (work in progress)",
+      "status": "Manuskript",
+      "url": "posts/hedoniska-löpbandet-work-in-progress.html"
+    },
+    {
+      "source": "content/Nollsummespel.md",
+      "title": "Nollsummespel",
+      "status": "Publicerat",
+      "url": "posts/nollsummespel.html"
+    },
+    {
+      "source": "content/Min epistemiska kompass.md",
+      "title": "En epistemisk kompasspekare",
+      "status": "Publicerat",
+      "url": "posts/en-epistemisk-kompasspekare.html"
+    },
+    {
+      "source": "content/Moralens-ontologiska-problem.md",
+      "title": "Pascals vad som lösning av moralens ontologiska problem",
+      "status": "Publicerat",
+      "url": "posts/pascals-vad-som-lösning-av-moralens-onto.html"
+    },
+    {
+      "source": "content/Normativ-etik.md",
+      "title": "Om normativ etik",
+      "status": "Publicerat",
+      "url": "posts/om-normativ-etik.html"
+    },
+    {
+      "source": "content/Optimeringskillar",
+      "title": "Optimeringskillar",
+      "status": "Manuskript",
+      "url": "posts/optimeringskillar.html"
+    },
+    {
+      "source": "content/Jerusalem-och-Aten.md",
+      "title": "Jerusalem och Aten",
+      "status": "Publicerat",
+      "url": "posts/jerusalem-och-aten.html"
+    },
+    {
+      "source": "content/spelar-och-giljotiner.md",
+      "title": "Till giljotinens försvar",
+      "status": "Publicerat",
+      "url": "posts/till-giljotinens-försvar.html"
+    },
+    {
+      "source": "drafts/Giljotiner.txt",
+      "title": "Giljotiner",
+      "status": "Manuskript",
+      "url": "posts/giljotiner.html"
+    },
+    {
+      "source": "drafts/Om-amerikansk-hegemoni.md",
+      "title": "Om amerikansk hegemoni",
+      "status": "Manuskript",
+      "url": "posts/om-amerikansk-hegemoni.html"
+    },
+    {
+      "source": "drafts/kultur.txt",
+      "title": "Kulturlager (anteckningar)",
+      "status": "Manuskript",
+      "url": "posts/kulturlager-anteckningar.html"
+    },
+    {
+      "source": "drafts/your-first-post.md",
+      "title": "Kulturlager",
+      "status": "Manuskript",
+      "url": "posts/kulturlager.html"
+    },
+    {
+      "source": "originals/posts/ekonomiska-nollsummespel.html",
+      "title": "Ekonomiska nollsummespel",
+      "status": "Tidigare version",
+      "url": "versions/ekonomiska-nollsummespel.html"
+    },
+    {
+      "source": "originals/posts/en-epistemisk-kompasspekare.html",
+      "title": "En epistemisk kompasspekare",
+      "status": "Tidigare version",
+      "url": "versions/en-epistemisk-kompasspekare.html"
+    },
+    {
+      "source": "originals/posts/enkel-lösning-av-moralens-ontologiska-pr.html",
+      "title": "Enkel lösning av moralens ontologiska problem, och varför normativ etik är slöseri med tid",
+      "status": "Tidigare version",
+      "url": "versions/enkel-lösning-av-moralens-ontologiska-pr.html"
+    },
+    {
+      "source": "originals/posts/hedoniska-löpbandet-work-in-progress.html",
+      "title": "Hedoniska löpbandet (work in progress)",
+      "status": "Tidigare version",
+      "url": "versions/hedoniska-löpbandet-work-in-progress.html"
+    },
+    {
+      "source": "originals/posts/hedoniska-löpbandet.html",
+      "title": "Hedoniska löpbandet",
+      "status": "Tidigare version",
+      "url": "versions/hedoniska-löpbandet.html"
+    },
+    {
+      "source": "originals/posts/jerusalem-och-aten.html",
+      "title": "Jerusalem och Aten",
+      "status": "Tidigare version",
+      "url": "versions/jerusalem-och-aten.html"
+    },
+    {
+      "source": "originals/posts/kain-och-abel-work-in-progress.html",
+      "title": "Kain och Abel (work in progress)",
+      "status": "Tidigare version",
+      "url": "versions/kain-och-abel-work-in-progress.html"
+    },
+    {
+      "source": "originals/posts/kain-och-abel.html",
+      "title": "Kain och Abel",
+      "status": "Tidigare version",
+      "url": "versions/kain-och-abel.html"
+    },
+    {
+      "source": "originals/posts/min-epistemiska-kompass.html",
+      "title": "Min epistemiska kompass",
+      "status": "Tidigare version",
+      "url": "versions/min-epistemiska-kompass.html"
+    },
+    {
+      "source": "originals/posts/newcombs-problem.html",
+      "title": "Newcombs problem",
+      "status": "Tidigare version",
+      "url": "versions/newcombs-problem.html"
+    },
+    {
+      "source": "originals/posts/nollsummespel.html",
+      "title": "Nollsummespel",
+      "status": "Tidigare version",
+      "url": "versions/nollsummespel.html"
+    },
+    {
+      "source": "originals/posts/om-normativ-etik.html",
+      "title": "Om normativ etik",
+      "status": "Tidigare version",
+      "url": "versions/om-normativ-etik.html"
+    },
+    {
+      "source": "originals/posts/on-the-nature-of-long-form-wri.html",
+      "title": "On the Nature of Long-Form Writing",
+      "status": "Tidigare version",
+      "url": "versions/on-the-nature-of-long-form-wri.html"
+    },
+    {
+      "source": "originals/posts/on-the-nature-of-long-form-writing.html",
+      "title": "On the Nature of Long-Form Writing",
+      "status": "Tidigare version",
+      "url": "versions/on-the-nature-of-long-form-writing.html"
+    },
+    {
+      "source": "originals/posts/pascals-vad-som-lösning-av-moralens-onto.html",
+      "title": "Pascals vad som lösning av moralens ontologiska problem",
+      "status": "Tidigare version",
+      "url": "versions/pascals-vad-som-lösning-av-moralens-onto.html"
+    },
+    {
+      "source": "originals/posts/praktisk-lösning-av-moralens-ontologiska.html",
+      "title": "Praktisk lösning av moralens ontologiska problem, och varför normativ etik är slöseri med tid",
+      "status": "Tidigare version",
+      "url": "versions/praktisk-lösning-av-moralens-ontologiska.html"
+    },
+    {
+      "source": "originals/posts/självbevarelsedrift.html",
+      "title": "Självbevarelsedrift",
+      "status": "Tidigare version",
+      "url": "versions/självbevarelsedrift.html"
+    },
+    {
+      "source": "originals/posts/speglar-och-giljotiner.html",
+      "title": "Speglar och giljotiner",
+      "status": "Tidigare version",
+      "url": "versions/speglar-och-giljotiner.html"
+    },
+    {
+      "source": "originals/posts/till-giljotinens-försvar.html",
+      "title": "Till giljotinens försvar",
+      "status": "Tidigare version",
+      "url": "versions/till-giljotinens-försvar.html"
+    },
+    {
+      "source": "originals/posts/untitled-post.html",
+      "title": "Untitled Post",
+      "status": "Tidigare version",
+      "url": "versions/untitled-post.html"
+    }
+  ]
+}

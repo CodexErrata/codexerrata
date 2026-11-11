@@ -1,5 +1,6 @@
 <!-- title: En epistemisk kompasspekare -->
 <!-- date: 1/2-2026 -->
+<!-- description: När två idéer har lika stort stöd kan den minst tilltalande vara den mest trovärdiga. -->
 
 <div class="container">Epistemologiska riktlinhjer finns det många av. De flesta av dem, t ex att auktoriteter på ett ämne oftare har rätt än lekmän, har du hört explicit, eller förstår intuitivt. Att skriva om dem är slöseri med tid. Denna har jag däremot inte hört folk prata om (vilket inte betyder att jag tror jag är först med idén). </div>
 

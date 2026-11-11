@@ -1,8 +1,9 @@
 {
-  "name": "codexerrata",
+  "name": "codexerrata-editorial",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "python3 build.py && mkdir -p dist && cp -R index.html css posts images dist/"
+    "build": "python3 build.py",
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist"
   }
 }

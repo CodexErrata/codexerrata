@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc"><title id="title">Moralens ontologiska problem — ett vad</title><desc id="desc">Ett graverat beslutsträd med två grenar: värden finns eller finns inte. En röd spelpjäs står vid valet.</desc><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0V6" stroke="#30424b" stroke-width="1"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5 1 9" fill="none" stroke="#30424b" stroke-width="1.1"/></marker></defs><path fill="#dedbcc" d="M0 0H900V640H0Z"/><path d="M230 530H835M230 539H835" stroke="#30424b" fill="none" opacity=".5"/>
+<g fill="none" stroke="#30424b" stroke-width="2"><path d="M555 476V361L365 229M555 361L745 229"/><path d="M365 229L285 128M365 229L445 128M745 229L670 128M745 229L820 128" stroke-width="1.5"/>
+<path d="M555 461V368L372 239M563 365L746 239" stroke-width=".8"/>
+<path d="M262 104H466M648 104H841" stroke-width="1"/>
+<circle cx="365" cy="229" r="27" fill="#eee6ce"/><circle cx="745" cy="229" r="27" fill="#eee6ce"/>
+<circle cx="285" cy="128" r="12" fill="#b6422f"/><circle cx="445" cy="128" r="12" fill="#b6422f"/><circle cx="670" cy="128" r="12" fill="#eee6ce"/><circle cx="820" cy="128" r="12" fill="#eee6ce"/>
+<path d="M303 158L343 208M650 169L715 207" stroke-dasharray="2 5" opacity=".4"/>
+<path d="M293 291A275 275 0 0 0 817 291" stroke-width="1" stroke-dasharray="2 8" opacity=".45"/></g>
+<g font-family="Georgia,serif" fill="#30424b" text-anchor="middle"><text x="365" y="239" font-size="28" font-style="italic">V</text><text x="745" y="238" font-size="26" font-style="italic">¬V</text><text x="365" y="84" font-size="15" letter-spacing="2">VÄRDEN FINNS</text><text x="745" y="84" font-size="15" letter-spacing="2">VÄRDEN FINNS INTE</text></g>
+<ellipse cx="555" cy="495" rx="65" ry="15" fill="#30424b" opacity=".1"/>
+<g fill="#b6422f" stroke="#30424b" stroke-width="2"><path d="M519 463H591L601 478V494H509V478Z"/><path d="M519 463Q543 444 542 410H568Q567 444 591 463Z"/><ellipse cx="555" cy="463" rx="36" ry="7"/><path d="M536 401H574V412H536Z"/><circle cx="555" cy="377" r="27"/></g>
+<path d="M519 478H591M523 485H587M548 417Q547 442 530 457M554 417Q553 443 542 458M560 417Q560 444 554 459" fill="none" stroke="#30424b" stroke-width="1" opacity=".7"/>
+<path d="M540 365a18 18 0 0 1 22-6" fill="none" stroke="#eee6ce" stroke-width="2" opacity=".7"/>
+</svg>

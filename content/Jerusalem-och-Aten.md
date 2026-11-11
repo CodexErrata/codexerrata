@@ -1,5 +1,6 @@
 <!-- title: Jerusalem och Aten -->
 <!-- date: 17/12-2025 -->
+<!-- description: Liberalismen har varit så framgångsrik att vi glömt vad den skyddar oss från. -->
 <div class="container">Detta är den andra av två texter delvist inspirerade av Peter Thiels essä [The Straussian Moment](https://gwern.net/doc/politics/2007-thiel.pdf) från 2004. Vi undersöker bl a upplysningsidéer, liberala samhällens [["Sista människa"-problematik|Nietzsche beskrev den sista människan i *Så talade Zarathustra* som en passiv nihilist -- antitesen till hans *Übermensch* -- vilket han förutspådde skulle bli den västerländska människan efter *Gud är död*]], och lösningar för det problemet.</div>
 
 ##Stat eller kyrka, rationalitet eller religion, Sokrates eller Jesus. 

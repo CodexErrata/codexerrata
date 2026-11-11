@@ -1,5 +1,6 @@
 <!-- title: Till giljotinens försvar -->
 <!-- date: 11/12-2025 -->
+<!-- description: Vad händer med ett samhälles aggressioner när det inte längre får offra en syndabock? -->
 <blockquote>
 <p>Everywhere and always, when human beings either cannot or dare not take their anger out on the thing that has caused it, they unconsciously search for substitutes, and more often than not they find them</p>
 <footer>— René Girard</footer>

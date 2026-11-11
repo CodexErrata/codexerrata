@@ -1,5 +1,6 @@
 <!-- title: Om normativ etik -->
 <!-- date: 29/01-2026 -->
+<!-- description: Vi handlar efter magkänslan och bygger sedan en moralfilosofi som ger oss rätt. -->
 <div class="container">Moralens ontologiska problem är frågan om objektiv moral finns. Normativ etik är den gren av moralfilosofi som studerar principer för rätt (gott) handlande.
 </div>
 
